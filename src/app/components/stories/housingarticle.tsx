@@ -209,7 +209,7 @@ Most importantly, TCL brought to the table a deep commitment to co-creation, wor
         <h2 className="text-sm font-bold text-[#3E3E3E] mb-1">
           From Insight to Impact: Real Stories, Real Results
         </h2>
-        <p className="leading-loose mb-6 text-justify text-xs text-[#3E3E3E]">Since its launch, the HMIP has redefined how housing-related decisions are made in Nigeria. For the first time, stakeholders across the board have access to a "single source of truth" on housing data. Its impact is already tangible:</p>
+        <p className="leading-loose mb-6 text-justify text-xs text-[#3E3E3E]">Since its launch, the HMIP has redefined how housing-related decisions are made in Nigeria. For the first time, stakeholders across the board have access to a single source of truth on housing data. Its impact is already tangible:</p>
           
           <ul className='leading-loose mb-6 text-justify text-xs text-[#3E3E3E]'>
 <li>•	Financial institutions are using HMIP insights to evaluate mortgage financing opportunities with greater confidence.</li>

@@ -17,7 +17,7 @@ const sectors: Sector[] = [
   {
     title: " Managed IT Support Services",
     description:
-      "Our experienced support teams provide round-the-clock IT assistance through 24/7 monitoring, proactive maintenance, and fast-response issue resolution. Whether you're facing unexpected technical disruptions or planning a system upgrade, we are there every step of the way.",
+      "Our experienced support teams provide round-the-clock IT assistance through 24/7 monitoring, proactive maintenance, and fast-response issue resolution. Whether you are facing unexpected technical disruptions or planning a system upgrade, we are there every step of the way.",
     image: "/sector2.png", 
     imageLeft: true,
   },

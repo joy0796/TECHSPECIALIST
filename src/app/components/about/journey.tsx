@@ -10,7 +10,7 @@ export default function OurJourney() {
         <h2 className="text-2xl text-[#3E3E3E] font-semibold mb-4">Our Journey</h2>
         <p className="text-[#3E3E3E] text-xs max-w-3xl mx-auto mb-4 leading-relaxed">
           Since 2008, TCL has built a reputation for excellence in delivering secure, reliable information
-          technology services to diverse organizations across Nigeria. With over a decade of experience, we've 
+          technology services to diverse organizations across Nigeria. With over a decade of experience, we have 
           continually evolved to meet the demands of a rapidly changing technology landscape. <br />
           Watch our story unfold—how we have grown, adapted, and led innovation in IT across Nigeria.
         </p>

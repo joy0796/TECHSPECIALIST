@@ -142,7 +142,7 @@ const CaseArticleSection2 = () => {
             </div>
             
 
-            <div className=''>
+            <div>
                             <button
               type="submit"
               className="w-full bg-orange-600 text-white py-2 rounded font-normal"
@@ -198,7 +198,7 @@ A 2023 report by PwC Nigeria estimated that AI could contribute up to $15.7 tril
 <p className="leading-loose mb-6 text-justify text-xs text-[#3E3E3E]">•	And a firm like Techspecialist Consulting provides the infrastructure and integration expertise to make it all work seamlessly.
 When these players operate in silos, innovation slows. But when they collaborate, progress accelerates.</p>
 <p className="text-sm font-bold mb-1 text-[#3E3E3E]">Challenges Slowing Collaboration <span className='font-normal'>(And How We Can Overcome Them)</span></p>
-<p className="leading-loose mb-2 text-justify text-xs text-[#3E3E3E]">Of course, Nigeria's AI revolution is not without its challenges:</p>
+<p className="leading-loose mb-2 text-justify text-xs text-[#3E3E3E]">Of course, Nigerias AI revolution is not without its challenges:</p>
 <p className="text-xs font-bold mb-1 text-[#3E3E3E]">•	Talent Gaps:<span className='font-normal'> There is a shortage of AI-trained professionals. Universities are only beginning to catch up.</span></p>
 <p className="text-xs font-bold mb-1 text-[#3E3E3E]">•	Regulatory Uncertainty:<span className='font-normal'> AI frameworks are still evolving, making policy alignment tricky.</span></p>
 <p className="text-xs font-bold mb-1 text-[#3E3E3E]">•	Funding Barriers:<span className='font-normal'> Many startups struggle to find partners or investors willing to bet on unproven AI models.</span></p>
