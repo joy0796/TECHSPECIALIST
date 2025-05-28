@@ -92,7 +92,7 @@ const HousingArticleSection = () => {
         <div className='bg-gray-100 mb-1 p-2'>
           <p className="text-sm font-semibold text-[#3E3E3E]">Ready to talk?</p>
           <p className="text-xs text-[#707070]">
-            I want to talk to your specialist in the field of{' '}
+            I want to talk to your specialist in the field of
             <span className="text-[#707070] underline">Digital Transformation</span>.
           </p>
           </div>
@@ -172,7 +172,7 @@ const HousingArticleSection = () => {
         </h2>
         <p className="leading-loose mb-6 text-justify text-xs text-[#3E3E3E]">
           NMRCs Vision: Bridging the Data Divide
-            At the center of this challenge stood the Nigeria Mortgage Refinance Company (NMRC), a key institution tasked with enhancing mortgage liquidity and promoting affordable housing finance in Nigeria. NMRC knew that without structured, credible data, its mandate would remain limited in impact. Housing finance couldn't flourish in opacity. The policies meant to guide investment couldnt take root without real-world visibility.
+            At the center of this challenge stood the Nigeria Mortgage Refinance Company (NMRC), a key institution tasked with enhancing mortgage liquidity and promoting affordable housing finance in Nigeria. NMRC knew that without structured, credible data, its mandate would remain limited in impact. Housing finance could not flourish in opacity. The policies meant to guide investment couldnt take root without real-world visibility.
             Rather than resign to the constraints, NMRC took bold action. It envisioned a national housing intelligence platform, a place where policymakers, lenders, developers, and citizens could turn data into action, risk into opportunity, and planning into progress.
             Co-Creating the Housing Market Information Portal (HMIP)
         </p>
