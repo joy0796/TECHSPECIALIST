@@ -1,9 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+
 
 export default function ContactWithCompanyInfo() {
-  const [marketingConsent, setMarketingConsent] = useState(false);
+  
 
   return (
     <section className="bg-white text-black px-4 py-8 border-b border-gray-400">

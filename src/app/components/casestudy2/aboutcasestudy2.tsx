@@ -9,7 +9,7 @@ export default function Section() {
   return (
     <section className="w-full bg-white pl-4 py-0 md:py-0 border-b border-red-400">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        {/* Left - Text and Icons */}
+        
         <div>
           <p className="text-xs font-semibold text-[#3E3E3E] uppercase mb-2">
             Artificial Intelligence

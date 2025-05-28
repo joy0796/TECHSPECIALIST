@@ -35,13 +35,13 @@ const tags = [
 ];
 
 const CaseArticleSection3 = () => {
-  const [formData, setFormData] = useState({
-    fullName: '',
-    companyName: '',
-    businessEmail: '',
-    phoneNumber: '',
-    consent: false,
-  });
+  // const [formData, setFormData] = useState({
+  //   fullName: '',
+  //   companyName: '',
+  //   businessEmail: '',
+  //   phoneNumber: '',
+  //   consent: false,
+  // });
 
   return (
     <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-16 py-10 flex flex-col lg:flex-row gap-10 text-black">

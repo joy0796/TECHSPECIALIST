@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import MandateWrapper from "../components/stories3/mandatewrapper";
 import Breadcrumb from "../components/stories/breadcrumb";
 import HousingArticleSection3 from "../components/stories3/housingarticle3";

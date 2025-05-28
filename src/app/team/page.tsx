@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import TeamWrapper from "../components/team/aboutteamwrapper";
 import Breadcrumb from "../components/stories/breadcrumb";
 import TeamSection from "../components/team/meettheteam";

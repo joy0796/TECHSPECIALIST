@@ -1,8 +1,8 @@
 'use client';
 
-import Image from 'next/image';
+// import Image from 'next/image';
 import { Bookmark, Share, InsertLink, } from '@mui/icons-material';
-import AddIcon from '@mui/icons-material/Add';
+// import AddIcon from '@mui/icons-material/Add';
 
 
 export default function Mandate() {

@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import TrendsWrapper from "../components/trends/abouttrendswrapper";
 import Breadcrumb from "../components/stories/breadcrumb";
 import FeaturedPostsSection from "../components/trends/featuredpost";

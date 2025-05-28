@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Breadcrumb from "../components/stories/breadcrumb";
 import AboutserviceWrapper from "../components/services/aboutservicewrapper";
 import ValueMethodologySection from "../components/services/valuemethod";

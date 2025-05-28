@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import AboutusWrapper from "../components/about/aboutuswrapper";
 import Breadcrumb from "../components/stories/breadcrumb";
 import ContactWithCompanyInfo from "../components/about/contactcompanyinfo";

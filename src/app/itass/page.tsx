@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Breadcrumb from "../components/stories/breadcrumb";
 import ItaasWrapper from "../components/itaas/itaaswrapper";
 import ReadyToTalk from "../components/stories/readyToTalk";

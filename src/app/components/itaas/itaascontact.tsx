@@ -1,10 +1,10 @@
 // app/components/ContactSection.tsx
 "use client";
 
-import { useState } from "react";
+// import { useState } from "react";
 
 const ContactSection = () => {
-  const [topic, setTopic] = useState("Digital Transformation");
+  // const [topic, setTopic] = useState("Digital Transformation");
 
   return (
     <section className="w-full px-4 py-12 bg-white md:flex md:gap-10 md:justify-center md:items-center gap-12 mx-auto">
