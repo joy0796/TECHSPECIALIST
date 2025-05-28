@@ -12,7 +12,7 @@ export default function OurJourney() {
           Since 2008, TCL has built a reputation for excellence in delivering secure, reliable information
           technology services to diverse organizations across Nigeria. With over a decade of experience, we've 
           continually evolved to meet the demands of a rapidly changing technology landscape. <br />
-          Watch our story unfold—how we’ve grown, adapted, and led innovation in IT across Nigeria.
+          Watch our story unfold—how we have grown, adapted, and led innovation in IT across Nigeria.
         </p>
 
         <div className="relative w-full max-w-2xl mx-auto">

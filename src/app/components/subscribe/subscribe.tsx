@@ -43,7 +43,7 @@ const SubscribeSection = () => {
                 className="mt-1"
               />
               <label htmlFor="consent" className="text-sm text-gray-700 text-justify">
-                I’d like to receive marketing communications regarding Techspecialist Consulting Limited service offerings. I understand that I can unsubscribe at any time.
+                I would like to receive marketing communications regarding Techspecialist Consulting Limited service offerings. I understand that I can unsubscribe at any time.
               </label>
             </div>
 

@@ -136,7 +136,7 @@ const HousingArticleSection3 = () => {
             <div className='bg-gray-100 mb-1 p-2'>
                 <label className="flex items-start gap-2 text-xs">
               <input type="checkbox" className="mt-1 text-[#707070]" />
-              I’d like to receive exciting communication regarding Techspecialist services.
+              I would like to receive exciting communication regarding Techspecialist services.
             </label>
             </div>
             
@@ -159,13 +159,13 @@ const HousingArticleSection3 = () => {
         <p className="text-[#3E3E3E] text-xs leading-relaxed mb-4 text-justify">
           In a country of over 200 million people, one of the least talked about but most pressing challenges in the housing sector is the lack of credible, centralized housing data.</p>
 
-<p className="text-[#3E3E3E] text-xs leading-relaxed mb-4 text-justify">This gap doesn’t just affect developers or policymakers. It affects everyone from financial institutions trying to de-risk housing finance, to families seeking affordable homes, to government agencies crafting policies that reflect reality. With fragmented, inconsistent, and inaccessible housing data, progress is simply guesswork.</p>
+<p className="text-[#3E3E3E] text-xs leading-relaxed mb-4 text-justify">This gap doesnt just affect developers or policymakers. It affects everyone from financial institutions trying to de-risk housing finance, to families seeking affordable homes, to government agencies crafting policies that reflect reality. With fragmented, inconsistent, and inaccessible housing data, progress is simply guesswork.</p>
 
 <p className="text-[#3E3E3E] text-xs leading-relaxed mb-8 text-justify">To fix the housing challenge, we must first fix the data problem.
-That’s the mission behind the Housing Market Information Portal (HMIP) a national data platform co-created with leading institutions like Nigeria Mortgage Refinance Company Plc, Central Bank of Nigeria, National Bureau of Statistics Nigeria, National Population Commission, FEDERAL MORTGAGE BANK OF NIGERIA (FMBN) Real Estate Developers Association of Nigeria (REDAN) and other agencies.</p>
+Thats the mission behind the Housing Market Information Portal (HMIP) a national data platform co-created with leading institutions like Nigeria Mortgage Refinance Company Plc, Central Bank of Nigeria, National Bureau of Statistics Nigeria, National Population Commission, FEDERAL MORTGAGE BANK OF NIGERIA (FMBN) Real Estate Developers Association of Nigeria (REDAN) and other agencies.</p>
 
 
-<p className="text-[#3E3E3E] text-xs leading-relaxed mb-2 text-justify">What HMIP Does: HMIP is not just a data repository. It’s a housing intelligence system that: </p>
+<p className="text-[#3E3E3E] text-xs leading-relaxed mb-2 text-justify">What HMIP Does: HMIP is not just a data repository. Its a housing intelligence system that: </p>
 <ul className="text-[#3E3E3E] text-xs leading-relaxed mb-6 text-justify">
     <li>* Aggregates and unifies datasets from credible national sources</li>
  <li>• Visualizes housing trends, affordability, and supply-demand gaps</li>
@@ -177,7 +177,7 @@ That’s the mission behind the Housing Market Information Portal (HMIP) a natio
 
 <p className="text-[#3E3E3E] text-xs leading-relaxed mb-6 text-justify">So far, HMIP has integrated key datasets, built interactive dashboards, and laid the groundwork for real-time market analysis, bringing a new level of transparency and shared insight to the housing ecosystem.</p>
 
-<p className="text-[#3E3E3E] text-xs leading-relaxed mb-6 text-justify">The Bigger Picture HMIP is more than a platform, it’s a collaborative step toward building a future where:</p> 
+<p className="text-[#3E3E3E] text-xs leading-relaxed mb-6 text-justify">The Bigger Picture HMIP is more than a platform, its a collaborative step toward building a future where:</p> 
 <ul className="text-[#3E3E3E] text-xs leading-relaxed mb-6 text-justify">
     <li>* Policy is powered by insight</li>
  <li>• Investment is backed by visibility</li>

@@ -14,7 +14,7 @@ export default function ExperienceImpact() {
           </div>
           <div className="md:border-l md:border-r border-gray-300">
             <p className="text-4xl text-[#3E3E3E] font-extrabold">50+</p>
-            <p className="text-[#3E3E3E] mt-2 font-semibold">Businesses we’ve impacted</p>
+            <p className="text-[#3E3E3E] mt-2 font-semibold">Businesses we have impacted</p>
           </div>
           <div>
             <p className="text-4xl font-extrabold text-[#3E3E3E]">1000+</p>

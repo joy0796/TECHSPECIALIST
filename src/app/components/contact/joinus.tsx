@@ -8,9 +8,9 @@ export default function JoinUsSection() {
           Join us & be a part of the future
         </h2>
         <p className="text-gray-700 text-xs leading-loose mb-4">
-          At Techspecialist Consulting Limited (TCL), we’re always on the lookout for individuals who are passionate
-          about driving meaningful progress. If you’re seeking a career where your expertise is valued, collaboration fuels success,
-          and innovation is powered by people — you’ve found the right place.
+          At Techspecialist Consulting Limited (TCL), we are always on the lookout for individuals who are passionate
+          about driving meaningful progress. If you are seeking a career where your expertise is valued, collaboration fuels success,
+          and innovation is powered by people — you have found the right place.
           <br />
           Join us in shaping the future of digital transformation.
         </p>

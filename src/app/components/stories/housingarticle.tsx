@@ -136,7 +136,7 @@ const HousingArticleSection = () => {
             <div className='bg-gray-100 mb-1 p-2'>
                 <label className="flex items-start gap-2 text-xs">
               <input type="checkbox" className="mt-1 text-[#707070]" />
-              I’d like to receive exciting communication regarding Techspecialist services.
+              I would like to receive exciting communication regarding Techspecialist services.
             </label>
             </div>
             
@@ -158,8 +158,8 @@ const HousingArticleSection = () => {
       <article className="lg:w-3/4 w-full">
         <p className="leading-loose mb-6 text-justify text-xs text-[#3E3E3E]">
           {/* Paste your full article content here */}
-          For decades, Nigeria’s housing sector has grappled with a silent but systemic crisis: the absence of reliable, centralized data. While the nation’s housing deficit continued to grow now estimated at over 25 million units, the ability to diagnose, plan, and respond effectively remained painfully limited. Government agencies lacked the insights to formulate evidence-based policies. Financial institutions were unable to de-risk housing investments confidently. Real estate developers operated in the dark. And for millions of Nigerians, the dream of affordable housing remained out of reach, obscured by data blind spots.
-        As Nigeria’s population rapidly urbanizes with projections exceeding 295 million by 2050 this information gap was more than a bureaucratic inconvenience. It was a bottleneck threatening inclusive growth, investor confidence, and housing affordability nationwide.
+          For decades, Nigerias housing sector has grappled with a silent but systemic crisis: the absence of reliable, centralized data. While the nations housing deficit continued to grow now estimated at over 25 million units, the ability to diagnose, plan, and respond effectively remained painfully limited. Government agencies lacked the insights to formulate evidence-based policies. Financial institutions were unable to de-risk housing investments confidently. Real estate developers operated in the dark. And for millions of Nigerians, the dream of affordable housing remained out of reach, obscured by data blind spots.
+        As Nigerias population rapidly urbanizes with projections exceeding 295 million by 2050 this information gap was more than a bureaucratic inconvenience. It was a bottleneck threatening inclusive growth, investor confidence, and housing affordability nationwide.
 
 
 
@@ -168,20 +168,20 @@ const HousingArticleSection = () => {
         </p>
 
         <h2 className="text-sm font-bold mb-1 text-[#3E3E3E]">
-          NMRC’s Vision: Bridging the Data Divide
+          NMRCs Vision: Bridging the Data Divide
         </h2>
         <p className="leading-loose mb-6 text-justify text-xs text-[#3E3E3E]">
-          NMRC’s Vision: Bridging the Data Divide
-            At the center of this challenge stood the Nigeria Mortgage Refinance Company (NMRC), a key institution tasked with enhancing mortgage liquidity and promoting affordable housing finance in Nigeria. NMRC knew that without structured, credible data, its mandate would remain limited in impact. Housing finance couldn't flourish in opacity. The policies meant to guide investment couldn’t take root without real-world visibility.
+          NMRCs Vision: Bridging the Data Divide
+            At the center of this challenge stood the Nigeria Mortgage Refinance Company (NMRC), a key institution tasked with enhancing mortgage liquidity and promoting affordable housing finance in Nigeria. NMRC knew that without structured, credible data, its mandate would remain limited in impact. Housing finance couldn't flourish in opacity. The policies meant to guide investment couldnt take root without real-world visibility.
             Rather than resign to the constraints, NMRC took bold action. It envisioned a national housing intelligence platform, a place where policymakers, lenders, developers, and citizens could turn data into action, risk into opportunity, and planning into progress.
             Co-Creating the Housing Market Information Portal (HMIP)
         </p>
 
         <h2 className="text-sm font-bold text-[#3E3E3E] mb-1">
-          NMRC’s leadership spearheaded a multi-stakeholder collaboration...
+          NMRCs leadership spearheaded a multi-stakeholder collaboration...
         </h2>
         <ul className='leading-loose mb-6 text-justify text-xs text-[#3E3E3E]'>
-          <li>•	Techspecialist Consulting Limited (TCL) – the digital transformation partner</li>  
+          <li>•	Techspecialist Consulting Limited (TCL) - the digital transformation partner</li>  
            <li>•	Federal Ministry of Works and Housing</li> 
             <li>•	National Bureau of Statistics</li>
             <li>•	Central Bank of Nigeria</li>
@@ -196,14 +196,14 @@ const HousingArticleSection = () => {
         <h2 className="text-sm font-bold text-[#3E3E3E] mb-1">
           The Role of Techspecialist Consulting Limited
         </h2>
-        <p className="leading-loose mb-6 text-justify text-xs text-[#3E3E3E]">From concept to execution, Techspecialist Consulting Limited (TCL) played a pivotal role as the digital execution partner. With a deep understanding of national development needs and technical expertise in enterprise platforms, TCL translated NMRC’s vision into a robust and scalable solution.</p>
+        <p className="leading-loose mb-6 text-justify text-xs text-[#3E3E3E]">From concept to execution, Techspecialist Consulting Limited (TCL) played a pivotal role as the digital execution partner. With a deep understanding of national development needs and technical expertise in enterprise platforms, TCL translated NMRCs vision into a robust and scalable solution.</p>
 
         <h2 className="text-sm font-bold text-[#3E3E3E] mb-1">TCL delivered:</h2>
         <ul className="list-disc list-inside leading-loose mb-6 text-justify text-xs text-[#3E3E3E]">
           <li>	An agile data architecture capable of integrating multiple datasets</li>
         <li>	User-centric interface design for policy, investment, and planning audiences</li>
         <li>	A secure, accessible platform hosted and managed in line with global standards
-Most importantly, TCL brought to the table a deep commitment to co-creation, working side by side with NMRC’s technical and strategic teams to ensure that the solution wasn’t just functional but transformational.</li>
+Most importantly, TCL brought to the table a deep commitment to co-creation, working side by side with NMRCs technical and strategic teams to ensure that the solution wasnt just functional but transformational.</li>
         </ul>
 
         <h2 className="text-sm font-bold text-[#3E3E3E] mb-1">
@@ -218,10 +218,10 @@ Most importantly, TCL brought to the table a deep commitment to co-creation, wor
 <li>•	Urban planners are incorporating real-time affordability indices into project design.
 One NMRC executive captured it best:</li>
 </ul>
-<p className='leading-loose mb-6 text-justify text-xs text-[#3E3E3E]'>“We’ve moved from asking questions in the dark to making decisions in the light.”
+<p className='leading-loose mb-6 text-justify text-xs text-[#3E3E3E]'>“We have moved from asking questions in the dark to making decisions in the light.”
 Looking Ahead: Building a Housing Future Backed by Intelligence
-The Housing Market Information Portal is more than a digital dashboard, it’s a strategic instrument for national development. It proves that when public institutions like NMRC combine vision with innovation and collaborate across sectors, real change happens.
-At Techspecialist Consulting Limited, we are proud to have walked this journey with NMRC and its partners. Our shared success in building HMIP exemplifies what’s possible when data, technology, and purpose align.
+The Housing Market Information Portal is more than a digital dashboard, it is a strategic instrument for national development. It proves that when public institutions like NMRC combine vision with innovation and collaborate across sectors, real change happens.
+At Techspecialist Consulting Limited, we are proud to have walked this journey with NMRC and its partners. Our shared success in building HMIP exemplifies whats possible when data, technology, and purpose align.
 </p>
     
       </article>

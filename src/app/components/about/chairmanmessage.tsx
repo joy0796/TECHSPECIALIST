@@ -30,7 +30,7 @@ export default function ChairmanMessage() {
             </p>
             <p className='text-sm'>
               Our AI-driven, security-conscious approach is built on deep technical expertise and
-              strengthened by strategic alliances. Through this, we don’t just implement technology — 
+              strengthened by strategic alliances. Through this, we do not just implement technology — 
               we enable sustainable transformation, helping our partners navigate disruption, exceed
               expectations, and thrive in the digital age.
             </p>

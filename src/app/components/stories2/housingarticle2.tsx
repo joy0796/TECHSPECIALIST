@@ -136,7 +136,7 @@ const HousingArticleSection2 = () => {
             <div className='bg-gray-100 mb-1 p-2'>
                 <label className="flex items-start gap-2 text-xs">
               <input type="checkbox" className="mt-1 text-[#707070]" />
-              I’d like to receive exciting communication regarding Techspecialist services.
+              I would like to receive exciting communication regarding Techspecialist services.
             </label>
             </div>
             

@@ -82,7 +82,7 @@ const ContactSection = () => {
           Modern businesses require more than just functional IT systems—they need resilient, responsive, and future-ready technology environments that keep operations running smoothly.  At Techspecialist Consulting Limited (TCL), we deliver dependable IT Support as a Service (ITaaS) that ensures your infrastructure performs at its best—every hour, every day. </p>
 
         <p className="text-sm mb-6 text-justify">
-          We help organizations across sectors manage the complexity of today’s IT landscape with tailored support services designed to reduce downtime, enhance system reliability, and strengthen cybersecurity—all while aligning with your strategic objectives.
+          We help organizations across sectors manage the complexity of todays IT landscape with tailored support services designed to reduce downtime, enhance system reliability, and strengthen cybersecurity—all while aligning with your strategic objectives.
         </p>
 
         <h3 className="font-semibold mb-4">Why Choose TCL?</h3>

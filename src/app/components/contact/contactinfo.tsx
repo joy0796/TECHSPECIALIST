@@ -93,7 +93,7 @@ export default function ContactSection() {
             <label className="flex items-start gap-2">
               <input type="checkbox" />
               <span>
-                I’d like to receive marketing communications regarding Techspecialist Consulting Limited
+                I would like to receive marketing communications regarding Techspecialist Consulting Limited
                 service offerings. I understand that I can unsubscribe at any time.
               </span>
             </label>

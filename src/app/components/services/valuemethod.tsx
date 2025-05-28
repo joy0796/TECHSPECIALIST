@@ -27,7 +27,7 @@ const ValueMethodologySection = () => {
           The Techspecialist Value Methodology
         </h2>
         <p className="text-[#979595] max-w-3xl mx-auto mb-12 text-xs">
-          TCL’s proprietary engagement methodology has been refined through over a decade of successful digital transformation implementations. This structured yet flexible approach ensures maximum value creation, seamless implementation, and sustainable long-term outcomes.
+          TCLs proprietary engagement methodology has been refined through over a decade of successful digital transformation implementations. This structured yet flexible approach ensures maximum value creation, seamless implementation, and sustainable long-term outcomes.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {methodologyItems.map((item, index) => (

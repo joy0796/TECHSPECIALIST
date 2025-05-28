@@ -10,7 +10,7 @@ const JoinUs = () => {
           Join us & be a part of the future
         </h2>
         <p className="text-sm leading-relaxed mb-10 max-w-3xl">
-          At Techspecialist Consulting Limited (TCL), we’re always on the lookout for individuals who are passionate about driving meaningful progress. If you’re seeking a career where your expertise is valued, collaboration fuels success, and innovation is powered by people — you’ve found the right place. Join us in shaping the future of digital transformation.
+          At Techspecialist Consulting Limited (TCL), we are always on the lookout for individuals who are passionate about driving meaningful progress. If you are seeking a career where your expertise is valued, collaboration fuels success, and innovation is powered by people — you have found the right place. Join us in shaping the future of digital transformation.
         </p>
         <Link href="/careers" className="inline-block bg-[#ED5D25] hover:bg-orange-700 text-white font-medium px-8 py-4 rounded transition duration-300">
           

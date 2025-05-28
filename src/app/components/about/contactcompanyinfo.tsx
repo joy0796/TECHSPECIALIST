@@ -57,7 +57,7 @@ export default function ContactWithCompanyInfo() {
             <div className='bg-gray-100 mb-1 p-2'>
                 <label className="flex items-start gap-2 text-xs">
               <input type="checkbox" className="mt-1 text-[#707070]" />
-              I’d like to receive exciting communication regarding Techspecialist services.
+              I would like to receive exciting communication regarding Techspecialist services.
             </label>
             </div>
             
@@ -76,7 +76,7 @@ export default function ContactWithCompanyInfo() {
         {/* Right - Company Info */}
         <div className="text-[#979595] space-y-6 text-xs leading-relaxed text-justify">
           <p>
-            Techspecialist Consulting Limited (TCL) stands as Nigeria’s premier digital transformation enabler,
+            Techspecialist Consulting Limited (TCL) stands as Nigerias premier digital transformation enabler,
             delivering innovative technology solutions that drive measurable business value.
           </p>
           <p>
@@ -92,9 +92,9 @@ export default function ContactWithCompanyInfo() {
           </p>
           <p>
             With our headquarters in Abuja and a growing national footprint, TCL supports Nigerian businesses,
-            government agencies, and international organizations in navigating today’s digital landscape. We simplify
+            government agencies, and international organizations in navigating todays digital landscape. We simplify
             complex technologies, accelerate transformation initiatives, and deliver consistent, measurable outcomes
-            that align with each client’s strategic objectives.
+            that align with each clients strategic objectives.
           </p>
           <p>
             Our distinctive approach integrates three specialized service domains into a seamless ecosystem — enabling
@@ -102,7 +102,7 @@ export default function ContactWithCompanyInfo() {
             empowers our clients to achieve operational excellence, build lasting resilience, and secure sustainable
             growth in an era defined by technological disruption and opportunity.
           </p>
-          <p>At TCL, we don’t just implement technology — we create impact.</p>
+          <p>At TCL, we do not just implement technology — we create impact.</p>
         </div>
       </div>
     </section>
