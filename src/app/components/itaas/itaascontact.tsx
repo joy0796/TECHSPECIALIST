@@ -63,7 +63,7 @@ const ContactSection = () => {
             </div>
             
 
-            <div className=''>
+            <div>
                             <button
               type="submit"
               className="w-full bg-orange-600 text-white py-2 rounded font-normal"
@@ -111,7 +111,7 @@ const ContactSection = () => {
           <span className="font-semibold">Trusted Expertise:</span> With over 15 years of experience enabling digital transformation, our team brings proven methodologies, sector-specific knowledge, and a commitment to excellence in every engagement.
         </p>
         <p className="text-sm mb-4">
-          <span className="font-semibold">Scalable & Customizable:</span>Whether you're a growing SME or a large enterprise, our ITaaS offering scales with your needs—adapting to new challenges, user demands, and technology shifts.
+          <span className="font-semibold">Scalable & Customizable:</span>Whether you are a growing SME or a large enterprise, our ITaaS offering scales with your needs—adapting to new challenges, user demands, and technology shifts.
         </p>
         <p className="text-sm">
           <span className="font-semibold">One Partner, Total Support:</span> We act as an extension of your team, offering end-to-end IT support that covers infrastructure, user support, security, and strategic advisory—all under one roof.

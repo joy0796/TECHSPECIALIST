@@ -141,7 +141,7 @@ const CaseArticleSection1 = () => {
             </div>
             
 
-            <div className=''>
+            <div>
                             <button
               type="submit"
               className="w-full bg-orange-600 text-white py-2 rounded font-normal"
@@ -257,7 +257,7 @@ const CaseArticleSection1 = () => {
                   <li className="text-sm font-bold mb-1 text-[#3E3E3E]">•	Training & Capacity Building: We organize SME-focused tech training sessions both virtually and onsite.</li>
                   <li className="text-sm font-bold mb-1 text-[#3E3E3E]">•	Digital Transformation Strategy: We do npt just install tech we help you design a roadmap for real transformation.</li>
                   <li className="text-sm font-bold mb-1 text-[#3E3E3E]">•	Cybersecurity Protection: We offer affordable cybersecurity services to help protect SME data and digital assets.
-Whether you're a one-person bakery or a growing logistics startup, Techspecialist offers tools, support, and strategy to help your business compete in the digital age.
+Whether you are a one-person bakery or a growing logistics startup, Techspecialist offers tools, support, and strategy to help your business compete in the digital age.
 </li>
                 </ul>
 
