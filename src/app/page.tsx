@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import HeroWrapper from "./components/herowrapper";
 import DigitalTransformationSection from "./components/digitalTransformation";
 import ImpactStories from "./components/impactStories";
