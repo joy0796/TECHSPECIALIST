@@ -21,7 +21,7 @@ const SubscribeSection = () => {
             <span className="text-[#3B73E3]">Subscribe</span> to our<br />Insights
           </h2>
           <p className="text-gray-800 font-semibold mb-8 text-justify">
-            Stay ahead with the latest thinking in AI, cybersecurity, and digital transformation. Simply sign up with your email address and confirm your subscription via the email we’ll send you. You’ll start receiving curated insights and updates directly from the experts at Techspecialist Consulting Limited.
+            Stay ahead with the latest thinking in AI, cybersecurity, and digital transformation. Simply sign up with your email address and confirm your subscription via the email we will send you. You will start receiving curated insights and updates directly from the experts at Techspecialist Consulting Limited.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-4">

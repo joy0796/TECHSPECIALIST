@@ -10,7 +10,7 @@ export default function ServicesSection() {
       {/* Background Image */}
       {/* <div className="absolute inset-0 -z-10">
         <Image
-          src="/bg-services.jpg" // 👈 Make sure this image exists in /public
+          src="/bg-services.jpg" //  Make sure this image exists in /public
           alt="Services Background"
           fill
           className="object-cover"

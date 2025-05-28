@@ -3,11 +3,11 @@
 const methodologyItems = [
   {
     title: "Strategic Discovery & Digital Assessment",
-    description: `We start by deeply understanding your organization’s strategic goals, digital environment, and transformation potential. This includes Business Value Mapping to align priorities with measurable outcomes; a Technology Ecosystem Assessment to evaluate systems, architecture, and integrations; Digital Maturity Benchmarking against industry standards; and a Capability Gap Analysis to identify critical skill, process, and technology needs required to reach your objectives.`,
+    description: `We start by deeply understanding your organizations strategic goals, digital environment, and transformation potential. This includes Business Value Mapping to align priorities with measurable outcomes; a Technology Ecosystem Assessment to evaluate systems, architecture, and integrations; Digital Maturity Benchmarking against industry standards; and a Capability Gap Analysis to identify critical skill, process, and technology needs required to reach your objectives.`,
   },
   {
     title: "Value-Driven Solution Design",
-    description: `Our expert IT architects develop tailored transformation blueprints aligned with your organization’s unique context and goals. This includes designing business-aligned technology frameworks, selecting optimal solutions based on scalability and long-term value, creating phased implementation roadmaps that balance quick wins with strategic growth, and establishing ROI models with clear metrics to track and sustain value over time.`,
+    description: `Our expert IT architects develop tailored transformation blueprints aligned with your organizations unique context and goals. This includes designing business-aligned technology frameworks, selecting optimal solutions based on scalability and long-term value, creating phased implementation roadmaps that balance quick wins with strategic growth, and establishing ROI models with clear metrics to track and sustain value over time.`,
   },
   {
     title: "Excellence in Execution & Change Enablement",

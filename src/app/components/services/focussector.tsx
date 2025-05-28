@@ -11,13 +11,13 @@ const sectors: Sector[] = [
   {
     title: "Public Sector: Powering Governance for Digital Citizens",
     description:
-      "TCL empowers government institutions to meet rising expectations for efficient, transparent, and citizen-focused services by transforming outdated systems into modern digital ecosystems. With deep expertise in public sector regulations and advanced technologies, we guide agencies through end-to-end digital transformation—enhancing service delivery while ensuring continuity. Our specialized offerings include e-Government–aligned consulting, integrated citizen service platforms, secure document and workflow automation, managed IT services built around government compliance standards, and digital skills development programs for the public sector workforce.",
+      "TCL empowers government institutions to meet rising expectations for efficient, transparent, and citizen-focused services by transforming outdated systems into modern digital ecosystems. With deep expertise in public sector regulations and advanced technologies, we guide agencies through end-to-end digital transformation—enhancing service delivery while ensuring continuity. Our specialized offerings include e-Government - aligned consulting, integrated citizen service platforms, secure document and workflow automation, managed IT services built around government compliance standards, and digital skills development programs for the public sector workforce.",
     image: "/sector1.png", 
   },
   {
     title: "Developmental Sector: Catalysing Development Through Technology",
     description:
-      "TCL supports developmental organizations—NGOs, foundations, and international agencies—in navigating complex environments with technology solutions that enhance program effectiveness, transparency, and reach. Aware of the sector’s accountability demands and limited resources, we deliver cost-efficient digital tools that extend impact without adding administrative overhead. Our tailored services include sustainable IT managed services aligned with NGO funding models, AI-powered analytics for impact and resource optimization, monitoring and evaluation platforms, mobile-first field data collection tools, and beneficiary management systems for streamlined impact reporting.",
+      "TCL supports developmental organizations—NGOs, foundations, and international agencies—in navigating complex environments with technology solutions that enhance program effectiveness, transparency, and reach. Aware of the sectors accountability demands and limited resources, we deliver cost-efficient digital tools that extend impact without adding administrative overhead. Our tailored services include sustainable IT managed services aligned with NGO funding models, AI-powered analytics for impact and resource optimization, monitoring and evaluation platforms, mobile-first field data collection tools, and beneficiary management systems for streamlined impact reporting.",
     image: "/sector2.png", 
     imageLeft: true,
   },

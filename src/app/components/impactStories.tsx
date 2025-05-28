@@ -17,7 +17,7 @@ const stories: Story[] = [
     image: '/impactimg2.png', 
     sector: 'Public Sector',
     title:
-      'Redefining Housing Development In Nigeria Through Data – The Housing Market Information Portal (HMIP)',
+      'Redefining Housing Development In Nigeria Through Data - The Housing Market Information Portal (HMIP)',
       link: '/stories',
   },
   {
@@ -43,7 +43,7 @@ export default function ImpactStories() {
       <div className="flex flex-col md:flex-row gap-6">
         <div className="w-full lg:w-1/2">
           <Image
-            src="/imactimg1.png" // Replace with actual image
+            src="/imactimg1.png" 
             alt="Speaker"
             width={600}
             height={200}

@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
+
 
 const authors = [
   {
@@ -164,7 +164,7 @@ const CaseArticleSection1 = () => {
 
           <h1 className="text-sm font-bold mb-1 text-[#3E3E3E]">Why Digital Transformation Matters for Nigerian SMEs</h1>
 
-          <p className="leading-loose mb-2 text-justify text-xs text-[#3E3E3E]">Let’s start with the big picture.
+          <p className="leading-loose mb-2 text-justify text-xs text-[#3E3E3E]">Lets start with the big picture.
       SMEs contribute over 48% to Nigerias GDP and account for more than 80% of employment. Yet many still run their operations manually from inventory and payroll to marketing and customer service. In a world where agility and efficiency are powered by technology, this digital lag is not just inefficient it is a threat to business survival.
       Digital transformation is not just about adopting tools. It is about rethinking processes, people, and platforms to unlock efficiency, resilience, and growth.</p>
 
@@ -195,7 +195,7 @@ const CaseArticleSection1 = () => {
                   <p className="leading-loose mb-2 text-justify text-xs text-[#3E3E3E]">Many SMEs remain cash-heavy due to concerns around fraud, delays, or unfamiliarity with fintech systems.</p>
 
                   <li>5. Change Resistance</li>
-                  <p className="leading-loose mb-2 text-justify text-xs text-[#3E3E3E]">There’s often cultural inertia “we have always done it this way” which limits openness to change, especially in family-run or legacy businesses.</p>
+                  <p className="leading-loose mb-2 text-justify text-xs text-[#3E3E3E]">Theres often cultural inertia “we have always done it this way” which limits openness to change, especially in family-run or legacy businesses.</p>
                 </ol>
 
                 <h1 className="text-sm font-bold mb-1 text-[#3E3E3E]">Breakthroughs: Where Nigerian SMEs Are Winning with Digital</h1>
