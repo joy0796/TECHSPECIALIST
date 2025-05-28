@@ -92,7 +92,7 @@ const CaseArticleSection3 = () => {
         <div className='bg-gray-100 mb-1 p-2'>
           <p className="text-sm font-semibold text-[#3E3E3E]">Ready to talk?</p>
           <p className="text-xs text-[#707070]">
-            I want to talk to your specialist in the field of{' '}
+            I want to talk to your specialist in the field of
             <span className="text-[#707070] underline">Digital Transformation</span>.
           </p>
           </div>

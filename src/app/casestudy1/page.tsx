@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Navbar from "../components/navbar";
 import Breadcrumb from "../components/stories/breadcrumb";
 import DigitalFindingSection from "../components/casestudy1/aboutcasestudy";
