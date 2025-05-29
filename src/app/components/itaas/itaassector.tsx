@@ -52,10 +52,10 @@ const ItaasSection = () => {
                 />
               </div>
               <div className="md:w-3/2 w-full">
-                <h3 className="text-md font-semibold text-[#3E3E3E] mb-4">
+                <h3 className="text-2xl font-semibold text-[#3E3E3E] mb-4">
                   {sector.title}
                 </h3>
-                <p className="text-[#666666] text-xs text-justify">{sector.description}</p>
+                <p className="text-[#666666] text-md text-justify">{sector.description}</p>
               </div>
             </div>
           ))}

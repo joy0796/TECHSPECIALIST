@@ -54,7 +54,7 @@ export default function ValueMethodologySection() {
      
           >
             <h3 className="text-xl font-semibold mb-3">{pillar.title}</h3>
-            <p className="text-sm leading-relaxed text-justify">{pillar.description}</p>
+            <p className="text-md leading-relaxed text-justify">{pillar.description}</p>
           </div>
         ))}
       </div>

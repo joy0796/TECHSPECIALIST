@@ -54,7 +54,7 @@ const ServiceOfferingsSection = () => {
         <h3 className="text-lg font-semibold text-gray-800 mb-2">
           {service.title}
         </h3>
-        <p className="text-gray-900 text-sm mt-auto">
+        <p className="text-gray-900 text-md mt-auto">
           {service.description}
         </p>
       </div>

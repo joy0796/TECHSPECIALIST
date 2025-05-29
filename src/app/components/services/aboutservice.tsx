@@ -25,7 +25,7 @@ export default function ServicesSection() {
       </div> */}
 
       {/* Main Content */}
-      <div className="max-w-6xl mx-auto px-6 pt-16 md:pt-14 " data-aos="fade-up"
+      <div className="max-w-6xl mx-auto px-6 pt-16 " data-aos="fade-up"
      data-aos-duration="1000">
         <h2 className="text-2xl font-bold mb-4">Our Services</h2>
         <p className="text-lg font-medium max-w-3xl md:leading-relaxed text-justify">
@@ -39,11 +39,11 @@ export default function ServicesSection() {
           </Link>
         </div>
         {/* <p>hello</p> */}
-        <div className="hidden md:block bg-black/50 text-white rounded-lg shadow-lg px-6 py-4 flex flex-col md:flex-row gap-4 justify-center items-center max-w-2xl mx-auto text-center text-sm font-semibold mt-2 sm:mt-10 md:mt-10 lg:mt-16 whitespace-nowrap">
+        {/* <div className="hidden md:block bg-black/50 text-white rounded-lg shadow-lg px-6 py-4 flex flex-col md:flex-row gap-4 justify-center items-center max-w-2xl mx-auto text-center text-sm font-semibold mt-2 sm:mt-10 md:mt-10 lg:mt-16 whitespace-nowrap">
           <span>Digital Transformation</span>
           <span>IT Support as a Service (ITaaS)</span>
           <span>Digital Upskilling as a Service (DUaaS)</span>
-        </div>
+        </div> */}
       </div>
 
 

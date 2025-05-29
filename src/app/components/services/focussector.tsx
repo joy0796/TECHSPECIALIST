@@ -68,7 +68,7 @@ useEffect(() => {
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">
                   {sector.title}
                 </h3>
-                <p className="text-gray-900 text-sm leading-relaxed text-justify">{sector.description}</p>
+                <p className="text-gray-900 text-sm md:text-md leading-relaxed text-justify">{sector.description}</p>
               </div>
             </div>
           ))}
