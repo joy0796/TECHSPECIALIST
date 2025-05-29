@@ -23,31 +23,31 @@ const HeroSection = () => {
     }, []);
 
   return (
-    <section className="w-full pt-28 md:pt-40 pb-12 relative z-10 md:pl-4">
-      <div className="max-w-7xl mx-auto px-4 flex flex-col-reverse lg:flex-row">
+    <section className="w-full pt-28 md:pt-[19rem] pb-12 relative z-10 md:pl-4">
+      <div className=" flex flex-col-reverse lg:flex-row">
         {/* Left - Text Content */}
-        <div className="w-full lg:w-2/3 lg:mt-0 space-y-2 text-center md:text-start" data-aos="fade-up" data-aos-duration="1000"
+        <div className="w-full md:ml-20 md:pr-[6rem] lg:mt-0 space-y-2 text-center md:text-start"
         >
-          <p className="text-xs font-semibold text-gray-800 uppercase">
+          <p className="text-[23px] font-semibold text-[#3E3E3E] uppercase">
             {activeTab}
           </p>
-          <h1 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-tight text-[#3E3E3E]">
+          <h1 className="text-3xl md:text-[53px] font-semibold leading-tight text-[#3E3E3E]">
             Cross-Sectoral Collaboration:
             <br />
             AI Partnerships Driving Nigeria&apos;s
             <br />
             Digital Economy
           </h1>
-          <div className="flex flex-col sm:flex-row gap-4 pt-2 justify-center md:justify-start">
+          <div className="flex flex-col sm:flex-row gap-4 pt-2 justify-center items-center md:justify-start">
 
             <Link href="/casestudy3">
-            <button className="px-2 py-2 border border-black rounded-lg text-sm font-medium hover:bg-black hover:text-white transition text-black">
+            <button className="px-8 py-5 border border-black rounded-lg text-[16px] font-medium hover:bg-black hover:text-white transition text-black">
               Get a Free IT Audit
             </button>
             </Link>
 
             <Link href="/casestudy2">
-            <button className="px-6 py-2 bg-[#3E3E3E] text-white rounded-lg text-sm hover:bg-gray-800 transition font-normal">
+            <button className="px-14 py-5 bg-[#3E3E3E] text-white rounded-lg text-[16px] hover:bg-gray-800 transition font-normal">
               Read More
             </button>
             </Link>
