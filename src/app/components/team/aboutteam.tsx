@@ -19,8 +19,8 @@ export default function Team() {
 
       {/* Content Box */}
       <div className="absolute top-10 left-5 sm:left-10 bg-gradient-to-r from-black/40 via-black/70 to-transparent text-white max-w-xl py-6 px-2 md:mt-14 rounded-md shadow-lg border-l-4 border-[#F06322]">
-        <p className="text-md font-semibold  text-white mb-2  md:mt-6">Our Team</p>
-        <h2 className="text-xs font-bold leading-snug mb-4">
+        <p className="text-lg font-semibold  text-white mb-2  md:mt-6">Our Team</p>
+        <h2 className="text-md font-bold leading-snug mb-4">
           At Techspecialist Consulting Limited (TCL), progress is intentional. Every day, we empower enterprises and government institutions to overcome the challenges of complex technologies—bridging ambition with execution through clarity, expertise, and impact. 
         </h2>
 

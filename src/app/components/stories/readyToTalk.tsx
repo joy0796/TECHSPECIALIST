@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function ReadyToTalk() {
   return (
-    <section className="bg-white py-12 px-4 md:px-8 lg:px-10">
+    <section className="bg-white py-12 px-4 md:px-8">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-800 mb-2">
           Ready to talk?

@@ -1,13 +1,22 @@
 'use client';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import Image from 'next/image';
 
 export default function ContactSection() {
+  useEffect(() => {
+      AOS.init();
+    }, []);
   return (
     <section className="bg-white text-gray-800 py-12 px-4 lg:px-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center">
         {/* Left Side */}
-        <div>
+        <div data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
           <h2 className="text-3xl font-semibold mb-2">
             <span className="text-[#3B73E3]">Connect</span> with our <br />
             <span className="">Team of Experts</span>
@@ -43,7 +52,9 @@ export default function ContactSection() {
         </div>
 
         {/* Right Side - Form */}
-        <div className="bg-[#ED5D25] shadow-lg p-6 space-y-4 text-white">
+        <div className="bg-[#ED5D25] shadow-lg p-6 space-y-4 text-white" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
           <div>
             <label className="block text-xs font-md mb-1">FULL NAME</label>
             <input

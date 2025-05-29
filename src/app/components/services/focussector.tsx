@@ -1,4 +1,7 @@
 "use client";
+import { useEffect } from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 type Sector = {
   title: string;
@@ -30,11 +33,15 @@ const sectors: Sector[] = [
 ];
 
 const FocusSectorsSection = () => {
+useEffect(() => {
+        AOS.init();
+      }, []);
+
   return (
     <section className="bg-white text-black py-8 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl font-bold text-center mb-4 text-[#3E3E3E]">Our Focus Sectors</h2>
-        <p className="text-[#979595] text-center max-w-3xl mx-auto mb-8 text-xs">
+        <h2 className="text-2xl font-bold text-center mb-4 text-gray-800">Our Focus Sectors</h2>
+        <p className="text-gray-700 text-center max-w-3xl mx-auto mb-8 md:mb-10 text-sm md:text-lg">
           At Techspecialist Consulting Limited, we have developed specialized expertise across three vital sectors of the Nigerian economy. Our tailored approaches address the unique digital transformation challenges and opportunities in each sector, delivering measurable impact and sustainable digital evolution.
         </p>
 
@@ -46,18 +53,22 @@ const FocusSectorsSection = () => {
                 sector.imageLeft ? "md:flex-row-reverse" : ""
               } gap-8 items-center`}
             >
-              <div className=" w-full md:w-1/2">
+              <div className=" w-full md:w-1/2" data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                 <img
                   src={sector.image}
                   alt={sector.title}
-                  className="w-full h-[250px] object-cover shadow-md"
+                  className="w-full h-[300px] object-cover shadow-md"
                 />
               </div>
-              <div className="md:w-2/3 w-full">
-                <h3 className="text-sm font-semibold text-[#3E3E3E] mb-2">
+              <div className="md:w-2/3 w-full" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+                <h3 className="text-lg font-semibold text-gray-800 mb-2">
                   {sector.title}
                 </h3>
-                <p className="text-[#979595] text-xs leading-relaxed text-justify">{sector.description}</p>
+                <p className="text-gray-900 text-sm leading-relaxed text-justify">{sector.description}</p>
               </div>
             </div>
           ))}

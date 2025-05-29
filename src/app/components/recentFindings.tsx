@@ -1,5 +1,8 @@
 'use client';
 import Link from 'next/link';
+import { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 type Finding = {
   title: string;
@@ -32,18 +35,22 @@ const findings: Finding[] = [
     category: 'Public Sector',
     type: 'Impact Story',
     image: '/recentfindingimg.png',
-    link: '/casestudy2',
+    link: '/casestudy3',
   },
   {
     title: "Cross-Sectoral Collaboration: AI Partnerships Driving Nigeria's Digital Economy",
     category: 'Artificial Intelligence',
     type: 'Case Study',
     image: '/recentfindingimg.png',
-    link: '/casestudy3',
+    link: '/casestudy2',
   },
 ];
 
 export default function RecentFindings({ heading = 'Our most recent findings', bgColor = '#ffffff', showButton = true,  headingColor = '#3E3E3E', padding = 'py-16 px-4'}: Props) {
+  useEffect(() => {
+            AOS.init();
+          }, []);
+
   return (
     <section 
       className={`text-black ${padding ?? 'py-16 px-4'}`}
@@ -62,12 +69,15 @@ export default function RecentFindings({ heading = 'Our most recent findings', b
             <div
               key={idx}
               className="bg-white pb-4 rounded-md shadow-xl overflow-hidden text-black flex flex-col h-full"
+              data-aos="zoom-in"
+              
+     
             >
               <img src={item.image} alt={item.title} className="w-full h-56 object-cover" />
               <div className="p-2  flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="font-semibold text-xs mb-2 text-[#3E3E3E]">{item.title}</h3>
-                  <p className="text-xs text-gray-600 mb-1">{item.category}</p>
+                  <h3 className="font-semibold text-sm mb-2 text-[#3E3E3E]">{item.title}</h3>
+                  <p className="text-sm text-gray-600 mb-1">{item.category}</p>
                 </div>
                 <p className="text-xs font-semibold  text-[#3E3E3E]">{item.type}</p>
               </div>

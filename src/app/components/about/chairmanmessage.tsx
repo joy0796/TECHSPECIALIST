@@ -21,14 +21,14 @@ export default function ChairmanMessage() {
         {/* Text Content */}
         <div className="w-full md:w-2/3 flex flex-col justify-between">
           <div className="text-gray-800 space-y-6 leading-relaxed text-justify">
-            <p className='text-sm'>
+            <p className='text-md'>
               At Techspecialist Consulting Limited (TCL), we recognize that Artificial Intelligence,
               Customer Experience, and Cybersecurity form the backbone of resilient and
               future-ready organizations. By weaving these elements into every solution we deliver,
               we empower businesses and government institutions to operate smarter, respond faster,
               and lead boldly.
             </p>
-            <p className='text-sm'>
+            <p className='text-md'>
               Our AI-driven, security-conscious approach is built on deep technical expertise and
               strengthened by strategic alliances. Through this, we do not just implement technology — 
               we enable sustainable transformation, helping our partners navigate disruption, exceed

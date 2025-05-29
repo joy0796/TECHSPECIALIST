@@ -1,7 +1,10 @@
 'use client';
 
+import { useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface Story {
   id: number;
@@ -38,9 +41,14 @@ const stories: Story[] = [
 ];
 
 export default function ImpactStories() {
+   useEffect(() => {
+          AOS.init();
+        }, []);
+
   return (
     <section className="bg-white text-black py-10 px-5 md:px-20">
-      <div className="flex flex-col md:flex-row gap-6">
+      <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-center" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000">
         <div className="w-full lg:w-1/2">
           <Image
             src="/imactimg1.png" 
@@ -50,11 +58,12 @@ export default function ImpactStories() {
             className="rounded-md w-full object-cover"
           />
         </div>
-        <div className="w-full lg:w-1/2 space-y-2">
-          <h2 className="text-lg md:text-2xl font-bold text-black">
+        <div className="w-full lg:w-1/2 space-y-2" data-aos="flip-down" data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000">
+          <h2 className="text-2xl md:text-2xl font-bold text-black">
             Our Impact stories
           </h2>
-          <p className="text-gray-500 text-xs">
+          <p className="text-gray-500 text-md">
             Over a wide range of sectors, here is how we have been able to make an impact.
           </p>
           <div className="space-y-6 flex flex-col">
@@ -70,7 +79,7 @@ export default function ImpactStories() {
                   />
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 font-semibold">{story.sector}</p>
+                  <p className="text-md text-gray-500 font-semibold">{story.sector}</p>
                   <p className="text-sm font-bold text-black">{story.title}</p>
                 </div>
               </div>
@@ -81,9 +90,11 @@ export default function ImpactStories() {
         </div>
       </div>
             <div className="text-center mt-10">
+            <Link href="/stories">
           <button className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-6 py-2 transition-colors">
             See all stories
           </button>
+          </Link>
         </div>
     </section>
   );

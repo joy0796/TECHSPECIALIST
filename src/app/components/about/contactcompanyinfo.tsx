@@ -1,13 +1,19 @@
 'use client';
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 
 export default function ContactWithCompanyInfo() {
-  
+  useEffect(() => {
+        AOS.init();
+      }, []);
 
   return (
     <section className="bg-white text-black px-4 py-8 border-b border-gray-400">
-      <div className="  flex flex-col md:flex-row justify-between gap-8 px-2 md:px-8">
+      <div className="  flex flex-col md:flex-row justify-between gap-8 px-2 md:px-8" data-aos="fade-up"
+     data-aos-duration="1000">
         {/* Left - Contact Form */}
         <div className="bg-white text-black p-4  space-y-4 pt-14 border-t border-gray-300 w-full md:w-[1000px]">
         <div className='bg-gray-100 mb-1 p-2'>
@@ -74,7 +80,7 @@ export default function ContactWithCompanyInfo() {
           </form>
         </div>
         {/* Right - Company Info */}
-        <div className="text-[#979595] space-y-6 text-xs leading-relaxed text-justify">
+        <div className="text-gray-800 space-y-6 text-md leading-relaxed text-justify">
           <p>
             Techspecialist Consulting Limited (TCL) stands as Nigerias premier digital transformation enabler,
             delivering innovative technology solutions that drive measurable business value.

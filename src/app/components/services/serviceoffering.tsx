@@ -1,5 +1,8 @@
 "use client";
 import Link from "next/link";
+import { useEffect } from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 type ServiceCard = {
@@ -30,10 +33,13 @@ const services: ServiceCard[] = [
 ];
 
 const ServiceOfferingsSection = () => {
+   useEffect(() => {
+          AOS.init();
+        }, []);
   return (
-    <section className="bg-white py-6 px-4 md:px-8 lg:px-20">
+    <section className="bg-white py-8 px-4 md:px-8 lg:px-20">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-lg font-bold text-center text-[#3E3E3E] mb-4">
+        <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
           Our Service Offerings
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -41,12 +47,14 @@ const ServiceOfferingsSection = () => {
     <Link key={index} href={service.link!}>
       <div
         className="flex flex-col h-full bg-gray-50 px-4 py-6 rounded-xs border border-blue-500 shadow-lg hover:shadow-xl transition-shadow duration-300"
+        data-aos="fade-up"
+     data-aos-duration="2000"
       >
         <div className="w-8 h-8 bg-blue-500 rounded-md mb-6" />
-        <h3 className="text-xs font-semibold text-[#3E3E3E] mb-2">
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">
           {service.title}
         </h3>
-        <p className="text-[#979595] text-xs mt-auto">
+        <p className="text-gray-900 text-sm mt-auto">
           {service.description}
         </p>
       </div>

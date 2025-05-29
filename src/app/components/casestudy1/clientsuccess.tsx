@@ -1,4 +1,8 @@
 'use client';
+import { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Image from 'next/image';
 
 
 
@@ -18,6 +22,9 @@ const caseStudies = [
 ];
 
 const ClientSuccessStories = () => {
+  useEffect(() => {
+          AOS.init();
+        }, []);
   return (
     <section className="bg-white px-4 lg:px-24 py-10 md:py-16">
       <div className="max-w-7xl mx-auto">
@@ -25,7 +32,9 @@ const ClientSuccessStories = () => {
           How we have helped clients
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 bg-blue-500 rounded overflow-hidden text-white">
+        <div className="grid grid-cols-1 md:grid-cols-3 bg-blue-500 rounded overflow-hidden text-white" data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
           {caseStudies.map((study, idx) => (
             <div
               key={idx}

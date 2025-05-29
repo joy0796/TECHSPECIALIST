@@ -1,10 +1,16 @@
 
 'use client'
 import Link from 'next/link'
+import { useEffect } from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // import Image from 'next/image'
 
 export default function ServicesSection() {
+  useEffect(() => {
+      AOS.init();
+    }, []);
   return (
     <section className="relative w-full text-white overflow-hidden">
       {/* Background Image */}
@@ -19,9 +25,10 @@ export default function ServicesSection() {
       </div> */}
 
       {/* Main Content */}
-      <div className="max-w-6xl mx-auto px-6 pt-10 pb-28 md:pt-14">
+      <div className="max-w-6xl mx-auto px-6 pt-16 md:pt-14 " data-aos="fade-up"
+     data-aos-duration="1000">
         <h2 className="text-2xl font-bold mb-4">Our Services</h2>
-        <p className="text-sm md:text-lg font-medium max-w-3xl md:leading-relaxed text-justify">
+        <p className="text-lg font-medium max-w-3xl md:leading-relaxed text-justify">
           Our service portfolio has evolved into a sophisticated integrated ecosystem where three core service domains interconnect through strategic pathways. This architecture enables us to deliver truly comprehensive solutions that address every aspect of our clients&apos; digital transformation journey.
         </p>
         <div className="mt-6">

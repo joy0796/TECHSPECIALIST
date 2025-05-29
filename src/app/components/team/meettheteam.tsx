@@ -32,6 +32,7 @@ const teamData: TeamGroup[] = [
       { name: 'Joy Eboh Adah', role: 'Human Resources', image: '/kadir.png' },
       { name: 'Olusola Afolabi', role: 'Team Lead, Technical Services', image: '/kadir.png' },
       { name: 'Zainab Sanni', role: 'Team Lead, Cybersecurity', image: '/kadir.png' },
+      { name: 'Godwin Arigbonu', role: 'MD Techspecialist Consulting', image: '/kadir.png' },
     ],
   },
   {

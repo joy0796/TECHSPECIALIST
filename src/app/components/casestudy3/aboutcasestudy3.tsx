@@ -1,16 +1,23 @@
 'use client';
-
+import { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Image from 'next/image';
 import PrintIcon from '@mui/icons-material/Print';
 import ShareIcon from '@mui/icons-material/Share';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 
 export default function Section2() {
+  useEffect(() => {
+          AOS.init();
+        }, []);
   return (
     <section className="w-full bg-white pI-4 md:pl-6 py-0 md:py-0 border-b border-red-400">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left - Text and Icons */}
-        <div>
+        <div data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
           <p className="text-xs font-semibold text-[#3E3E3E] uppercase mb-2">
             Digital Infrastructure
           </p>
@@ -31,7 +38,9 @@ export default function Section2() {
         </div>
 
         {/* Right - Image */}
-        <div className="w-full h-64 md:h-[100vh] -scale-x-100 relative rounded-lg overflow-hidden shadow-md">
+        <div className="w-full h-64 md:h-[100vh] -scale-x-100 relative rounded-lg overflow-hidden shadow-md" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
           <Image
             src="/caseimg.png"
             alt="Digital Transformation"

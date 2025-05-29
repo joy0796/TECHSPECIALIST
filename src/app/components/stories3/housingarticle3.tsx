@@ -1,5 +1,8 @@
 'use client';
-
+'use client';
+import { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Image from 'next/image';
 // import { useState } from 'react';
 
@@ -35,6 +38,9 @@ const tags = [
 ];
 
 const HousingArticleSection3 = () => {
+  useEffect(() => {
+          AOS.init();
+        }, []);
   // const [formData, setFormData] = useState({
   //   fullName: '',
   //   companyName: '',
@@ -44,9 +50,11 @@ const HousingArticleSection3 = () => {
   // });
 
   return (
-    <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-16 py-10 flex flex-col lg:flex-row gap-10 text-black">
+    <div className="bg-white max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-16 py-10 flex flex-col lg:flex-row gap-10 text-black">
       {/* LEFT SIDEBAR */}
-      <aside className="lg:w-1/4 w-full space-y-8">
+      <aside className="lg:w-1/4 w-full space-y-8" data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                     {/* Audio */}
                     <div className="">
                       <p className="text-xs text-[#3E3E3E] font-md">Listen to this article</p>
@@ -155,30 +163,32 @@ const HousingArticleSection3 = () => {
                   </aside>
 
       {/* RIGHT MAIN ARTICLE */}
-      <article className="lg:w-3/4 w-full">
-        <p className="text-[#3E3E3E] text-xs leading-relaxed mb-4 text-justify">
+      <article className="lg:w-3/4 w-full" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+        <p className="text-[#3E3E3E] text-md leading-relaxed mb-4 text-justify">
           In a country of over 200 million people, one of the least talked about but most pressing challenges in the housing sector is the lack of credible, centralized housing data.</p>
 
-<p className="text-[#3E3E3E] text-xs leading-relaxed mb-4 text-justify">This gap doesnt just affect developers or policymakers. It affects everyone from financial institutions trying to de-risk housing finance, to families seeking affordable homes, to government agencies crafting policies that reflect reality. With fragmented, inconsistent, and inaccessible housing data, progress is simply guesswork.</p>
+<p className="text-[#3E3E3E] text-md leading-relaxed mb-4 text-justify">This gap doesnt just affect developers or policymakers. It affects everyone from financial institutions trying to de-risk housing finance, to families seeking affordable homes, to government agencies crafting policies that reflect reality. With fragmented, inconsistent, and inaccessible housing data, progress is simply guesswork.</p>
 
-<p className="text-[#3E3E3E] text-xs leading-relaxed mb-8 text-justify">To fix the housing challenge, we must first fix the data problem.
+<p className="text-[#3E3E3E] text-md leading-relaxed mb-8 text-justify">To fix the housing challenge, we must first fix the data problem.
 Thats the mission behind the Housing Market Information Portal (HMIP) a national data platform co-created with leading institutions like Nigeria Mortgage Refinance Company Plc, Central Bank of Nigeria, National Bureau of Statistics Nigeria, National Population Commission, FEDERAL MORTGAGE BANK OF NIGERIA (FMBN) Real Estate Developers Association of Nigeria (REDAN) and other agencies.</p>
 
 
-<p className="text-[#3E3E3E] text-xs leading-relaxed mb-2 text-justify">What HMIP Does: HMIP is not just a data repository. Its a housing intelligence system that: </p>
-<ul className="text-[#3E3E3E] text-xs leading-relaxed mb-6 text-justify">
+<p className="text-[#3E3E3E] text-md leading-relaxed mb-2 text-justify">What HMIP Does: HMIP is not just a data repository. Its a housing intelligence system that: </p>
+<ul className="text-[#3E3E3E] text-md leading-relaxed mb-6 text-justify">
     <li>* Aggregates and unifies datasets from credible national sources</li>
  <li>• Visualizes housing trends, affordability, and supply-demand gaps</li>
  <li>• Supports data-driven policy and financing decisions</li>
  <li>• Equips stakeholders with clarity to act and invest smartly</li>
  </ul>
 
-<p className="text-[#3E3E3E] text-xs leading-relaxed mb-4 text-justify">With Nigeria facing an estimated housing deficit of about 25.55 million units and the urban population projected to surpass 295 million by 2050, the need for timely, accurate housing data has never been greater.</p>
+<p className="text-[#3E3E3E] text-md leading-relaxed mb-4 text-justify">With Nigeria facing an estimated housing deficit of about 25.55 million units and the urban population projected to surpass 295 million by 2050, the need for timely, accurate housing data has never been greater.</p>
 
-<p className="text-[#3E3E3E] text-xs leading-relaxed mb-6 text-justify">So far, HMIP has integrated key datasets, built interactive dashboards, and laid the groundwork for real-time market analysis, bringing a new level of transparency and shared insight to the housing ecosystem.</p>
+<p className="text-[#3E3E3E] text-md leading-relaxed mb-6 text-justify">So far, HMIP has integrated key datasets, built interactive dashboards, and laid the groundwork for real-time market analysis, bringing a new level of transparency and shared insight to the housing ecosystem.</p>
 
-<p className="text-[#3E3E3E] text-xs leading-relaxed mb-6 text-justify">The Bigger Picture HMIP is more than a platform, its a collaborative step toward building a future where:</p> 
-<ul className="text-[#3E3E3E] text-xs leading-relaxed mb-6 text-justify">
+<p className="text-[#3E3E3E] text-md leading-relaxed mb-6 text-justify">The Bigger Picture HMIP is more than a platform, its a collaborative step toward building a future where:</p> 
+<ul className="text-[#3E3E3E] text-md leading-relaxed mb-6 text-justify">
     <li>* Policy is powered by insight</li>
  <li>• Investment is backed by visibility</li>
  <li>• And every Nigerian has a better shot at decent, affordable housing

@@ -36,14 +36,14 @@ const Navbar = ({ textColor = "text-[#3E3E3E]", borderColor = 'border-b border-b
             <Image
               src={logoSrc || "/logo.png"}
               alt="TCL Logo"
-              width={100}
+              width={120}
               height={40}
               className="object-contain"
             />
           </Link>
 
     
-          <div className={`hidden md:flex space-x-6 text-xs font-semibold ${textColor}`}>
+          <div className={`hidden md:flex space-x-6 text-sm font-semibold ${textColor}`}>
             <Link href="/services">Services</Link>
             <Link href="/about">About</Link>
             <Link href="/trends">Trends & Insights</Link>

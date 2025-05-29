@@ -2,8 +2,15 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
+import { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SubscribeSection = () => {
+useEffect(() => {
+      AOS.init();
+    }, []);
+
   const [email, setEmail] = useState('');
   const [isChecked, setIsChecked] = useState(false);
 
@@ -14,13 +21,15 @@ const SubscribeSection = () => {
 
   return (
     <section className="w-full px-4 md:px-6 py-6 md:py-8 bg-white">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center" >
         {/* Left: Text + Form */}
-        <div>
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">
-            <span className="text-[#3B73E3]">Subscribe</span> to our<br />Insights
+        <div data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-[#3B73E3]">Subscribe 
+            <span className="text-gray-900"> to our <br />Insights</span>
           </h2>
-          <p className="text-gray-800 font-semibold mb-8 text-justify">
+          <p className="text-gray-800 font-semibold mb-8 text-justify text-md">
             Stay ahead with the latest thinking in AI, cybersecurity, and digital transformation. Simply sign up with your email address and confirm your subscription via the email we will send you. You will start receiving curated insights and updates directly from the experts at Techspecialist Consulting Limited.
           </p>
 
@@ -57,7 +66,9 @@ const SubscribeSection = () => {
         </div>
 
         {/* Right: Image */}
-        <div className="hidden md:flex justify-center">
+        <div className="hidden md:flex justify-center" data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
           <Image
             src="/messageimg.png"
             alt="Message Illustration"

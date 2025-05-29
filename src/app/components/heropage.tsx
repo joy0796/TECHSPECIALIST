@@ -1,8 +1,12 @@
 "use client";
 
 // import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 
 const tabs = [
   "Artificial Intelligence",
@@ -14,11 +18,16 @@ const tabs = [
 const HeroSection = () => {
   const [activeTab, setActiveTab] = useState("Artificial Intelligence");
 
+  useEffect(() => {
+      AOS.init();
+    }, []);
+
   return (
     <section className="w-full pt-16 md:pt-28 pb-12 relative z-10 md:pl-4">
       <div className="max-w-7xl mx-auto px-4 flex flex-col-reverse lg:flex-row">
         {/* Left - Text Content */}
-        <div className="w-full lg:w-2/3 lg:mt-0 space-y-2 text-center md:text-start">
+        <div className="w-full lg:w-2/3 lg:mt-0 space-y-2 text-center md:text-start" data-aos="fade-up" data-aos-duration="1000"
+        >
           <p className="text-xs font-semibold text-gray-800 uppercase">
             {activeTab}
           </p>
@@ -32,7 +41,7 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 pt-2 justify-center md:justify-start">
 
             <Link href="/casestudy3">
-            <button className="px-2 py-2 border border-black rounded-lg text-sm font-medium hover:bg-black hover:text-white transition">
+            <button className="px-2 py-2 border border-black rounded-lg text-sm font-medium hover:bg-black hover:text-white transition text-black">
               Get a Free IT Audit
             </button>
             </Link>
@@ -64,6 +73,7 @@ const HeroSection = () => {
     <button
       key={tab}
       onClick={() => setActiveTab(tab)}
+      
       className={`pb-3 text-sm font-bold transition ${
         activeTab === tab
           ? "text-black border-t-4 border-orange-500 pt-2"

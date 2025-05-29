@@ -1,5 +1,7 @@
 'use client';
-
+import { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Image from 'next/image';
 // import { useState } from 'react';
 
@@ -35,6 +37,9 @@ const tags = [
 ];
 
 const HousingArticleSection2 = () => {
+  useEffect(() => {
+          AOS.init();
+        }, []);
   // const [formData, setFormData] = useState({
   //   fullName: '',
   //   companyName: '',
@@ -44,9 +49,11 @@ const HousingArticleSection2 = () => {
   // });
 
   return (
-    <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-16 py-10 flex flex-col lg:flex-row gap-10 text-black">
+    <div className="bg-white max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-16 py-10 flex flex-col lg:flex-row gap-10 text-black">
       {/* LEFT SIDEBAR */}
-      <aside className="lg:w-1/4 w-full space-y-8">
+      <aside className="lg:w-1/4 w-full space-y-8" data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
               {/* Audio */}
               <div className="">
                 <p className="text-xs text-[#3E3E3E] font-md">Listen to this article</p>
@@ -154,19 +161,21 @@ const HousingArticleSection2 = () => {
         </div>
             </aside>
       {/* RIGHT MAIN ARTICLE */}
-      <article className="lg:w-3/4 w-full space-y-6">
-        <p className="text-[#3E3E3E] text-xs leading-relaxed text-justify">
+      <article className="lg:w-3/4 w-full space-y-6" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+        <p className="text-[#3E3E3E] text-md leading-relaxed text-justify">
           
           The West/South-South Director for Young Professionals for Tinubu, Victor Benjamin, believes young Nigerians would drive the projected $15bn addition to the economy from artificial intelligence.</p>
 
-        <p className="text-[#3E3E3E] text-xs leading-relaxed text-justify">According to a statement made available to The PUNCH on Sunday, Benjamin said the key to ensuring this value to the economy becomes a reality is to equip youths with the right skills.</p>
+        <p className="text-[#3E3E3E] text-md leading-relaxed text-justify">According to a statement made available to The PUNCH on Sunday, Benjamin said the key to ensuring this value to the economy becomes a reality is to equip youths with the right skills.</p>
         
-        <p className="text-[#3E3E3E] text-xs leading-relaxed text-justify">Back in October, a study by Public First, a research agency specialising in economic, social, and opinion research, indicated that artificial intelligence could add about $15bn to the Nigerian economy by 2030.</p>
+        <p className="text-[#3E3E3E] text-md leading-relaxed text-justify">Back in October, a study by Public First, a research agency specialising in economic, social, and opinion research, indicated that artificial intelligence could add about $15bn to the Nigerian economy by 2030.</p>
         
 
-        <p className="text-[#3E3E3E] text-xs leading-relaxed text-justify">In the fresh statement, Benjamin said, “One of the biggest misconceptions about AI is that it will eliminate jobs. But the reality is AI will create more jobs than it replaces—the key is ensuring that people are equipped with the right skills. We are already seeing AI create new industries in financial services, digital health, precision agriculture, and even the creative economy. In banking, AI is automating fraud detection and improving financial inclusion. In agriculture, AI is predicting weather patterns, optimising irrigation, and increasing crop yields. In film, music, and content creation, AI-powered tools are making Nigerian creatives more competitive on a global scale. These are not hypothetical examples. These are real applications happening today, and they are expanding, not shrinking, job opportunities. The key is to train young Nigerians to be at the centre of these industries, and that is exactly what programmes like 3MTT and the AI and Blockchain Training Initiative are designed to do.</p>
+        <p className="text-[#3E3E3E] text-md leading-relaxed text-justify">In the fresh statement, Benjamin said, “One of the biggest misconceptions about AI is that it will eliminate jobs. But the reality is AI will create more jobs than it replaces—the key is ensuring that people are equipped with the right skills. We are already seeing AI create new industries in financial services, digital health, precision agriculture, and even the creative economy. In banking, AI is automating fraud detection and improving financial inclusion. In agriculture, AI is predicting weather patterns, optimising irrigation, and increasing crop yields. In film, music, and content creation, AI-powered tools are making Nigerian creatives more competitive on a global scale. These are not hypothetical examples. These are real applications happening today, and they are expanding, not shrinking, job opportunities. The key is to train young Nigerians to be at the centre of these industries, and that is exactly what programmes like 3MTT and the AI and Blockchain Training Initiative are designed to do.</p>
 
-        <p className="text-[#3E3E3E] text-xs leading-relaxed text-justify">He continued, “These are not hypothetical examples. These are real applications happening today, and they are expanding, not shrinking, job opportunities. The key is to train young Nigerians to be at the centre of these industries, and that is exactly what programmes like 3MTT and the AI and Blockchain Training Initiative are designed to do.”</p>
+        <p className="text-[#3E3E3E] text-md leading-relaxed text-justify">He continued, “These are not hypothetical examples. These are real applications happening today, and they are expanding, not shrinking, job opportunities. The key is to train young Nigerians to be at the centre of these industries, and that is exactly what programmes like 3MTT and the AI and Blockchain Training Initiative are designed to do.”</p>
         
 
 

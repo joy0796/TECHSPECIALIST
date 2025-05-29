@@ -7,8 +7,8 @@ export default function OurJourney() {
   return (
     <section className="bg-white text-black py-6 px-4">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-2xl text-[#3E3E3E] font-semibold mb-4">Our Journey</h2>
-        <p className="text-[#3E3E3E] text-xs max-w-3xl mx-auto mb-4 leading-relaxed">
+        <h2 className="text-2xl text-gray-800 font-semibold mb-4">Our Journey</h2>
+        <p className="text-gray-900 text-md max-w-3xl mx-auto mb-6 leading-relaxed">
           Since 2008, TCL has built a reputation for excellence in delivering secure, reliable information
           technology services to diverse organizations across Nigeria. With over a decade of experience, we have 
           continually evolved to meet the demands of a rapidly changing technology landscape. <br />

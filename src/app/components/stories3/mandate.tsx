@@ -1,4 +1,7 @@
 'use client';
+import { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // import Image from 'next/image';
 import { Bookmark, Share, InsertLink, } from '@mui/icons-material';
@@ -6,6 +9,9 @@ import { Bookmark, Share, InsertLink, } from '@mui/icons-material';
 
 
 export default function Mandate() {
+  useEffect(() => {
+          AOS.init();
+        }, []);
   return (
     <section className="relative w-full min-h-[400px] md:min-h-[500px] lg:min-h-[600px]">
       {/* Background Image */}
@@ -20,7 +26,8 @@ export default function Mandate() {
       <div className="absolute inset-0 bg-black/30" /> */}
 
       {/* Content Box */}
-      <div className="absolute top-10 left-5 sm:left-10 bg-gradient-to-r from-black/60 via-black/70 to-transparent text-white max-w-xl px-2 py-6 md:mt-14 rounded-md shadow-lg border-l-4 border-[#F06322]">
+      <div className="absolute top-10 left-5 sm:left-10 bg-gradient-to-r from-black/60 via-black/70 to-transparent text-white max-w-xl px-2 py-6 md:mt-14 rounded-md shadow-lg border-l-4 border-[#F06322]" data-aos="fade-up"
+     data-aos-duration="1000">
         <p className="text-xs font-lg uppercase text-gray-300 mb-1 mt-6">Public Sector</p>
         <h2 className="text-2xl font-bold leading-snug mb-4">
           Understanding the mandate: Reform, Transparency and Public Value
