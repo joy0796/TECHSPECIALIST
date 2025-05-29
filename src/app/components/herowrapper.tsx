@@ -5,7 +5,7 @@ import Image from "next/image";
 const HeroWrapper = () => {
   return (
     <>
-    <div className="relative w-full h-auto overflow-hidden">
+    <div className="relative w-full h-auto">
     <div
       className="absolute inset-0 -scale-x-100  bg-cover bg-no-repeat"
       style={{ backgroundImage: "url('/heroimage.jpg')",

@@ -23,7 +23,7 @@ const HeroSection = () => {
     }, []);
 
   return (
-    <section className="w-full pt-16 md:pt-28 pb-12 relative z-10 md:pl-4">
+    <section className="w-full pt-28 md:pt-40 pb-12 relative z-10 md:pl-4">
       <div className="max-w-7xl mx-auto px-4 flex flex-col-reverse lg:flex-row">
         {/* Left - Text Content */}
         <div className="w-full lg:w-2/3 lg:mt-0 space-y-2 text-center md:text-start" data-aos="fade-up" data-aos-duration="1000"
