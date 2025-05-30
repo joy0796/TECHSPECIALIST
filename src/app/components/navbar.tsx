@@ -23,7 +23,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Determine text color based on page and scroll state
+  
   const textColor = isScrolled || isHomePage ? "text-black" : "text-white";
   const iconColor = textColor;
 

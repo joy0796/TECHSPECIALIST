@@ -51,7 +51,7 @@ const HeroSection = ({ activeTab, activeIndex, tabs, onTabClick }: HeroSectionPr
           <Typography
             sx={{
     fontWeight: 600,
-    fontSize: "83px",  // or whatever size you want
+    fontSize: "83px",
     textTransform: "uppercase",
     color: backgroundTextColor,
   }}
