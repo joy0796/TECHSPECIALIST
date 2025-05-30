@@ -76,10 +76,10 @@ export default function RecentFindings({ heading = 'Our most recent findings', b
               <img src={item.image} alt={item.title} className="w-full h-56 object-cover" />
               <div className="p-2  flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="font-semibold text-sm mb-2 text-[#3E3E3E]">{item.title}</h3>
-                  <p className="text-sm text-gray-600 mb-1">{item.category}</p>
+                  <h3 className="font-semibold text-[19px] mb-2 text-[#3E3E3E]">{item.title}</h3>
+                  <p className="text-[16px] text-gray-600 mb-1">{item.category}</p>
                 </div>
-                <p className="text-xs font-semibold  text-[#3E3E3E]">{item.type}</p>
+                <p className="text-[13px] font-semibold  text-[#3E3E3E]">{item.type}</p>
               </div>
             </div>
             </Link>

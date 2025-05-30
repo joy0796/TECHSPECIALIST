@@ -46,7 +46,7 @@ const Navbar = () => {
             />
           </Link>
 
-          <div className={`hidden md:flex space-x-6 text-sm font-semibold ${textColor}`}>
+          <div className={`hidden md:flex space-x-6 text-lg font-semibold ${textColor}`}>
             <Link href="/services">Services</Link>
             <Link href="/about">About</Link>
             <Link href="/trends">Trends & Insights</Link>

@@ -16,7 +16,7 @@ export default function ContactWithCompanyInfo() {
      data-aos-duration="1000">
         {/* Left - Contact Form */}
         <div className="bg-white text-black p-4  space-y-4 pt-14 border-t border-gray-300 w-full md:w-[1000px]">
-        <div className='bg-gray-100 mb-1 p-2'>
+        <div className='bg-gray-100 p-2'>
           <p className="text-sm font-semibold text-[#3E3E3E]">Ready to talk?</p>
           <p className="text-xs text-[#707070]">
             I want to talk to your specialist in the field of{' '}
@@ -24,7 +24,7 @@ export default function ContactWithCompanyInfo() {
           </p>
           </div>
           <form className="space-y-3 text-sm">
-            <div className='bg-[#F0F0F0] mb-1 p-2'>
+            <div className='bg-[#F0F0F0] p-2'>
               <label className='text-xs text-[#3E3E3E]'>FULL NAME</label>
                 <input
               type="text"
@@ -33,7 +33,7 @@ export default function ContactWithCompanyInfo() {
             />
             </div>
             
-            <div className='bg-gray-100 mb-1 p-2'>
+            <div className='bg-gray-100 p-2'>
               <label className='text-xs text-[#3E3E3E]'>COMPANY/BUSINESS NAME</label>
             <input
               type="text"
@@ -42,7 +42,7 @@ export default function ContactWithCompanyInfo() {
             />
             </div>
 
-            <div className='bg-gray-100 mb-1 p-2'>
+            <div className='bg-gray-100 p-2'>
               <label className='text-xs text-[#3E3E3E]'>BUSINESS EMAIL</label>
                             <input
               type="email"
@@ -51,7 +51,7 @@ export default function ContactWithCompanyInfo() {
             />
             </div>
 
-            <div className='bg-gray-100 mb-1 p-2'>
+            <div className='bg-gray-100 p-2'>
               <label className='text-xs text-[#3E3E3E]'>PHONE NUMBER</label>
             <input
               type="tel"
@@ -60,7 +60,7 @@ export default function ContactWithCompanyInfo() {
             />
             </div>
             
-            <div className='bg-gray-100 mb-1 p-2'>
+            <div className='bg-gray-100 p-2'>
                 <label className="flex items-start gap-2 text-xs">
               <input type="checkbox" className="mt-1 text-[#707070]" />
               I would like to receive exciting communication regarding Techspecialist services.
@@ -80,7 +80,7 @@ export default function ContactWithCompanyInfo() {
           </form>
         </div>
         {/* Right - Company Info */}
-        <div className="text-gray-800 space-y-6 text-md leading-relaxed text-justify">
+        <div className="text-[#3E3E3E] space-y-6 text-[19px] font-[400] leading-relaxed text-justify">
           <p>
             Techspecialist Consulting Limited (TCL) stands as Nigerias premier digital transformation enabler,
             delivering innovative technology solutions that drive measurable business value.

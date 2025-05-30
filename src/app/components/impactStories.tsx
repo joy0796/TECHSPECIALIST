@@ -49,38 +49,38 @@ export default function ImpactStories() {
     <section className="bg-white text-black py-10 px-5 md:px-20">
       <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-center" data-aos="flip-up" data-aos-easing="ease-out-cubic"
      data-aos-duration="1000">
-        <div className="w-full lg:w-1/2">
+        <div className="w-full lg:w-1/2 h-auto">
           <Image
             src="/imactimg1.png" 
             alt="Speaker"
             width={600}
-            height={200}
+            height={150}
             className="rounded-md w-full object-cover"
           />
         </div>
         <div className="w-full lg:w-1/2 space-y-2" data-aos="flip-down" data-aos-easing="ease-out-cubic"
      data-aos-duration="1000">
-          <h2 className="text-2xl md:text-2xl font-bold text-black">
+          <h2 className="text-2xl md:text-3xl font-bold text-black">
             Our Impact stories
           </h2>
-          <p className="text-gray-500 text-md">
+          <p className="text-gray-500 text-lg">
             Over a wide range of sectors, here is how we have been able to make an impact.
           </p>
           <div className="space-y-6 flex flex-col">
             {stories.map((story) => (
               <Link key={story.id} href={story.link}>
               <div key={story.id} className="flex gap-4 items-start">
-                <div className="min-w-[80px] h-[60px] relative">
+                <div className="min-w-[140px] h-[144px] relative">
                   <Image
                     src={story.image}
                     alt={story.title}
                     fill
-                    className="object-cover rounded-md"
+                    className="object-cover"
                   />
                 </div>
                 <div>
-                  <p className="text-md text-gray-500 font-semibold">{story.sector}</p>
-                  <p className="text-sm font-bold text-black">{story.title}</p>
+                  <p className="text-[16px] text-gray-500 font-semibold mt-4 mb-2 Roboto">{story.sector}</p>
+                  <p className="text-[23px] font-bold text-black">{story.title}</p>
                 </div>
               </div>
               </Link>
@@ -91,7 +91,7 @@ export default function ImpactStories() {
       </div>
             <div className="text-center mt-10">
             <Link href="/stories">
-          <button className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-6 py-2 transition-colors">
+          <button className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-6 py-4 transition-colors font-semibold">
             See all stories
           </button>
           </Link>

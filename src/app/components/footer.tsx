@@ -39,7 +39,7 @@ const footerLinks = [
 
         {/* Mission Statement */}
         <div className="flex-1 md:text-left">
-          <h2 className="text-md font-semibold mb-2">
+          <h2 className="text-[39.18px] font-semibold mb-2">
             Bridging the <br className="md:hidden" /> gap between{' '}
             <span className="text-blue-400">users</span> &{' '}
             <span className="text-[#ED5D25]">technology</span>
@@ -48,8 +48,8 @@ const footerLinks = [
 
         {/* Location */}
         <div>
-          <h3 className="text-md font-semibold mb-2">Location</h3>
-          <p className="flex items-start gap-2 text-xs">
+          <h3 className="text-[24.53px] font-semibold mb-2">Location</h3>
+          <p className="flex items-start gap-2 text-[18.59]">
             <LocationOn fontSize="small" className="mt-0.5" />
             No. 2 Harare street, Wuse Zone 6, Abuja, F.C.T.
           </p>
@@ -57,8 +57,8 @@ const footerLinks = [
 
         {/* Contact Info */}
         <div>
-          <h3 className="text-md font-semibold mb-2">Contact us</h3>
-          <ul className="text-xs space-y-2">
+          <h3 className="text-[24.53px] font-semibold mb-2">Contact us</h3>
+          <ul className="text-[18.59px] space-y-2">
             <li className="flex items-center gap-2">
               <MailOutline fontSize="small" /> info@techspecialistlimited.com
             </li>
@@ -76,7 +76,7 @@ const footerLinks = [
       </div>
 
       {/* Bottom Links */}
-      <div className="border-t border-gray-700 mt-10 pt-4 text-xs flex flex-wrap gap-4">
+      <div className="border-t border-gray-700 mt-10 pt-4 text-[19px] flex flex-wrap gap-4">
   {footerLinks.map(({ label, path }) => (
     <Link key={label} href={path} className="hover:text-gray-400">
       {label}

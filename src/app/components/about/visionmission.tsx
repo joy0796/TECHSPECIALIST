@@ -14,22 +14,22 @@ export default function VisionMissionValues() {
      data-aos-duration="2000">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center"  >
           <div>
-            <h3 className="text-xl md:text-2xl font-semibold mb-4 text-[#3E3E3E]">Vision</h3>
-            <p className="text-gray-700 text-md leading-relaxed">
+            <h3 className="text-[40px] font-[600] mb-4 text-[#3E3E3E]">Vision</h3>
+            <p className="text-[#3E3E3E] leading-relaxed text-[23px] font-[600]">
               To be Africa&apos;s premier digital transformation enabler, delivering
               innovative technology solutions that create measurable business value.
             </p>
           </div>
           <div>
-            <h3 className="text-xl md:text-2xl font-semibold mb-4 text-[#3E3E3E]">Mission</h3>
-            <p className="text-gray-700 text-md leading-relaxed">
+            <h3 className="text-[40px] font-[600] mb-4 text-[#3E3E3E]">Mission</h3>
+            <p className="text-[#3E3E3E] leading-relaxed text-[23px] font-[600]">
               To be Africa&apos;s premier digital transformation enabler, delivering
               innovative technology solutions that create measurable business value.
             </p>
           </div>
           <div>
-            <h3 className="text-xl md:text-2xl font-semibold mb-4 text-[#3E3E3E]">Value Proposition</h3>
-            <p className="text-gray-700 text-md leading-relaxed">
+            <h3 className="text-[40px] font-[600] mb-4 text-[#3E3E3E]">Value Proposition</h3>
+            <p className="text-[#3E3E3E] leading-relaxed text-[23px] font-[600]">
               Empowering Nigerian businesses to thrive in the digital age by simplifying
               technology, accelerating digital transformation, and driving measurable impact.
             </p>
