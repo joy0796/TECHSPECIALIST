@@ -22,7 +22,7 @@ export default function HeroSection() {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/40 z-10" />
+      <div className="absolute inset-0 bg-black/40" />
 
       {/* Content */}
       <div className="relative z-20 max-w-6xl mx-auto px-4 md:px-8 w-full" data-aos="fade-up"
@@ -41,7 +41,7 @@ export default function HeroSection() {
       </div>
 
       {/* Center Play Button */}
-      <div className="absolute inset-0 flex justify-center items-center z-20">
+      <div className="absolute inset-0 flex justify-center items-center">
         <button className="bg-white rounded-full w-16 h-16 flex items-center justify-center shadow-xl group hover:scale-105 transition">
           <svg
             className="w-6 h-6 text-red-600 group-hover:scale-110 transition"

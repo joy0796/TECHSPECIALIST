@@ -68,7 +68,7 @@ const HeroWrapper = () => {
         }}
       />
 
-      {/* Conditional Overlay for tabs 2, 3, and 4 */}
+    
       {["Digital Transformation", "Information Security", "Digital Infrastructure"].includes(
         activeTab.label
       ) && (
@@ -91,7 +91,7 @@ const HeroWrapper = () => {
       </div>
 
       {/* Orange Circle Icon */}
-      <div className="absolute bottom-4 right-4 sm:bottom-36 sm:right-24 w-8 h-8 bg-orange-600 rounded-full flex justify-center items-center z-20">
+      {/* <div className="absolute bottom-4 right-4 sm:bottom-36 sm:right-24 w-8 h-8 bg-orange-600 rounded-full flex justify-center items-center z-20">
         <Image
           src="/Vector.png"
           alt="Orange Icon"
@@ -99,7 +99,7 @@ const HeroWrapper = () => {
           height={16}
           className="object-contain"
         />
-      </div>
+      </div> */}
     </div>
   );
 };
