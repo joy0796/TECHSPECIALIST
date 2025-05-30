@@ -16,7 +16,7 @@ const breadcrumbItems = [
 export default function About() {
   return (
     <>
-        <Navbar bgColor="#3B7EEE" textColor="text-white" logoSrc="/logo2.png" />
+        <Navbar  />
         <Section/>
         <Breadcrumb items={breadcrumbItems} />
         <CaseArticleSection2/>

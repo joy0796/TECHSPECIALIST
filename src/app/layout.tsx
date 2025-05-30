@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./globals.css"
 
 
 
@@ -17,12 +16,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="font-wfvisualsans">
+    <html lang="en" className="">
       <body
-        className="font-sans"
+        className=""
       >
         {children}
       </body>
     </html>
   );
 }
+
+// font-sans

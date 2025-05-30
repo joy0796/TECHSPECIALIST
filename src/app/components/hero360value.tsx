@@ -4,13 +4,13 @@ export default function Hero360Value() {
   return (
     <section className="bg-[#3B73E3] text-white text-center py-24 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-5xl font-bold mb-4">360 VALUE</h1>
-        <p className="text-md mb-6">
+        <h1 className="text-[83px] font-custom font-[600] mb-4">360 VALUE</h1>
+        <p className="text-[23px] mb-6 font-poppins font-[500] ">
           Over a decade of digital transformation, a promise of 360 value
         </p>
 
         <Link href="/about">
-        <button className="border border-white px-6 py-2 text-white text-sm font-medium hover:bg-white hover:text-blue-600 transition-all duration-300">
+        <button className="border border-white px-8 py-4 text-white text-[19px] font-medium hover:bg-white hover:text-blue-600 transition-all duration-300">
           Read More
         </button>
         </Link>

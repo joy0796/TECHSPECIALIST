@@ -24,32 +24,33 @@ const footerLinks = [
 
 
   return (
-    <footer className="bg-black text-white px-6 md:px-12 py-10">
+    <footer className="bg-[#0D0D0D] text-white px-6 md:px-12 py-10">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-10">
         {/* Logo and Info */}
         <div className="flex flex-col items-start">
           <Image
             src="/logo.png" // Adjust path as needed
             alt="Techspecialist Logo"
-            width={100}
+            width={200}
             height={40}
           />
-          <p className="mt-2 text-sm">TCL © 2008</p>
+          <p className="mt-2 text-sm mx-auto font-inter">TCL © 2008</p>
         </div>
 
         {/* Mission Statement */}
-        <div className="flex-1 md:text-left">
-          <h2 className="text-md font-semibold mb-2">
-            Bridging the <br className="md:hidden" /> gap between{' '}
-            <span className="text-blue-400">users</span> &{' '}
+        <div className=" md:text-left text-[39.18px] font-[600] font-custom">
+          <h2 className=" mb-2">
+            ...Bridging the <br/> gap between{' '}
+          
+            <span className="text-blue-400">users</span> <span>&</span> 
             <span className="text-[#ED5D25]">technology</span>
           </h2>
         </div>
 
         {/* Location */}
         <div>
-          <h3 className="text-md font-semibold mb-2">Location</h3>
-          <p className="flex items-start gap-2 text-xs">
+          <h3 className="text-[24.53px] font-semibold mb-2">Location</h3>
+          <p className="flex items-start gap-2 text-[18.59]">
             <LocationOn fontSize="small" className="mt-0.5" />
             No. 2 Harare street, Wuse Zone 6, Abuja, F.C.T.
           </p>
@@ -57,8 +58,8 @@ const footerLinks = [
 
         {/* Contact Info */}
         <div>
-          <h3 className="text-md font-semibold mb-2">Contact us</h3>
-          <ul className="text-xs space-y-2">
+          <h3 className="text-[24.53px] font-semibold mb-2">Contact us</h3>
+          <ul className="text-[18.59px] space-y-2">
             <li className="flex items-center gap-2">
               <MailOutline fontSize="small" /> info@techspecialistlimited.com
             </li>
@@ -76,7 +77,7 @@ const footerLinks = [
       </div>
 
       {/* Bottom Links */}
-      <div className="border-t border-gray-700 mt-10 pt-4 text-xs flex flex-wrap gap-4">
+      <div className="border-t border-gray-700 mt-10 pt-4 text-[19px] flex flex-wrap gap-4">
   {footerLinks.map(({ label, path }) => (
     <Link key={label} href={path} className="hover:text-gray-400">
       {label}
