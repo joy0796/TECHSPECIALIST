@@ -18,9 +18,7 @@ const AboutserviceWrapper = () => {
         
     <div className="relative z-10 text-white">
        <Navbar 
-    textColor="text-black md:text-white"
-    borderColor="border-b border-black md:border-white"
-    logoSrc="/logo2.png"
+    
 />
 
       <ServicesSection/>

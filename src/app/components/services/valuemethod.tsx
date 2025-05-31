@@ -35,10 +35,10 @@ export default function ValueMethodologySection() {
   return (
     <section className="bg-white text-black py-20 px-6 lg:px-24">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800">
+        <h2 className="text-[40px] sm:text-3xl font-semibold text-[#3E3E3E]">
           The Techspecialist Value Methodology
         </h2>
-        <p className="text-gray-700 mt-4 text-base max-w-3xl mx-auto">
+        <p className="text-[#3E3E3E] mt-6 text-[19px] max-w-6xl mx-auto">
           TCL’s proprietary engagement methodology has been refined through over a decade of successful digital transformation implementations. This structured yet flexible approach ensures maximum value creation, seamless implementation, and sustainable long-term outcomes.
         </p>
       </div>
@@ -53,8 +53,8 @@ export default function ValueMethodologySection() {
      data-aos-offset="200"
      
           >
-            <h3 className="text-xl font-semibold mb-3">{pillar.title}</h3>
-            <p className="text-md leading-relaxed text-justify">{pillar.description}</p>
+            <h3 className="text-[40px] text-[#3E3E3E] font-semibold mb-3">{pillar.title}</h3>
+            <p className="text-[19px] text-[#979595] leading-relaxed text-justify font-medium">{pillar.description}</p>
           </div>
         ))}
       </div>

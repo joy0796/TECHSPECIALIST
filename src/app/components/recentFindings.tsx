@@ -57,7 +57,7 @@ export default function RecentFindings({ heading = 'Our most recent findings', b
       style={{ backgroundColor: bgColor }}
     >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-center text-2xl font-semibold mb-10"
+        <h2 className="text-center text-[40px] font-[600] font-custom mb-10"
         style={{ color: headingColor }}
         >
           {heading}
@@ -76,10 +76,11 @@ export default function RecentFindings({ heading = 'Our most recent findings', b
               <img src={item.image} alt={item.title} className="w-full h-56 object-cover" />
               <div className="p-2  flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="font-semibold text-sm mb-2 text-[#3E3E3E]">{item.title}</h3>
-                  <p className="text-sm text-gray-600 mb-1">{item.category}</p>
+                  <h3 className="font-[600] font-custom text-[19px] mb-2 text-[#3E3E3E] ">{item.title}</h3>
+                  {/* <p className="text-[16px] text-gray-600 mb-1">{item.category}</p> */}
                 </div>
-                <p className="text-xs font-semibold  text-[#3E3E3E]">{item.type}</p>
+                <p className="text-[16px] font-poppins font-[400] text-[#3E3E3E] mb-2">{item.category}</p> 
+                <p className="text-[13px] font-[600]  text-[#3E3E3E] font-custom">{item.type}</p>
               </div>
             </div>
             </Link>
@@ -89,7 +90,7 @@ export default function RecentFindings({ heading = 'Our most recent findings', b
 
         {showButton && (
         <div className="text-center mt-10">
-          <button className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-6 py-2 transition-colors">
+          <button className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-6 py-4 transition-colors">
             See all findings
           </button>
         </div>

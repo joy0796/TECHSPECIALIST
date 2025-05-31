@@ -23,13 +23,13 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Determine text color based on page and scroll state
+  
   const textColor = isScrolled || isHomePage ? "text-black" : "text-white";
   const iconColor = textColor;
 
   return (
     <nav
-      className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${
+      className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 border-b border-[#3E3E3E] ${
         isScrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
@@ -46,7 +46,7 @@ const Navbar = () => {
             />
           </Link>
 
-          <div className={`hidden md:flex space-x-6 text-sm font-semibold ${textColor}`}>
+          <div className='hidden md:flex space-x-10 text-[19px] font-custom text-[#3E3E3E] '>
             <Link href="/services">Services</Link>
             <Link href="/about">About</Link>
             <Link href="/trends">Trends & Insights</Link>
