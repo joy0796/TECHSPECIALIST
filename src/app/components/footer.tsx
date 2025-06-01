@@ -13,11 +13,10 @@ import {
 export default function Footer() {
 
 const footerLinks = [
-  { label: 'Home', path: '/' },
-  { label: 'Products', path: '/products' },
+  { label: 'Services', path: '/services' },
   { label: 'About', path: '/about' },
-  { label: 'Blog', path: '/blog' },
-  { label: 'FAQ', path: '/faq' },
+  { label: 'Trends & Insights', path: '/trends' },
+  { label: 'Subscribe', path: '/subsribe' },
   { label: 'Contact', path: '/contact' },
 ];
 
@@ -25,11 +24,12 @@ const footerLinks = [
 
   return (
     <footer className="bg-[#0D0D0D] text-white px-6 md:px-12 py-10">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-10">
-        {/* Logo and Info */}
+      <div className=" flex flex-col md:flex-row justify-between gap-10">
+        {/* Logo*/}
+        <div>
         <div className="flex flex-col items-start">
           <Image
-            src="/logo.png" // Adjust path as needed
+            src="/logo.png"
             alt="Techspecialist Logo"
             width={200}
             height={40}
@@ -37,10 +37,25 @@ const footerLinks = [
           <p className="mt-2 text-sm mx-auto font-inter">TCL © 2008</p>
         </div>
 
+        <div className="flex flex-col items-start">
+          <div className='text-center'>
+            <p className="mt-2 text-[7.96px] mx-auto font-Poppins text-center ml-14 font-[500]">member of</p>
+          </div>
+          <Image
+            src="/footerimg.png"
+            alt="Techspecialist Logo"
+            width={30}
+            height={40}
+            className='mx-auto'
+          />
+          <p className="mt-2 text-[11.63px] mx-auto font-[500] font-Poppins">Mswitch Group</p>
+        </div>
+        </div>
+
         {/* Mission Statement */}
-        <div className=" md:text-left text-[39.18px] font-[600] font-custom">
+        <div className="ml-10 text-[39.18px] font-[600] font-sans">
           <h2 className=" mb-2">
-            ...Bridging the <br/> gap between{' '}
+            ...bridging the <br/>gap between{' '}
           
             <span className="text-blue-400">users</span> <span>&</span> 
             <span className="text-[#ED5D25]">technology</span>
@@ -49,14 +64,14 @@ const footerLinks = [
 
         {/* Location */}
         <div>
-          <h3 className="text-[24.53px] font-semibold mb-2">Location</h3>
-          <p className="flex items-start gap-2 text-[18.59]">
-            <LocationOn fontSize="small" className="mt-0.5" />
-            No. 2 Harare street, Wuse Zone 6, Abuja, F.C.T.
+          <h3 className="text-[24.53px] font-semibold mb-2 font-sans">Location</h3>
+          <p className="flex items-center gap-4">
+            <LocationOn fontSize="medium" className="mt-0.5 w-[21.77px] h-[25.14px]" />
+            <span className='text-[18.59px]'>No. 2 Harare street, Wuse Zone 6, Abuja, F.C.T.</span>
           </p>
         </div>
 
-        {/* Contact Info */}
+        {/* Contact */}
         <div>
           <h3 className="text-[24.53px] font-semibold mb-2">Contact us</h3>
           <ul className="text-[18.59px] space-y-2">
@@ -76,7 +91,7 @@ const footerLinks = [
         </div>
       </div>
 
-      {/* Bottom Links */}
+      {/* Links */}
       <div className="border-t border-gray-700 mt-10 pt-4 text-[19px] flex flex-wrap gap-4">
   {footerLinks.map(({ label, path }) => (
     <Link key={label} href={path} className="hover:text-gray-400">
