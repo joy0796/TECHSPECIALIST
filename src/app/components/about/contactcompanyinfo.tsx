@@ -89,12 +89,12 @@ export default function ContactWithCompanyInfo() {
           </p>
           <p>
             Founded in 2008, we have strategically evolved from a traditional IT service provider into a comprehensive
-            digital transformation partner — guiding organizations through their digital journeys with expertise,
+            digital transformation partner - guiding organizations through their digital journeys with expertise,
             precision, and purpose.
           </p>
           <p>
-            As a proud member of the MSwitch Group — a dynamic ecosystem that includes Techspecialist Consulting,
-            Mswitch Media, and the TIIDELab Initiative — we are part of a broader mission to empower organizations and
+            As a proud member of the MSwitch Group - a dynamic ecosystem that includes Techspecialist Consulting,
+            Mswitch Media, and the TIIDELab Initiative - we are part of a broader mission to empower organizations and
             elevate creators through digital innovation, creative expression, and smart business support. This alignment
             enhances our capabilities and offers our clients access to a wider network of specialized expertise.
           </p>
@@ -105,12 +105,12 @@ export default function ContactWithCompanyInfo() {
             that align with each clients strategic objectives.
           </p>
           <p>
-            Our distinctive approach integrates three specialized service domains into a seamless ecosystem — enabling
+            Our distinctive approach integrates three specialized service domains into a seamless ecosystem - enabling
             us to address the full spectrum of digital challenges facing modern organizations. This holistic methodology
             empowers our clients to achieve operational excellence, build lasting resilience, and secure sustainable
             growth in an era defined by technological disruption and opportunity.
           </p>
-          <p>At TCL, we do not just implement technology — we create impact.</p>
+          <p>At TCL, we do not just implement technology - we create impact.</p>
         </div>
       </div>
     </section>
