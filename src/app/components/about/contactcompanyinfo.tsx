@@ -63,7 +63,7 @@ export default function ContactWithCompanyInfo() {
             <div className='bg-[#F0F0F0] py-4 px-6'>
                 <label className="flex items-center gap-2 text-xs mb-4">
               <input type="checkbox" className="mt-1 text-[#707070]" />
-              I'd like to receive exciting communication regarding Techspecialist services.
+              Id like to receive exciting communication regarding Techspecialist services.
             </label>
 
             <div className=''>
