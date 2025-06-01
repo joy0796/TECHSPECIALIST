@@ -19,7 +19,7 @@ export default function ContactWithCompanyInfo() {
         <div className='bg-[#F0F0F0] py-2 px-6'>
           <p className="text-[22px] font-[600] text-[#3E3E3E] font-sans">Ready to talk?</p>
           <p className="text-[18px] text-[#707070] font-[400] font-sans">
-            I want to talk to your specialist in the field of{' '}
+            I want to talk to your specialist in the field of
             <span className="text-[#707070] underline">Digital Transformation</span>.
           </p>
           </div>
