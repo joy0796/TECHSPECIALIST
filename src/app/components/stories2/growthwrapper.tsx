@@ -19,9 +19,7 @@ const GrowthWrapper = () => {
         
     <div className="relative z-10 text-white">
       <Navbar 
-      textColor="text-white"
-      borderColor="border-b border-white"
-      logoSrc="/logo2.png"
+      
       />
       <EconomicGrowth/>
       </div>

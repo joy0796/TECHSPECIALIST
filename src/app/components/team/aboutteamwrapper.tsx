@@ -19,9 +19,7 @@ const TeamWrapper = () => {
         
     <div className="relative z-10">
        <Navbar 
-      textColor="text-white"
-      borderColor="border-b border-white"
-      logoSrc="/logo2.png"
+      
       />
       <Team/>
       </div>
