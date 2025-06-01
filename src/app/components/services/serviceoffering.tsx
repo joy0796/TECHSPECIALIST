@@ -39,7 +39,7 @@ const ServiceOfferingsSection = () => {
   return (
     <section className="bg-white py-8 px-4 md:px-8 lg:px-20">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-[40px] font-[600] text-center text-[#3E3E3E] mb-6">
+        <h2 className="text-[40px] font-[600] text-center text-[#3E3E3E] mb-6 font-sans">
           Our Service Offerings
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -51,10 +51,10 @@ const ServiceOfferingsSection = () => {
      data-aos-duration="2000"
       >
         <div className="w-14 h-14 bg-blue-500 rounded-md mb-6" />
-        <h3 className="text-[40px] font-[600] text-[#3E3E3E] mb-2">
+        <h3 className="text-[40px] font-[600] text-[#3E3E3E] mb-2 font-sans">
           {service.title}
         </h3>
-        <p className="text-[#979595] text-[19px] font-[500] mt-auto">
+        <p className="text-[#979595] text-[19px] font-[500] mt-auto font-sans text-justify">
           {service.description}
         </p>
       </div>

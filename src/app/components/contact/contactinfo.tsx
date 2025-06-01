@@ -10,17 +10,17 @@ export default function ContactSection() {
       AOS.init();
     }, []);
   return (
-    <section className="bg-white text-gray-800 py-12 px-4 lg:px-12">
+    <section className="bg-white text-gray-800 py-16 px-4 lg:px-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center">
         {/* Left Side */}
-        <div data-aos="flip-right"
+        <div className='mt-10' data-aos="flip-right"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
-          <h2 className="text-3xl font-semibold mb-2">
+          <h2 className="text-[83px] font-[600] mb-2 font-sans">
             <span className="text-[#3B73E3]">Connect</span> with our <br />
             <span className="">Team of Experts</span>
           </h2>
-          <p className="mb-1 text-xs text-gray-700 font-semibold">
+          <p className="mb-1 text-[23px] text-gray-700 font-[900] font-Roboto">
             Discover why hundreds of enterprises and institutions choose <br />
             Techspecialist Consulting Limited as their trusted technology partner.
           </p>
@@ -55,7 +55,7 @@ export default function ContactSection() {
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
           <div>
-            <label className="block text-xs font-md mb-1">FULL NAME</label>
+            <label className="block text-[22px] font-[600] mb-1 font-sans">FULL NAME</label>
             <input
               type="text"
               placeholder="Enter your name here"
@@ -64,7 +64,7 @@ export default function ContactSection() {
           </div>
 
           <div>
-            <label className="block text-xs font-md mb-1">COMPANY/BUSINESS NAME</label>
+            <label className="block text-[22px] font-[600] mb-1 font-sans">COMPANY/BUSINESS NAME</label>
             <input
               type="text"
               placeholder="Enter your company name here"
@@ -73,7 +73,7 @@ export default function ContactSection() {
           </div>
 
           <div>
-            <label className="block text-xs font-md mb-1">COMPANY/BUSINESS EMAIL ADDRESS</label>
+            <label className="block text-[22px] font-[600] mb-1 font-sans">COMPANY/BUSINESS EMAIL ADDRESS</label>
             <input
               type="email"
               placeholder="Enter your email address here"
@@ -82,7 +82,7 @@ export default function ContactSection() {
           </div>
 
           <div>
-            <label className="block text-xs font-md mb-1">PHONE NUMBER</label>
+            <label className="block text-[22px] font-[600] mb-1 font-sans">PHONE NUMBER</label>
             <input
               type="tel"
               placeholder="Enter your phone number here"
@@ -91,7 +91,7 @@ export default function ContactSection() {
           </div>
 
           <div>
-            <label className="block text-xs font-normal mb-1">FIELD OF INTEREST</label>
+            <label className="block text-[22px] font-[600] mb-1 font-sans">FIELD OF INTEREST</label>
             <select className="w-full p-3 rounded text-black">
               <option>Digital Transformation</option>
               <option>AI Solutions</option>
@@ -99,7 +99,7 @@ export default function ContactSection() {
             </select>
           </div>
 
-          <div className="text-xs">
+          <div className="text-[22px">
             <label className="flex items-start gap-2">
               <input type="checkbox" />
               <span>

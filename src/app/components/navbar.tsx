@@ -24,7 +24,8 @@ const Navbar = () => {
   }, []);
 
   
-  const textColor = isScrolled || isHomePage ? "text-black" : "text-white";
+  const textColor = isScrolled || !isHomePage ? "text-black" : "text-white";
+
   const iconColor = textColor;
 
   return (
@@ -46,7 +47,7 @@ const Navbar = () => {
             />
           </Link>
 
-          <div className='hidden md:flex space-x-10 text-[19px] font-custom text-[#3E3E3E] '>
+          <div className='hidden md:flex space-x-10 text-[19px] font-sans text-[#3E3E3E] font-[600]'>
             <Link href="/services">Services</Link>
             <Link href="/about">About</Link>
             <Link href="/trends">Trends & Insights</Link>

@@ -25,24 +25,24 @@ export default function ServicesSection() {
       </div> */}
 
       {/* Main Content */}
-      <div className="max-w-6xl mx-auto px-6 pt-28 md:pt-40 " data-aos="fade-up"
+      <div className="max-w-7xl mx-auto px-6 pt-28 md:pt-40 " data-aos="fade-up"
      data-aos-duration="1000">
-        <h2 className="text-[57px] font-bold mb-4">Our Services</h2>
-        <p className="text-[19px] md:text-[23px] font-medium max-w-3xl md:leading-relaxed text-justify">
+        <h2 className="text-[57px] font-[600] mb-4 font-sans">Our Services</h2>
+        <p className="text-[19px] md:text-[23px] font-[600] max-w-3xl md:leading-normal text-justify font-Roboto">
           Our service portfolio has evolved into a sophisticated integrated ecosystem where three core service domains interconnect through strategic pathways. This architecture enables us to deliver truly comprehensive solutions that address every aspect of our clients&apos; digital transformation journey.
         </p>
         <div className="mt-6">
           <Link href="/team">
-          <button className="px-6 py-3 border border-white rounded-md transition text-16px">
+          <button className="px-6 py-3 border border-white rounded-md transition text-[16px] font-500 font-inter">
             Talk with the Team
           </button>
           </Link>
         </div>
         {/* <p>hello</p> */}
-        <div className="hidden md:block bg-black/50 text-white rounded-lg shadow-lg px-6 py-4 flex flex-col md:flex-row gap-4 justify-center items-center w-full text-center text-[24px] font-semibold mt-2 sm:mt-10 md:mt-10 lg:mt-16 whitespace-nowrap">
-          <span>Digital Transformation</span>
-          <span>IT Support as a Service (ITaaS)</span>
-          <span>Digital Upskilling as a Service (DUaaS)</span>
+        <div className="hidden md:flex bg-black/50 text-white rounded-xl shadow-lg px-6 py-6 flex-col md:flex-row gap-8 justify-between items-center w-full font-[500] whitespace-nowrap font-Roboto font-[500] md:mt-14 lg:mt-16">
+          <p className='text-2xl'>Digital Transformation</p>
+          <p className='text-2xl'>IT Support as a Service (ITaaS)</p>
+          <p className='text-2xl'>Digital Upskilling as a Service (DUaaS)</p>
         </div>
       </div>
 

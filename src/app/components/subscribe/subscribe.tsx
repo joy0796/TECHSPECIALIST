@@ -20,16 +20,16 @@ useEffect(() => {
   };
 
   return (
-    <section className="w-full px-4 md:px-6 py-6 md:py-8 bg-white">
+    <section className="w-full bg-white py-16">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center" >
         {/* Left: Text + Form */}
         <div data-aos="flip-right"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-[#3B73E3]">Subscribe 
-            <span className="text-gray-900"> to our <br />Insights</span>
-          </h2>
-          <p className="text-gray-800 font-semibold mb-8 text-justify text-md">
+          <p className="text-[83px] font-[600] font-sans mb-6 text-[#3B73E3] mt-10">Subscribe 
+            <span className="text-gray-900"> to our Insights</span>
+          </p>
+          <p className="text-[#3E3E3E] font-[900] mb-8 text-justify text-[23px] font-Roboto">
             Stay ahead with the latest thinking in AI, cybersecurity, and digital transformation. Simply sign up with your email address and confirm your subscription via the email we will send you. You will start receiving curated insights and updates directly from the experts at Techspecialist Consulting Limited.
           </p>
 
@@ -51,14 +51,14 @@ useEffect(() => {
                 onChange={(e) => setIsChecked(e.target.checked)}
                 className="mt-1"
               />
-              <label htmlFor="consent" className="text-sm text-gray-700 text-justify">
+              <label htmlFor="consent" className="text-[16px] text-gray-700 text-justify font-[400] font-sans">
                 I would like to receive marketing communications regarding Techspecialist Consulting Limited service offerings. I understand that I can unsubscribe at any time.
               </label>
             </div>
 
             <button
               type="submit"
-              className="bg-[#3B73E3] text-white font-sm text-sm px-8 py-3 rounded-md transition duration-300"
+              className="bg-[#3B73E3] text-white text-[23px] text-sm px-12 py-4 rounded-md transition duration-300 font-[500] font-sans"
             >
               SUBSCRIBE
             </button>
@@ -78,15 +78,16 @@ useEffect(() => {
           />
         </div>
       </div>
-      <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 w-8 h-8 bg-orange-600 rounded-full flex justify-center ">
-              <Image
-                src="/Vector.png"
-                alt="Orange Icon"
-                width={16}
-                height={16}
-                className="object-contain"
-              />
-            </div>
+
+        <div className="fixed bottom-4 right-4 sm:bottom-36 sm:right-24 w-8 h-8 bg-orange-600 rounded-full flex justify-center items-center z-50">
+  <Image
+    src="/Vector.png"
+    alt="Orange Icon"
+    width={16}
+    height={16}
+    className="object-contain"
+  />
+</div>
     </section>
   );
 };

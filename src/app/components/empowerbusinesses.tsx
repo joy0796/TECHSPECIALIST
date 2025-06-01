@@ -32,7 +32,7 @@ export default function HeroSection() {
       >
         <div className="text-white md:pr-[40rem]">
           <h1 className="text-[57px] font-custom  font-[500] leading-tight mb-6">
-            Empowering businesses with <br /> digital solutions, one <br />{" "}
+            Empowering businesses with digital solutions, one <br />{" "}
             process at a time
           </h1>
 

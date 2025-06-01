@@ -13,12 +13,12 @@ export default function ValueMethodologySection() {
     {
       title: "Strategic Discovery & Digital Assessment",
       description:
-        "We start by deeply understanding your organization’s strategic goals, digital environment, and transformation potential. This includes Business Value Mapping to align priorities with measurable outcomes; a Technology Ecosystem Assessment to evaluate systems, architecture, and integrations; Digital Maturity Benchmarking against industry standards; and a Capability Gap Analysis to identify critical skill, process, and technology needs required to reach your objectives.",
+        "We start by deeply understanding your organizations strategic goals, digital environment, and transformation potential. This includes Business Value Mapping to align priorities with measurable outcomes; a Technology Ecosystem Assessment to evaluate systems, architecture, and integrations; Digital Maturity Benchmarking against industry standards; and a Capability Gap Analysis to identify critical skill, process, and technology needs required to reach your objectives.",
     },
     {
       title: "Value-Driven Solution Design",
       description:
-        "Our expert IT architects develop tailored transformation blueprints aligned with your organization’s unique context and goals. This includes designing business-aligned technology frameworks, selecting optimal solutions based on scalability and long-term value, creating phased implementation roadmaps that balance quick wins with strategic growth, and establishing ROI models with clear metrics to track and sustain value over time.",
+        "Our expert IT architects develop tailored transformation blueprints aligned with your organizations unique context and goals. This includes designing business-aligned technology frameworks, selecting optimal solutions based on scalability and long-term value, creating phased implementation roadmaps that balance quick wins with strategic growth, and establishing ROI models with clear metrics to track and sustain value over time.",
     },
     {
       title: "Excellence in Execution & Change Enablement",
@@ -33,13 +33,13 @@ export default function ValueMethodologySection() {
   ];
 
   return (
-    <section className="bg-white text-black py-20 px-6 lg:px-24">
+    <section className="bg-white py-20 px-6 lg:px-24">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-[40px] sm:text-3xl font-semibold text-[#3E3E3E]">
+        <h2 className="text-[40px] sm:text-3xl font-[600] text-[#3E3E3E] font-sans">
           The Techspecialist Value Methodology
         </h2>
-        <p className="text-[#3E3E3E] mt-6 text-[19px] max-w-6xl mx-auto">
-          TCL’s proprietary engagement methodology has been refined through over a decade of successful digital transformation implementations. This structured yet flexible approach ensures maximum value creation, seamless implementation, and sustainable long-term outcomes.
+        <p className="text-[#3E3E3E] mt-6 text-[19px] max-w-6xl mx-auto font-[400] font-sans">
+          TCLs proprietary engagement methodology has been refined through over a decade of successful digital transformation implementations. This structured yet flexible approach ensures maximum value creation, seamless implementation, and sustainable long-term outcomes.
         </p>
       </div>
 
@@ -53,8 +53,8 @@ export default function ValueMethodologySection() {
      data-aos-offset="200"
      
           >
-            <h3 className="text-[40px] text-[#3E3E3E] font-semibold mb-3">{pillar.title}</h3>
-            <p className="text-[19px] text-[#979595] leading-relaxed text-justify font-medium">{pillar.description}</p>
+            <h3 className="text-[40px] text-[#3E3E3E] font-[600] mb-3 font-sans">{pillar.title}</h3>
+            <p className="text-[19px] text-[#979595] leading-normal text-justify font-[500] Poppins">{pillar.description}</p>
           </div>
         ))}
       </div>

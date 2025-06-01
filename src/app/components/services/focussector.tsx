@@ -40,8 +40,8 @@ useEffect(() => {
   return (
     <section className="bg-white text-black py-8 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-[40px] font-[600] text-center mb-4 text-[#3E3E3E]">Our Focus Sectors</h2>
-        <p className="text-[#979595] text-center max-w-5xl mx-auto mb-8 md:mb-10 text-[19px] font-[400]">
+        <h2 className="text-[40px] font-[600] text-center mb-4 text-[#3E3E3E] font-sans">Our Focus Sectors</h2>
+        <p className="font-sans text-[#979595] text-center max-w-5xl mx-auto mb-8 md:mb-10 text-[19px] font-[400]">
           At Techspecialist Consulting Limited, we have developed specialized expertise across three vital sectors of the Nigerian economy. Our tailored approaches address the unique digital transformation challenges and opportunities in each sector, delivering measurable impact and sustainable digital evolution.
         </p>
 
