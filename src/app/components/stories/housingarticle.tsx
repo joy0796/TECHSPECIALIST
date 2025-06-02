@@ -51,11 +51,10 @@ const HousingArticleSection = () => {
   // });
 
   return (
-    <div className="bg-white max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-16 py-10 flex flex-col lg:flex-row gap-10 text-black">
+    <div className="bg-white max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-16 py-10 flex flex-col lg:flex-row gap-10 text-black" data-aos="zoom-in"
+              data-aos-duration="1000">
       {/* LEFT SIDEBAR */}
-      <aside className="lg:w-1/4 w-full space-y-8" data-aos="flip-right"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+      <aside className="lg:w-1/4 w-full space-y-8" >
         {/* Audio */}
         <div className="">
           <p className="text-xs text-[#3E3E3E] font-md">Listen to this article</p>
@@ -164,9 +163,7 @@ const HousingArticleSection = () => {
       </aside>
 
       {/* RIGHT MAIN ARTICLE */}
-      <article className="lg:w-3/4 w-full" data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+      <article className="lg:w-3/4 w-full" >
         <p className="leading-relaxed mb-6 text-justify text-md text-[#3E3E3E]" >
           {/* Paste your full article content here */}
           For decades, Nigerias housing sector has grappled with a silent but systemic crisis: the absence of reliable, centralized data. While the nations housing deficit continued to grow now estimated at over 25 million units, the ability to diagnose, plan, and respond effectively remained painfully limited. Government agencies lacked the insights to formulate evidence-based policies. Financial institutions were unable to de-risk housing investments confidently. Real estate developers operated in the dark. And for millions of Nigerians, the dream of affordable housing remained out of reach, obscured by data blind spots.

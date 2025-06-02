@@ -42,9 +42,9 @@ export default function DigitalTransformationSection() {
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full">
           <div
             className=" w-full text-center lg:text-left"
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
+            data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in"
           >
             <h1 className="text-4xl sm:text-[48px] font-semibold leading-tight text-[#3E3E3E] mt-16 font-custom">
               Begin your <span className="text-[#ED5D25]">digital transformation</span> journey here
@@ -73,9 +73,9 @@ export default function DigitalTransformationSection() {
 
           <div
             className="w-full max-w-lg flex justify-center mt-14"
-            data-aos="flip-right"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
+            data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in"
           >
             <Image
               src="/digitalimg.png"
@@ -90,7 +90,7 @@ export default function DigitalTransformationSection() {
 
       {step === 2 && (
         <div className="w-full max-w-6xl text-center" data-aos="fade-up"
-     data-aos-duration="2000">
+     data-aos-duration="1000">
 
           <div className="flex items-center gap-10">
           <div className="flex justify-between items-center mb-6">

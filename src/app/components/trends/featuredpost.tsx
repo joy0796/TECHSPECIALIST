@@ -26,8 +26,7 @@ const FeaturedPostsSection = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left (Featured Post) */}
-          <div className="lg:col-span-2" data-aos="flip-right"
-     data-aos-easing="ease-out-cubic"
+          <div className="lg:col-span-2"  data-aos="fade-up"
      data-aos-duration="2000">
             <div className="w-full h-auto overflow-hidden rounded-lg">
               <img
@@ -37,19 +36,18 @@ const FeaturedPostsSection = () => {
               />
             </div>
             <div className="mt-4">
-              <h3 className="text-[40px] font-[600] font-sans text-[#3E3E3E]">
+              <h3 className="text-[30px] md:text-[40px] font-[600] font-sans text-[#3E3E3E]">
                 {featuredPost.title}
               </h3>
-              <div className="text-[23px] font-[500] font-sans text-[#3E3E3E] mt-2">
+              <div className="text-[20px] md:text-[23px] font-[500] font-sans text-[#3E3E3E] mt-2">
                 <div>{featuredPost.category}</div>
-                <div className="font-[600] text-18px font-sans">{featuredPost.date}</div>
+                <div className="font-[600] text-[15px] md:text-[18px] font-sans">{featuredPost.date}</div>
               </div>
             </div>
           </div>
 
           {/* Right (Recommended Posts) */}
-          <div className="border-t border-gray-700 pt-4 lg:pt-0 lg:pl-6 " data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
+          <div className="border-t border-gray-700 pt-4 lg:pt-0 lg:pl-6 "  data-aos="fade-up"
      data-aos-duration="2000">
             <h4 className="text-[24px] font-[600] font-sans mb-4 text-[#3E3E3E] mt-2">Recommended Posts</h4>
             <ul className="space-y-4">

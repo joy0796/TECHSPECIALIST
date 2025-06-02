@@ -34,10 +34,10 @@ const footerLinks = [
             width={200}
             height={40}
           />
-          <p className="mt-2 text-sm mx-auto font-inter">TCL © 2008</p>
+          <p className="mt-2 text-sm font-inter md:mx-auto">TCL © 2008</p>
         </div>
 
-        <div className="flex flex-col items-start">
+        <div className="hidden md:flex-col items-start">
           <div className='text-center'>
             <p className="mt-2 text-[7.96px] mx-auto font-Poppins text-center ml-14 font-[500]">member of</p>
           </div>
@@ -53,7 +53,7 @@ const footerLinks = [
         </div>
 
         {/* Mission Statement */}
-        <div className="ml-10 text-[39.18px] font-[600] font-sans">
+        <div className="text-[25px] md:text-[39.18px] font-[600] font-sans md:ml-[15px]">
           <h2 className=" mb-2">
             ...bridging the <br/>gap between{' '}
           
@@ -64,16 +64,16 @@ const footerLinks = [
 
         {/* Location */}
         <div>
-          <h3 className="text-[24.53px] font-semibold mb-2 font-sans">Location</h3>
+          <h3 className="text-[17px] md:text-[24.53px] font-semibold mb-2 font-sans">Location</h3>
           <p className="flex items-center gap-4">
             <LocationOn fontSize="medium" className="mt-0.5 w-[21.77px] h-[25.14px]" />
-            <span className='text-[18.59px]'>No. 2 Harare street, Wuse Zone 6, Abuja, F.C.T.</span>
+            <span className='text-[14px] md:text-[18.59px]'>No. 2 Harare street, Wuse Zone 6, Abuja, F.C.T.</span>
           </p>
         </div>
 
         {/* Contact */}
         <div>
-          <h3 className="text-[24.53px] font-semibold mb-2">Contact us</h3>
+          <h3 className="text-[17px] md:text-[24.53px] font-semibold mb-2">Contact us</h3>
           <ul className="text-[18.59px] space-y-2">
             <li className="flex items-center gap-2">
               <MailOutline fontSize="small" /> info@techspecialistlimited.com
@@ -92,7 +92,7 @@ const footerLinks = [
       </div>
 
       {/* Links */}
-      <div className="border-t border-gray-700 mt-10 pt-4 text-[19px] flex flex-wrap gap-4">
+      <div className="border-t border-gray-700 mt-10 pt-4 text-[15px] md:text-[19px] flex flex-wrap gap-4">
   {footerLinks.map(({ label, path }) => (
     <Link key={label} href={path} className="hover:text-gray-400">
       {label}

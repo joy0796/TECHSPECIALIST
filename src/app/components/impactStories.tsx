@@ -46,10 +46,10 @@ export default function ImpactStories() {
         }, []);
 
   return (
-    <section className="bg-white text-black py-10 md:w-[95%] mx-auto">
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-center" data-aos="flip-up" data-aos-easing="ease-out-cubic"
-     data-aos-duration="1000">
-        <div className="w-full lg:w-[60%] h-auto">
+    <section className="bg-white text-black py-10 md:w-[95%] mx-auto " data-aos="zoom-in"
+              data-aos-duration="1000">
+      <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-center" >
+        <div className="w-full lg:w-[60%] h-auto " >
           <Image
             src="/imactimg1.png" 
             alt="Speaker"
@@ -58,8 +58,7 @@ export default function ImpactStories() {
             className="rounded-md w-full object-cover"
           />
         </div>
-        <div className="w-full space-y-2" data-aos="flip-down" data-aos-easing="ease-out-cubic"
-     data-aos-duration="1000">
+        <div className="px-2 w-full space-y-2" >
           <h2 className="text-2xl md:text-[40px] font-[600] text-black font-custom pb-4" >
             Our Impact stories
           </h2>

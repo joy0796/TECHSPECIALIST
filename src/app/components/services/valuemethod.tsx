@@ -35,7 +35,7 @@ export default function ValueMethodologySection() {
   return (
     <section className="bg-white py-20 px-6 lg:px-24">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-[40px] sm:text-3xl font-[600] text-[#3E3E3E] font-sans">
+        <h2 className="text-[35px] md:text-[40px] sm:text-3xl font-[600] text-[#3E3E3E] font-sans">
           The Techspecialist Value Methodology
         </h2>
         <p className="text-[#3E3E3E] mt-6 text-[19px] max-w-6xl mx-auto font-[400] font-sans">
@@ -53,7 +53,7 @@ export default function ValueMethodologySection() {
      data-aos-offset="200"
      
           >
-            <h3 className="text-[40px] text-[#3E3E3E] font-[600] mb-3 font-sans">{pillar.title}</h3>
+            <h3 className="text-[30px] md:text-[40px] text-[#3E3E3E] font-[600] mb-3 font-sans">{pillar.title}</h3>
             <p className="text-[19px] text-[#979595] leading-normal text-justify font-[500] Poppins">{pillar.description}</p>
           </div>
         ))}

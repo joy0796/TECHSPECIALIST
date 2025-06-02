@@ -4,7 +4,7 @@ export default function JoinUsSection() {
   return (
     <section className="bg-white text-black pt-2 px-4 md:px-8 pb-6">
       <div className="max-w-4xl">
-        <h2 className="text-[83px] font-[600] mb-2 text-gray-800 font-sans">
+        <h2 className="text-[40px] md:text-[83px] font-[600] mb-2 text-gray-800 font-sans">
           Join us & be a part of the future
         </h2>
         <p className="text-gray-700 text-[23px] leading-relaxed mb-4 font-[500] font-[sans]">

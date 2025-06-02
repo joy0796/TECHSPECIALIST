@@ -12,7 +12,9 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
-  const isHomePage = pathname === "/";
+  const isHomeStyle = ["/", "/contact", "/subscribe"].includes(pathname);
+  const isScrolledPast = isScrolled;
+  const isNonHomeStyle = !isHomeStyle;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,23 +25,39 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  
-  const textColor = isScrolled || !isHomePage ? "text-black" : "text-white";
+  // Text color logic:
+  // Black text always on Home, Contact, Subscribe pages
+  // Other pages: white at top, black on scroll
+  const textColor = isHomeStyle
+    ? "text-black"
+    : isScrolledPast
+    ? "text-black"
+    : "text-white";
+
+  // Border color: dark border on scroll or on Home-style pages; white border otherwise
+  const borderColor =
+    isScrolledPast || isHomeStyle ? "border-[#3E3E3E]" : "border-white";
+
+  // Logo: logo.png on scroll or Home-style pages; logo2.png at top on other pages
+  const logoSrc =
+    isScrolledPast || isHomeStyle ? "/logo.png" : "/logo2.png";
 
   const iconColor = textColor;
 
   return (
     <nav
-      className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 border-b border-[#3E3E3E] ${
-        isScrolled ? "bg-white shadow-md" : "bg-transparent"
+      className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 border-b ${borderColor} ${
+        isScrolledPast ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={`flex justify-between items-center h-16 transition-colors duration-300 ${textColor}`}>
+        <div
+          className={`flex justify-between items-center h-16 transition-colors duration-300 ${textColor}`}
+        >
           <Link href="/" className="flex items-center space-x-2">
-            {pathname !== "/" && <MenuIcon className={iconColor} />}
+            {isNonHomeStyle && <MenuIcon className={iconColor} />}
             <Image
-              src="/logo.png"
+              src={logoSrc}
               alt="TCL Logo"
               width={120}
               height={40}
@@ -47,7 +65,7 @@ const Navbar = () => {
             />
           </Link>
 
-          <div className='hidden md:flex space-x-10 text-[19px] font-sans text-[#3E3E3E] font-[600]'>
+          <div className="hidden md:flex space-x-10 text-[19px] font-sans font-[600]">
             <Link href="/services">Services</Link>
             <Link href="/about">About</Link>
             <Link href="/trends">Trends & Insights</Link>
@@ -71,14 +89,28 @@ const Navbar = () => {
       <div
         className={`md:hidden absolute w-full top-16 left-0 z-40 transition-all duration-500 ${
           mobileOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        } overflow-hidden ${isScrolled ? "bg-white text-black" : isHomePage ? "bg-white text-black" : "bg-black text-white"}`}
+        } overflow-hidden ${
+          isScrolledPast || isHomeStyle
+            ? "bg-white text-black"
+            : "bg-black text-white"
+        }`}
       >
         <div className="px-4 py-3 space-y-2 text-sm font-bold">
-          <Link href="/services" className="block">Services</Link>
-          <Link href="/about" className="block">About</Link>
-          <Link href="/trends" className="block">Trends & Insights</Link>
-          <Link href="/subscribe" className="block">Subscribe</Link>
-          <Link href="/contact" className="block">Contact</Link>
+          <Link href="/services" className="block">
+            Services
+          </Link>
+          <Link href="/about" className="block">
+            About
+          </Link>
+          <Link href="/trends" className="block">
+            Trends & Insights
+          </Link>
+          <Link href="/subscribe" className="block">
+            Subscribe
+          </Link>
+          <Link href="/contact" className="block">
+            Contact
+          </Link>
         </div>
       </div>
     </nav>

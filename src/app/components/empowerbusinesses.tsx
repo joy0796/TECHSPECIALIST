@@ -31,7 +31,7 @@ export default function HeroSection() {
         data-aos-duration="1000"
       >
         <div className="text-white md:pr-[40rem]">
-          <h1 className="text-[57px] font-custom  font-[500] leading-tight mb-6">
+          <h1 className="text-[45px] md:text-[57px] font-custom  font-[500] leading-tight mb-6">
             Empowering businesses with digital solutions, one <br />{" "}
             process at a time
           </h1>
@@ -45,8 +45,8 @@ export default function HeroSection() {
       </div>
 
       {/* Center Play Button */}
-      <div className="absolute inset-0 flex justify-center items-center md:left-[18%] md:-top-20">
-        <button className="bg-white rounded-full w-28 h-28 flex items-center justify-center shadow-xl group hover:scale-105 transition">
+      <div className="absolute inset-0 flex justify-center items-center md:left-[13%] md:-top-20">
+        <button className="bg-white rounded-full w-16 h-16 md:w-28 md:h-28 flex items-center justify-center shadow-xl group hover:scale-105 transition">
           <svg
             className="w-28 h-28 text-red-600 group-hover:scale-110 transition"
             fill="currentColor"

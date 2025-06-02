@@ -11,12 +11,12 @@ const tabs = [
     label: "Artificial Intelligence",
     image: "/guy.jpeg",
     heading:
-      "Cross-Sectoral Collaboration:\nAI Partnerships Driving Nigeria’s\nDigital Economy",
+      "Cross-Sectoral Collaboration:\nAI Partnerships Driving Nigerias\nDigital Economy",
   },
   {
     label: "Digital Transformation",
     image: "/digitalimage.png",
-    heading: "Digital Transformation in\n Nigerian SMEs: Barriers,\n Breakthroughs, and\n Blueprints",
+    heading: "Digital Transformation in Nigerian SMEs: Barriers, Breakthroughs, and\n Blueprints",
   },
   {
     label: "Information Security",

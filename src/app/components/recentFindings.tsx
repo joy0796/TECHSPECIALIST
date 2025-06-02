@@ -70,6 +70,7 @@ export default function RecentFindings({ heading = 'Our most recent findings', b
               key={idx}
               className="bg-white pb-4 rounded-md shadow-xl overflow-hidden text-black flex flex-col h-full"
               data-aos="zoom-in"
+              data-aos-duration="1000"
               
      
             >

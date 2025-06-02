@@ -13,12 +13,11 @@ export default function ContactSection() {
     <section className="bg-white text-gray-800 py-16 px-4 lg:px-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center">
         {/* Left Side */}
-        <div className='mt-10' data-aos="flip-right"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
-          <h2 className="text-[83px] font-[600] mb-2 font-sans">
-            <span className="text-[#3B73E3]">Connect</span> with our <br />
-            <span className="">Team of Experts</span>
+        <div className='mt-10' data-aos="zoom-in"
+              data-aos-duration="1000">
+          <h2 className="text-[40px] md:text-[70px] font-[600] mb-2 font-sans">
+            <span className="text-[#3B73E3]">Connect</span> with our
+            <span className=""> Team of Experts</span>
           </h2>
           <p className="mb-1 text-[23px] text-gray-700 font-[900] font-Roboto">
             Discover why hundreds of enterprises and institutions choose <br />
@@ -51,9 +50,8 @@ export default function ContactSection() {
         </div>
 
         {/* Right Side - Form */}
-        <div className="bg-[#ED5D25] shadow-lg p-6 space-y-4 text-white" data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+        <div className="bg-[#ED5D25] shadow-lg p-6 space-y-4 text-white" data-aos="zoom-in"
+              data-aos-duration="1000">
           <div>
             <label className="block text-[22px] font-[600] mb-1 font-sans">FULL NAME</label>
             <input

@@ -20,16 +20,14 @@ useEffect(() => {
   };
 
   return (
-    <section className="w-full bg-white py-16">
+    <section className="w-full bg-white py-16 px-2">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center" >
         {/* Left: Text + Form */}
-        <div data-aos="flip-right"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
-          <p className="text-[83px] font-[600] font-sans mb-6 text-[#3B73E3] mt-10">Subscribe 
-            <span className="text-gray-900"> to our Insights</span>
+        <div data-aos="zoom-in"
+              data-aos-duration="1000">
+          <p className="text-[40px] md:text-[75px] font-[600] font-sans mb-6 text-[#3B73E3] mt-10">Subscribe <span className="text-gray-900"> to our Insights</span>
           </p>
-          <p className="text-[#3E3E3E] font-[900] mb-8 text-justify text-[23px] font-Roboto">
+          <p className="text-[#3E3E3E] font-[900] mb-8 text-[23px] font-Roboto md:text-justify">
             Stay ahead with the latest thinking in AI, cybersecurity, and digital transformation. Simply sign up with your email address and confirm your subscription via the email we will send you. You will start receiving curated insights and updates directly from the experts at Techspecialist Consulting Limited.
           </p>
 
@@ -66,9 +64,8 @@ useEffect(() => {
         </div>
 
         {/* Right: Image */}
-        <div className="hidden md:flex justify-center" data-aos="flip-right"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+        <div className="hidden md:flex justify-center" data-aos="zoom-in"
+              data-aos-duration="1000">
           <Image
             src="/messageimg.png"
             alt="Message Illustration"
