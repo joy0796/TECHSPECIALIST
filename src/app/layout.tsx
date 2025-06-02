@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 
 
-
 export const metadata: Metadata = {
   title: "Techspecialist",
   description: "where innovation meets impact",
@@ -17,9 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="">
-      <body
-        className=""
-      >
+      <body className="">
         {children}
       </body>
     </html>

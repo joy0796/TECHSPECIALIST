@@ -5,6 +5,7 @@ import Navbar from "./navbar";
 import HeroSection from "./heropage";
 import Image from "next/image";
 import "../../../src/app/globals.css";
+import Link from "next/link";
 
 const tabs = [
   {
@@ -16,21 +17,22 @@ const tabs = [
   {
     label: "Digital Transformation",
     image: "/digitalimage.png",
-    heading: "Digital Transformation in Nigerian SMEs: Barriers, Breakthroughs, and\n Blueprints",
+    heading:
+      "Digital Transformation in Nigerian SMEs: Barriers, Breakthroughs, and\n Blueprints",
   },
   {
     label: "Information Security",
     image: "/female.png",
-    heading: " When Hackers come for \nGovernment: A review of\n cyberattacks on Nigerian\n public institutions.",
+    heading:
+      " When Hackers come for \nGovernment: A review of\n cyberattacks on Nigerian\n public institutions.",
   },
   {
     label: "Digital Infrastructure",
     image: "/goodnotes.png",
-    heading: "Bridging Budget and innovation:\n Sustainable IT management for Nigeria’s\n Digital future.",
+    heading:
+      "Bridging Budget and innovation:\n Sustainable IT management for Nigeria’s\n Digital future.",
   },
 ];
-
-
 
 const HeroWrapper = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -71,13 +73,16 @@ const HeroWrapper = () => {
         }}
       />
 
-    
-      {["Digital Transformation", "Information Security", "Digital Infrastructure"].includes(
-        activeTab.label
-      ) && (
+      {[
+        "Digital Transformation",
+        "Information Security",
+        "Digital Infrastructure",
+      ].includes(activeTab.label) && (
         <div
           className={`absolute inset-0 z-[1] ${
-            activeTab.label === "Digital Infrastructure" ? "bg-black/10" : "bg-black/30"
+            activeTab.label === "Digital Infrastructure"
+              ? "bg-black/10"
+              : "bg-black/30"
           }`}
         />
       )}
@@ -93,17 +98,17 @@ const HeroWrapper = () => {
         />
       </div>
 
-      
-
-      <div className="fixed bottom-4 right-4 sm:bottom-36 sm:right-24 w-8 h-8 bg-orange-600 rounded-full flex justify-center items-center z-50">
-        <Image
-      src="/Vector.png"
-    alt="Orange Icon"
-    width={16}
-    height={16}
-    className="object-contain"
-  />
-</div>
+      <Link href="/contact">
+        <div className="fixed bottom-4 right-4 sm:bottom-36 sm:right-24 w-8 h-8 bg-orange-600 rounded-full flex justify-center items-center z-50">
+          <Image
+            src="/Vector.png"
+            alt="Orange Icon"
+            width={16}
+            height={16}
+            className="object-contain"
+          />
+        </div>
+      </Link>
     </div>
   );
 };
