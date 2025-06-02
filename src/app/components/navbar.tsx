@@ -12,7 +12,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
-  const isHomeStyle = ["/", "/contact", "/subscribe"].includes(pathname);
+  const isHomeStyle = ["/", "/contact", "/subscribe", ].includes(pathname);
   const isScrolledPast = isScrolled;
   const isNonHomeStyle = !isHomeStyle;
 
@@ -25,20 +25,18 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Text color logic:
-  // Black text always on Home, Contact, Subscribe pages
-  // Other pages: white at top, black on scroll
+  
   const textColor = isHomeStyle
     ? "text-black"
     : isScrolledPast
     ? "text-black"
     : "text-white";
 
-  // Border color: dark border on scroll or on Home-style pages; white border otherwise
+  
   const borderColor =
     isScrolledPast || isHomeStyle ? "border-[#3E3E3E]" : "border-white";
 
-  // Logo: logo.png on scroll or Home-style pages; logo2.png at top on other pages
+  
   const logoSrc =
     isScrolledPast || isHomeStyle ? "/logo.png" : "/logo2.png";
 
