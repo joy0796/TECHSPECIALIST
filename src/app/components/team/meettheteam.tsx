@@ -17,20 +17,20 @@ const teamData: TeamGroup[] = [
   {
     title: 'Board of Directors',
     members: [
-      { name: 'Kadir Salami', role: 'Chairman', image: '/kadir.png' },
-      { name: 'Emeka Mba', role: 'Board Member', image: '/kadir.png' },
-      { name: 'Olayinka Ola', role: 'Board Member', image: '/kadir.png' },
-      { name: 'Otuya Okecha', role: 'Board Member', image: '/kadir.png' },
-      { name: 'Bankole Oloruntoba', role: 'Board Member', image: '/kadir.png' },
-      { name: 'Lanre Yusuf', role: 'Board Member', image: '/kadir.png' },
+      { name: 'Adedayo Eyiaro', role: 'Chairman', image: '/team1.png' },
+      { name: 'Joy Eboh Adah', role: 'Board Member', image: '/team2.png' },
+      { name: 'Daniel Taiwo', role: 'Board Member', image: '/team3.png' },
+      { name: 'Toyyib Ijaya', role: 'Board Member', image: '/team4.png' },
+      { name: 'Temitope Ayeni', role: 'Board Member', image: '/team5.png' },
+      { name: 'Godwin Arigbonu', role: 'Board Member', image: '/team9.png' },
     ],
   },
   {
     title: 'Management Team',
     members: [
-      { name: 'Godwin Arigbonu', role: 'MD Techspecialist Consulting', image: '/myGuy.png' },
-      { name: 'Joy Eboh Adah', role: 'Human Resources', image: '/kadir.png' },
-      { name: 'Olusola Afolabi', role: 'Team Lead, Technical Services', image: '/kadir.png' },
+      { name: 'Olusola Afolabi', role: 'MD Techspecialist Consulting', image: '/myGuy.png' },
+      { name: 'Victoria Ubi', role: 'Human Resources', image: '/team7.png' },
+      { name: 'Zainab Sanni', role: 'Team Lead, Technical Services', image: '/team8.png' },
       { name: 'Zainab Sanni', role: 'Team Lead, Cybersecurity', image: '/kadir.png' },
       { name: 'Godwin Arigbonu', role: 'MD Techspecialist Consulting', image: '/kadir.png' },
     ],
@@ -58,7 +58,7 @@ const TeamSection = () => {
       <div className="max-w-7xl mx-auto space-y-20">
         {teamData.map((group, idx) => (
           <div key={idx}>
-            <h2 className="text-center text-2xl font-semibold text-gray-800 mb-10">
+            <h2 className="text-center text-[30px] md:text-[40px] font-[600] font-sans text-gray-800 mb-10 text-[#3E3E3E]">
               {group.title}
             </h2>
 
@@ -73,8 +73,8 @@ const TeamSection = () => {
                       className="object-cover rounded"
                     />
                   </div>
-                  <p className="font-semibold text-sm text-gray-900">{member.name}</p>
-                  <p className="text-xs text-gray-600 mt-1">{member.role}</p>
+                  <p className="font-[600] font-sans text-[20px] md:text-[23px] text-gray-900">{member.name}</p>
+                  <p className="text-[17px] font-[400] font-sans text-[#3E3E3E] mt-1">{member.role}</p>
                 </div>
               ))}
             </div>

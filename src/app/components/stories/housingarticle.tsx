@@ -88,7 +88,7 @@ const HousingArticleSection = () => {
         {/* Tags */}
         <div className='border-b border-black pb-6'>
           <p className="text-xs text-[#3E3E3E] font-semibold uppercase mb-4">Tags</p>
-          <ul className="text-xs text-[#8F8F8F] list-disc list-inside space-y-1">
+          <ul className="text-[14px] md:text-[16px] text-[#8F8F8F] list-disc list-inside space-y-1 font-[500] font-sans">
             {tags.map((tag, idx) => (
               <li key={idx}>{tag}</li>
             ))}
@@ -96,17 +96,17 @@ const HousingArticleSection = () => {
         </div>
 
         {/* Form */}
-        <div className="bg-white text-black  space-y-2 pt-8  w-full md:w-[230px]">
-        <div className='bg-gray-100 mb-1 p-2'>
-          <p className="text-sm font-semibold text-[#3E3E3E]">Ready to talk?</p>
-          <p className="text-xs text-[#707070]">
+        <div className="bg-white text-black pt-8  w-full md:w-[230px]">
+        <div className='bg-gray-100 mb-1 py-2 px-6'>
+          <p className="text-[19px] md:text-[22px] font-[600] text-[#3E3E3E] font-sans">Ready to talk?</p>
+          <p className="text-[16px] font-[400] font-sans text-[#707070]">
             I want to talk to your specialist in the field of
             <span className="text-[#707070] underline">Digital Transformation</span>.
           </p>
           </div>
-          <form className="space-y-3 text-sm">
-            <div className='bg-[#F0F0F0] mb-1 p-2'>
-              <label className='text-xs text-[#3E3E3E]'>FULL NAME</label>
+          <form className="space-y-1">
+            <div className='bg-[#F0F0F0] mb-1 py-2 px-6'>
+              <label className='text-[8px] md:text-[10px] font-[600] font-sans text-[#3E3E3E]'>FULL NAME</label>
                 <input
               type="text"
               placeholder="Enter your name"
@@ -114,8 +114,8 @@ const HousingArticleSection = () => {
             />
             </div>
             
-            <div className='bg-gray-100 mb-1 p-2'>
-              <label className='text-xs text-[#3E3E3E]'>COMPANY/BUSINESS NAME</label>
+            <div className='bg-gray-100 mb-1 p-2 px-6'>
+              <label className='text-[8px] md:text-[10px] font-[600] font-sans text-[#3E3E3E]'>COMPANY/BUSINESS NAME</label>
             <input
               type="text"
               placeholder="Enter your name here"
@@ -123,8 +123,8 @@ const HousingArticleSection = () => {
             />
             </div>
 
-            <div className='bg-gray-100 mb-1 p-2'>
-              <label className='text-xs text-[#3E3E3E]'>BUSINESS EMAIL</label>
+            <div className='bg-gray-100 mb-1 p-2 px-6'>
+              <label className='text-[8px] md:text-[10px] font-[600] font-sans text-[#3E3E3E]'>BUSINESS EMAIL</label>
                             <input
               type="email"
               placeholder="Enter your email here"
@@ -132,8 +132,8 @@ const HousingArticleSection = () => {
             />
             </div>
 
-            <div className='bg-gray-100 mb-1 p-2'>
-              <label className='text-xs text-[#3E3E3E]'>PHONE NUMBER</label>
+            <div className='bg-gray-100 mb-1 py-2 px-6'>
+              <label className='text-[8px] md:text-[10px] font-[600] font-sans text-[#3E3E3E]'>PHONE NUMBER</label>
             <input
               type="tel"
               placeholder="Enter your phone number"
@@ -141,9 +141,9 @@ const HousingArticleSection = () => {
             />
             </div>
             
-            <div className='bg-gray-100 mb-1 p-2'>
+            <div className='bg-gray-100 mb-1 py-2 px-4'>
                 <label className="flex items-start gap-2 text-xs">
-              <input type="checkbox" className="mt-1 text-[#707070]" />
+              <input type="checkbox" className="mt-1 text-[#707070] text-[8px] md:text-[10px] font-[400] font-sans" />
               I would like to receive exciting communication regarding Techspecialist services.
             </label>
             </div>
@@ -152,7 +152,7 @@ const HousingArticleSection = () => {
             <div className=''>
                             <button
               type="submit"
-              className="w-full bg-orange-600 text-white py-2 rounded font-normal"
+              className="w-full bg-orange-600 text-white py-2 rounded font-[600] font-sans text-[10px] md:text-[11px]"
             >
               Contact Me
             </button>
@@ -163,8 +163,8 @@ const HousingArticleSection = () => {
       </aside>
 
       {/* RIGHT MAIN ARTICLE */}
-      <article className="lg:w-3/4 w-full" >
-        <p className="leading-relaxed mb-6 text-justify text-md text-[#3E3E3E]" >
+      <article className="lg:w-3/4 w-full text-[19px] font-[400] font-Poppins" >
+        <p className="leading-relaxed mb-6 text-justify text-[19px] text-[#3E3E3E] font-[400] font-Poppins" >
           {/* Paste your full article content here */}
           For decades, Nigerias housing sector has grappled with a silent but systemic crisis: the absence of reliable, centralized data. While the nations housing deficit continued to grow now estimated at over 25 million units, the ability to diagnose, plan, and respond effectively remained painfully limited. Government agencies lacked the insights to formulate evidence-based policies. Financial institutions were unable to de-risk housing investments confidently. Real estate developers operated in the dark. And for millions of Nigerians, the dream of affordable housing remained out of reach, obscured by data blind spots.
         As Nigerias population rapidly urbanizes with projections exceeding 295 million by 2050 this information gap was more than a bureaucratic inconvenience. It was a bottleneck threatening inclusive growth, investor confidence, and housing affordability nationwide.
@@ -178,17 +178,17 @@ const HousingArticleSection = () => {
         <h2 className="text-md font-bold mb-1 text-[#3E3E3E]">
           NMRCs Vision: Bridging the Data Divide
         </h2>
-        <p className="leading-relaxed mb-6 text-justify text-md text-[#3E3E3E]">
+        <p className="leading-relaxed mb-6 text-justify text-[#3E3E3E]">
           NMRCs Vision: Bridging the Data Divide
             At the center of this challenge stood the Nigeria Mortgage Refinance Company (NMRC), a key institution tasked with enhancing mortgage liquidity and promoting affordable housing finance in Nigeria. NMRC knew that without structured, credible data, its mandate would remain limited in impact. Housing finance could not flourish in opacity. The policies meant to guide investment couldnt take root without real-world visibility.
             Rather than resign to the constraints, NMRC took bold action. It envisioned a national housing intelligence platform, a place where policymakers, lenders, developers, and citizens could turn data into action, risk into opportunity, and planning into progress.
             Co-Creating the Housing Market Information Portal (HMIP)
         </p>
 
-        <h2 className="text-md font-bold text-[#3E3E3E] mb-1">
+        <h2 className=" font-bold text-[#3E3E3E] mb-1">
           NMRCs leadership spearheaded a multi-stakeholder collaboration...
         </h2>
-        <ul className='leading-relaxed mb-6 text-justify text-md text-[#3E3E3E]'>
+        <ul className='leading-relaxed mb-6 text-justify text-[#3E3E3E]'>
           <li>•	Techspecialist Consulting Limited (TCL) - the digital transformation partner</li>  
            <li>•	Federal Ministry of Works and Housing</li> 
             <li>•	National Bureau of Statistics</li>
@@ -201,32 +201,32 @@ const HousingArticleSection = () => {
             <li>•	A unified platform for government, private sector, and development institutions to access accurate data</li>
 </ul>
 
-        <h2 className="text-md font-bold text-[#3E3E3E] mb-1">
+        <h2 className=" font-bold text-[#3E3E3E] mb-1">
           The Role of Techspecialist Consulting Limited
         </h2>
-        <p className="leading-relaxed mb-6 text-justify text-md text-[#3E3E3E]">From concept to execution, Techspecialist Consulting Limited (TCL) played a pivotal role as the digital execution partner. With a deep understanding of national development needs and technical expertise in enterprise platforms, TCL translated NMRCs vision into a robust and scalable solution.</p>
+        <p className="leading-relaxed mb-6 text-justify text-[#3E3E3E]">From concept to execution, Techspecialist Consulting Limited (TCL) played a pivotal role as the digital execution partner. With a deep understanding of national development needs and technical expertise in enterprise platforms, TCL translated NMRCs vision into a robust and scalable solution.</p>
 
-        <h2 className="text-md font-bold text-[#3E3E3E] mb-1">TCL delivered:</h2>
-        <ul className="list-disc list-inside leading-relaxed mb-6 text-justify text-md text-[#3E3E3E]">
+        <h2 className="font-bold text-[#3E3E3E] mb-1">TCL delivered:</h2>
+        <ul className="list-disc list-inside leading-relaxed mb-6 text-justify text-[#3E3E3E]">
           <li>	An agile data architecture capable of integrating multiple datasets</li>
         <li>	User-centric interface design for policy, investment, and planning audiences</li>
         <li>	A secure, accessible platform hosted and managed in line with global standards
 Most importantly, TCL brought to the table a deep commitment to co-creation, working side by side with NMRCs technical and strategic teams to ensure that the solution wasnt just functional but transformational.</li>
         </ul>
 
-        <h2 className="text-md font-bold text-[#3E3E3E] mb-1">
+        <h2 className="font-bold text-[#3E3E3E] mb-1">
           From Insight to Impact: Real Stories, Real Results
         </h2>
-        <p className="leading-relaxed mb-6 text-justify text-md text-[#3E3E3E]">Since its launch, the HMIP has redefined how housing-related decisions are made in Nigeria. For the first time, stakeholders across the board have access to a single source of truth on housing data. Its impact is already tangible:</p>
+        <p className="leading-relaxed mb-6 text-justify text-[#3E3E3E]">Since its launch, the HMIP has redefined how housing-related decisions are made in Nigeria. For the first time, stakeholders across the board have access to a single source of truth on housing data. Its impact is already tangible:</p>
           
-          <ul className='leading-relaxed mb-6 text-justify text-md text-[#3E3E3E]'>
+          <ul className='leading-relaxed mb-6 text-justify text-[#3E3E3E]'>
 <li>•	Financial institutions are using HMIP insights to evaluate mortgage financing opportunities with greater confidence.</li>
 <li>•	Government agencies now have the tools to develop location-specific housing policies grounded in evidence.</li>
 <li>•	Developers are identifying demand clusters and aligning supply accordingly.</li>
 <li>•	Urban planners are incorporating real-time affordability indices into project design.
 One NMRC executive captured it best:</li>
 </ul>
-<p className='leading-relaxed mb-6 text-justify text-md text-[#3E3E3E]'>“We have moved from asking questions in the dark to making decisions in the light.”
+<p className='leading-relaxed mb-6 text-justify text-[#3E3E3E]'>“We have moved from asking questions in the dark to making decisions in the light.”
 Looking Ahead: Building a Housing Future Backed by Intelligence
 The Housing Market Information Portal is more than a digital dashboard, it is a strategic instrument for national development. It proves that when public institutions like NMRC combine vision with innovation and collaborate across sectors, real change happens.
 At Techspecialist Consulting Limited, we are proud to have walked this journey with NMRC and its partners. Our shared success in building HMIP exemplifies whats possible when data, technology, and purpose align.

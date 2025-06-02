@@ -25,7 +25,7 @@ export default function EconomicGrowth() {
       <div className="absolute inset-0 bg-black/30" /> */}
 
       {/* Content Box */}
-      <div className="absolute top-14 left-5 sm:left-10 bg-gradient-to-r from-black/80 via-black/60 to-transparent text-white max-w-xl p-2 md:mt-14 rounded-md shadow-lg border-l-4 border-[#F06322]" data-aos="fade-up"
+      <div className="absolute top-14 left-5 sm:left-10 bg-gradient-to-r from-black/80 via-black/60 to-transparent text-white max-w-xl p-4 md:mt-14 rounded-md shadow-lg border-l-4 border-[#F06322]" data-aos="fade-up"
      data-aos-duration="1000">
         <p className="text-xs font-lg uppercase text-gray-300 mb-2 pt-2">Public Sector</p>
         <h2 className="text-[45px] font-[600] font-sans leading-snug mb-4">
