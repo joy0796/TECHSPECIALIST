@@ -28,7 +28,7 @@ const teamData: TeamGroup[] = [
   {
     title: 'Management Team',
     members: [
-      { name: 'Godwin Arigbonu', role: 'MD Techspecialist Consulting', image: '/kadir.png' },
+      { name: 'Godwin Arigbonu', role: 'MD Techspecialist Consulting', image: '/myGuy.png' },
       { name: 'Joy Eboh Adah', role: 'Human Resources', image: '/kadir.png' },
       { name: 'Olusola Afolabi', role: 'Team Lead, Technical Services', image: '/kadir.png' },
       { name: 'Zainab Sanni', role: 'Team Lead, Cybersecurity', image: '/kadir.png' },
@@ -65,7 +65,7 @@ const TeamSection = () => {
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 place-items-center">
               {group.members.map((member, i) => (
                 <div key={i} className="text-center">
-                  <div className="relative w-48 h-52 mx-auto mb-4 rounded overflow-hidden">
+                  <div className="relative w-48 h-60 mx-auto mb-4 rounded overflow-hidden border border-gray-200 shadow-sm">  
                     <Image
                       src={member.image}
                       alt={member.name}
