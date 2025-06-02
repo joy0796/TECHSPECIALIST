@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const isHomeStyle = ["/", "/contact", "/subscribe"].includes(pathname);
   const isScrolledPast = isScrolled;
-  const isNonHomeStyle = !isHomeStyle;
+  // const isNonHomeStyle = !isHomeStyle;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,24 +25,23 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Text color logic:
-  // Black text always on Home, Contact, Subscribe pages
-  // Other pages: white at top, black on scroll
   const textColor = isHomeStyle
     ? "text-black"
     : isScrolledPast
     ? "text-black"
     : "text-white";
 
-  // Border color: dark border on scroll or on Home-style pages; white border otherwise
   const borderColor =
     isScrolledPast || isHomeStyle ? "border-[#3E3E3E]" : "border-white";
 
-  // Logo: logo.png on scroll or Home-style pages; logo2.png at top on other pages
-  const logoSrc =
-    isScrolledPast || isHomeStyle ? "/logo.png" : "/logo2.png";
+  const logoSrc = isScrolledPast || isHomeStyle ? "/logo.png" : "/logo2.png";
 
   const iconColor = textColor;
+
+  // Function to check if a link is active
+  const isActive = (href: string) => {
+    return pathname === href ? "text-[#ED5D25]" : "";
+  };
 
   return (
     <nav
@@ -55,7 +54,7 @@ const Navbar = () => {
           className={`flex justify-between items-center h-16 transition-colors duration-300 ${textColor}`}
         >
           <Link href="/" className="flex items-center space-x-2">
-            {isNonHomeStyle && <MenuIcon className={iconColor} />}
+            {/* {isNonHomeStyle && <MenuIcon className={iconColor} />} */}
             <Image
               src={logoSrc}
               alt="TCL Logo"
@@ -66,11 +65,21 @@ const Navbar = () => {
           </Link>
 
           <div className="hidden md:flex space-x-10 text-[19px] font-sans font-[600]">
-            <Link href="/services">Services</Link>
-            <Link href="/about">About</Link>
-            <Link href="/trends">Trends & Insights</Link>
-            <Link href="/subscribe">Subscribe</Link>
-            <Link href="/contact">Contact</Link>
+            <Link href="/services" className={`${isActive("/services")}`}>
+              Services
+            </Link>
+            <Link href="/about" className={`${isActive("/about")}`}>
+              About
+            </Link>
+            <Link href="/trends" className={`${isActive("/trends")}`}>
+              Trends & Insights
+            </Link>
+            <Link href="/subscribe" className={`${isActive("/subscribe")}`}>
+              Subscribe
+            </Link>
+            <Link href="/contact" className={`${isActive("/contact")}`}>
+              Contact
+            </Link>
           </div>
 
           <div className="md:hidden flex items-center rounded-lg overflow-hidden transition-all duration-300 ease-in-out">
@@ -96,19 +105,39 @@ const Navbar = () => {
         }`}
       >
         <div className="px-4 py-3 space-y-2 text-sm font-bold">
-          <Link href="/services" className="block">
+          <Link
+            href="/services"
+            className={`block ${isActive("/services")}`}
+            onClick={() => setMobileOpen(false)}
+          >
             Services
           </Link>
-          <Link href="/about" className="block">
+          <Link
+            href="/about"
+            className={`block ${isActive("/about")}`}
+            onClick={() => setMobileOpen(false)}
+          >
             About
           </Link>
-          <Link href="/trends" className="block">
+          <Link
+            href="/trends"
+            className={`block ${isActive("/trends")}`}
+            onClick={() => setMobileOpen(false)}
+          >
             Trends & Insights
           </Link>
-          <Link href="/subscribe" className="block">
+          <Link
+            href="/subscribe"
+            className={`block ${isActive("/subscribe")}`}
+            onClick={() => setMobileOpen(false)}
+          >
             Subscribe
           </Link>
-          <Link href="/contact" className="block">
+          <Link
+            href="/contact"
+            className={`block ${isActive("/contact")}`}
+            onClick={() => setMobileOpen(false)}
+          >
             Contact
           </Link>
         </div>

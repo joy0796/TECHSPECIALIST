@@ -62,10 +62,10 @@ const TeamSection = () => {
               {group.title}
             </h2>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 place-items-center">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 place-items-center">
               {group.members.map((member, i) => (
                 <div key={i} className="text-center">
-                  <div className="relative w-40 h-48 mx-auto mb-4 rounded overflow-hidden mx-auto">
+                  <div className="relative w-48 h-52 mx-auto mb-4 rounded overflow-hidden">
                     <Image
                       src={member.image}
                       alt={member.name}
