@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function ChairmanMessage() {
   return (
     <section className="bg-white text-black py-12 px-4 md:px-6">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-2">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-6">
         {/* Image */}
         <div className="w-full md:w-1/4 h-[300px] flex-shrink-0 ">
           <Image
@@ -50,7 +50,7 @@ export default function ChairmanMessage() {
 
         <div className='mt-auto whitespace-nowrap'>
             <Link href="/team">
-            <button className="bg-[#F05A28] text-white font-[500] px-4 py-2 rounded hover:bg-orange-600 transition text-[19px] font-Roboto">
+            <button className="bg-[#F05A28] text-white font-[500] px-6 py-4 hover:bg-orange-600 transition text-[19px] font-Roboto">
               Meet the team
             </button>
             </Link>
