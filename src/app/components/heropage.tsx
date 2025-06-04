@@ -16,7 +16,7 @@ import {
   useTheme,
 } from "@mui/material";
 
-import "../../../src/app/globals.css"; 
+import "../../../src/app/globals.css";
 
 interface TabData {
   label: string;
@@ -59,7 +59,7 @@ const HeroSection = ({
       <Box className="flex flex-col-reverse lg:flex-row">
         <Box className="w-full md:ml-10  lg:mt-8 space-y-4 text-center md:text-left">
           <div
-            className="font-black text:[16px] md:text-[23px] font-Roboto uppercase"
+            className="font-black text:[16px] md:text-[23px] font-sans uppercase"
             style={{ color: headingColor }}
           >
             {activeTab.label}
@@ -69,15 +69,14 @@ const HeroSection = ({
             sx={{
               fontWeight: 600,
               fontSize: {
-      xs: '30px', 
-      sm: '40px',
-      md: '63px', 
-    },
+                xs: "30px",
+                sm: "40px",
+                md: "63px",
+              },
               color: backgroundTextColor,
-              whiteSpace: 'pre-line' 
+              whiteSpace: "pre-line",
             }}
-            className="font-sans "
-       
+            className="font-custom"
           >
             {activeTab.heading}
           </Typography>
@@ -95,7 +94,7 @@ const HeroSection = ({
               <Button
                 variant="outlined"
                 sx={{
-                  borderRadius: '1rem',
+                  borderRadius: "1rem",
                   borderColor: isWhiteText ? "#fff" : "#000",
                   color: isWhiteText ? "#fff" : "#000",
                   padding: "1.5rem 2rem",
@@ -114,7 +113,7 @@ const HeroSection = ({
               <Button
                 variant="contained"
                 sx={{
-                  borderRadius: '1rem',
+                  borderRadius: "1rem",
                   backgroundColor: isWhiteText ? "#fff" : "#3E3E3E",
                   color: isWhiteText ? "#000" : "#fff",
                   padding: "1.5rem 4.5rem",
@@ -186,7 +185,7 @@ const HeroSection = ({
                 mr: "50px",
                 mt: "160px",
 
-                // marginRight: index !== tabs.length - 1 ? 4 : 0, 
+                // marginRight: index !== tabs.length - 1 ? 4 : 0,
               }}
             />
           );
