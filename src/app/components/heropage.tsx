@@ -1,4 +1,3 @@
-// components/HeroSection.tsx
 "use client";
 
 import { useEffect } from "react";
@@ -54,12 +53,12 @@ const HeroSection = ({
   return (
     <Box
       component="section"
-      className="w-full pt-28 md:pt-[16rem] pb-12 relative z-10 md:pl-4 px-2"
+      className="w-full pt-28 md:pt-[10rem] pb-12 relative z-10 md:pl-4 px-2"
     >
       <Box className="flex flex-col-reverse lg:flex-row">
-        <Box className="w-full md:ml-10  lg:mt-8 space-y-4 text-center md:text-left">
+        <Box className="w-full md:ml-10  lg:mt-[20px]  text-center md:text-left">
           <div
-            className="font-black text:[16px] md:text-[23px] font-sans uppercase"
+            className="font-black text:[16px] md:text-[23px] font-sans uppercase mb-[10px]"
             style={{ color: headingColor }}
           >
             {activeTab.label}
@@ -74,9 +73,13 @@ const HeroSection = ({
                 md: "63px",
               },
               color: backgroundTextColor,
+              lineHeight: "115%",
+              fontFamily: "WF Visual Sans, sans-serif",
+              //  maxWidth: "800px",
+              paddingRight: isMobile ? "0" : "16rem",
               whiteSpace: "pre-line",
             }}
-            className="font-custom"
+            className=""
           >
             {activeTab.heading}
           </Typography>
@@ -99,6 +102,8 @@ const HeroSection = ({
                   color: isWhiteText ? "#fff" : "#000",
                   padding: "1.5rem 2rem",
                   fontSize: "16px",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: "500",
                   "&:hover": {
                     backgroundColor: isWhiteText ? "#fff" : "#000",
                     color: isWhiteText ? "#000" : "#fff",
@@ -118,6 +123,8 @@ const HeroSection = ({
                   color: isWhiteText ? "#000" : "#fff",
                   padding: "1.5rem 4.5rem",
                   fontSize: "16px",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: "500",
 
                   "&:hover": {
                     backgroundColor: isWhiteText ? "#f3f3f3" : "#2f2f2f",
@@ -130,69 +137,77 @@ const HeroSection = ({
           </Stack>
         </Box>
       </Box>
+      <div className=" -mt-10">
+        <Tabs
+          value={activeIndex}
+          onChange={(e, index) => onTabClick(index)}
+          variant="standard"
+          TabIndicatorProps={{ style: { display: "none" } }}
+          sx={{
+            px: 4,
+          }}
+        >
+          {tabs.map((tab, index) => {
+            const isActive = activeIndex === index;
 
-      <Tabs
-        value={activeIndex}
-        onChange={(e, index) => onTabClick(index)}
-        variant="standard"
-        TabIndicatorProps={{ style: { display: "none" } }}
-        sx={{
-          px: 4,
-        }}
-      >
-        {tabs.map((tab, index) => {
-          const isActive = activeIndex === index;
-
-          return (
-            <Tab
-              key={tab.label}
-              disableRipple
-              label={
-                <Box
-                  sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                  }}
-                >
-                  {isActive && (
-                    <Box
-                      sx={{
-                        height: "4px",
-                        backgroundColor: "#F97316",
-                        borderRadius: "2px 2px 0 0",
-                        width: "100%",
-                        mb: "6px",
-                      }}
-                    />
-                  )}
-                  <Typography
+            return (
+              <Tab
+                key={tab.label}
+                disableRipple
+                label={
+                  <Box
                     sx={{
-                      fontWeight: 900,
-                      color: isActive ? "#3E3E3E" : "#979595",
-                      textTransform: "none",
-                      fontSize: "27px",
-                      fontFamily: "font-sans",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
                     }}
                   >
-                    {tab.label}
-                  </Typography>
-                </Box>
-              }
-              sx={{
-                minWidth: 0,
-                padding: "0 8px",
-                mr: "50px",
-                mt: "160px",
+                    {isActive && (
+                      <Box
+                        sx={{
+                          height: "6px",
+                          backgroundColor: "#F97316",
+                          borderRadius: "2px 2px 0 0",
+                          width: "100%",
+                          mb: "6px",
+                        }}
+                      />
+                    )}
+                    <Typography
+                      sx={{
+                        fontWeight: 900,
+                        color: isActive ? "#3E3E3E" : "#979595",
+                        textTransform: "none",
+                        fontSize: "27px",
+                        fontFamily: "Roboto, sans-serif",
+                      }}
+                    >
+                      {tab.label}
+                    </Typography>
+                  </Box>
+                }
+                sx={{
+                  minWidth: 0,
+                  padding: "0 8px",
+                  mr: "50px",
+                  mt: "160px",
 
-                // marginRight: index !== tabs.length - 1 ? 4 : 0,
-              }}
-            />
-          );
-        })}
-      </Tabs>
+                  // marginRight: index !== tabs.length - 1 ? 4 : 0,
+                }}
+              />
+            );
+          })}
+        </Tabs>
+      </div>
     </Box>
   );
 };
 
 export default HeroSection;
+
+
+
+
+
+
+

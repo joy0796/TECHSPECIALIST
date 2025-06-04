@@ -37,7 +37,7 @@ export default function DigitalTransformationSection() {
   const handleReset = () => setStep(1);
 
   return (
-    <section className="flex  w-[95%] flex-col items-center justify-between  pt-12 pb-24 gap-10 mx-auto">
+    <section className="flex  w-[95%] flex-col items-center justify-between  pt-12 pb-24 gap-10 mx-auto px-4 md:px-10">
       {step === 1 && (
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full">
           <div
@@ -53,17 +53,17 @@ export default function DigitalTransformationSection() {
               Let us help you begin your digital transformation journey with this free assessment
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-start gap-10 text-gray-800 w-full mb-10">
-              <h2 className="text-xl font-semibold mb-4 sm:mb-0">
+              <h2 className="font-[20px] md:text-[24px] font-[700] mb-4 sm:mb-0 font-Poppins text-[#3E3E3E]">
                 1. <span className="font-bold">What is your sector?</span>
               </h2>
-              <p className="text-sm text-gray-500">Step 1 of 3</p>
+              <p className="text-[14px] md:text-[16px] text-gray-500 font-[500] font-sans">Step 1 of 3</p>
             </div>
             <div className="mt-6 flex flex-col sm:flex-row items-center justify-start gap-10 md:gap-24">
               {sectors.map((sector) => (
                 <button
                   key={sector}
                   onClick={() => sector === "Public Sector" && setStep(2)}
-                  className="px-12 py-4 border-2 border-gray-300 rounded-xl text-gray-800 font-medium hover:bg-[#ED5D25] hover:text-white transition whitespace-nowrap"
+                  className="px-12 py-4 border-2 border-gray-300 rounded-xl text-gray-800 font-[500] hover:bg-[#ED5D25] hover:text-white transition whitespace-nowrap text-[18px] md:text-[20px] font-inter"
                 >
                   {sector}
                 </button>
@@ -98,13 +98,13 @@ export default function DigitalTransformationSection() {
             
           </div>
           <p className="text-sm text-gray-500 mb-6 font-semibold">Step 2 of 3</p>
-          <button onClick={handleReset} className="text-orange-500 font-semibold ml-auto text-lg mb-10">Reset</button>
+          <button onClick={handleReset} className="text-[#ED5D25] font-semibold ml-auto text-lg mb-10">Reset</button>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14">
             {industries.map((industry) => (
               <div
                 key={industry}
-                className="shadow-lg rounded-lg py-8 px-4 cursor-pointer hover:shadow-lg transition border-t-4 border-orange-500 text-[#3E3E3E] hover:bg-orange-500 hover:text-white"
+                className="shadow-lg rounded-lg py-8 px-4 cursor-pointer hover:shadow-lg transition border-t-4 border-[#ED5D25] text-[#3E3E3E] hover:bg-[#ED5D25] hover:text-white"
                 onClick={() => setStep(3)}
               >
                 <p className="font-semibold text-lg">{industry}</p>
@@ -123,7 +123,7 @@ export default function DigitalTransformationSection() {
             
           </div>
           <p className="text-sm text-gray-500 mb-6 font-semibold">Step 2 of 3</p>
-          <button onClick={handleReset} className="text-orange-500 font-semibold ml-auto text-lg mb-10">Reset</button>
+          <button onClick={handleReset} className="text-[#ED5D25] font-semibold ml-auto text-lg mb-10">Reset</button>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-[#3E3E3E] ">
             {cards.map((card, index) => (
@@ -136,7 +136,7 @@ export default function DigitalTransformationSection() {
                   <p className="text-[#979595]">{card.content}</p>
                 </div>
                 {index >= 0 && (
-                  <button className="mt-4 px-2 py-1 border border-orange-500 text-orange-500 bg-white hover:bg-orange-50 transition w-full md:w-[110px] ml-auto">
+                  <button className="mt-4 px-2 py-1 border border-orange-500 text-[#ED5D25] bg-white hover:bg-orange-50 transition w-full md:w-[110px] ml-auto">
                     See More
                   </button>
                 )}

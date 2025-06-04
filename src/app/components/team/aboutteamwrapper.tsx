@@ -1,11 +1,12 @@
 import Navbar from "../navbar";
 import Team from "./aboutteam";
 import Image from "next/image";
+import Link from "next/link";
 
 const TeamWrapper = () => {
   return (
     <>
-    <div className="relative w-full h-auto overflow-hidden">
+    <div className="relative w-full h-[100vh] overflow-hidden pt-16">
     <div
       className="absolute inset-0  bg-cover bg-no-repeat"
       style={{ backgroundImage: "url('/teamimg.png')",
@@ -23,15 +24,19 @@ const TeamWrapper = () => {
       />
       <Team/>
       </div>
-      <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 w-8 h-8 bg-orange-600 rounded-full flex justify-center ">
-              <Image
-                src="/Vector.png"
-                alt="Orange Icon"
-                width={16}
-                height={16}
-                className="object-contain"
-              />
-            </div>
+       
+
+       <Link href="/contact">
+        <div className="fixed bottom-4 right-4 sm:bottom-36 sm:right-24 w-8 h-8 bg-orange-600 rounded-full flex justify-center items-center z-50">
+          <Image
+            src="/Vector.png"
+            alt="Orange Icon"
+            width={16}
+            height={16}
+            className="object-contain"
+          />
+        </div>
+      </Link>
     </div>
     </>
   );

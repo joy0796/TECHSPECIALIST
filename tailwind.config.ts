@@ -40,7 +40,7 @@ export default {
         sans: ['Roboto', 'sans-serif'],
         heading: ['"Playfair Display"', 'serif'],
         mono: ['"Fira Code"', 'monospace'],
-        custom: ['WF Visual Sans', 'sans-serif'],
+        custom: ['"WF Visual Sans"', 'sans-serif'],
       poppins: ['Poppins', 'sans-serif'],
       inter: ['Inter', 'sans-serif'],
       },

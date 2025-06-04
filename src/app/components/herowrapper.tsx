@@ -10,15 +10,15 @@ import Link from "next/link";
 const tabs = [
   {
     label: "Artificial Intelligence",
-    image: "/guy.jpeg",
+    image: "/blackman.png",
     heading:
-      "Cross-Sectoral Collaboration:\nAI Partnerships Driving Nigerias\nDigital Economy",
+      "Cross-Sectoral Collaboration: \nAI Partnerships Driving Nigerias \n Digital Economy",
   },
   {
     label: "Digital Transformation",
-    image: "/digitalimage.png",
+    image: "/hey.png",
     heading:
-      "Digital Transformation in Nigerian SMEs: Barriers, Breakthroughs, and\n Blueprints",
+      "Digital Transformation in \nNigerian SMEs: Barriers, \nBreakthroughs, and\n Blueprints",
   },
   {
     label: "Information Security",
@@ -30,7 +30,7 @@ const tabs = [
     label: "Digital Infrastructure",
     image: "/goodnotes.png",
     heading:
-      "Bridging Budget and innovation:\n Sustainable IT management for Nigeria’s\n Digital future.",
+      "Bridging Budget and innovation: Sustainable IT management for Nigeria’s Digital future.",
   },
 ];
 
@@ -60,16 +60,20 @@ const HeroWrapper = () => {
   const activeTab = tabs[activeIndex];
 
   return (
-    <div className="relative w-full h-auto">
+    <div className="">
       {/* Background Image */}
       <div
-        className={`absolute   inset-0 bg-cover bg-no-repeat transition-all duration-700 ${
+        className={`absolute   inset-0 bg-cover bg-no-repeat h-[30%] transition-all duration-700 ${
           activeTab.label === "Artificial Intelligence"
         }`}
         style={{
           backgroundImage: `url('${activeTab.image}')`,
-          backgroundPosition: "center top 0px",
+          backgroundPosition: "center top 2px",
           backgroundSize: "cover",
+          // backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          // backgroundSize: "cover",
+          height: "auto",
         }}
       />
 
@@ -99,12 +103,12 @@ const HeroWrapper = () => {
       </div>
 
       <Link href="/contact">
-        <div className="fixed bottom-4 right-4 sm:bottom-36 sm:right-24 w-8 h-8 bg-orange-600 rounded-full flex justify-center items-center z-50">
+        <div className="fixed bottom-4 right-4 sm:bottom-36 sm:right-24 w-12 h-12 bg-orange-600 rounded-full flex justify-center items-center z-50">
           <Image
             src="/Vector.png"
             alt="Orange Icon"
-            width={16}
-            height={16}
+            width={30}
+            height={30}
             className="object-contain"
           />
         </div>

@@ -13,21 +13,21 @@ export default function Section() {
       }, []);
   return (
     <section className="w-full bg-white pl-4 py-0 md:py-0 border-b border-red-400">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-28 md:pt-16">
         
         <div data-aos="flip-right"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
-          <p className="text-xs font-semibold text-[#3E3E3E] uppercase mb-2">
+          <p className="text-[14px] md:text-[16px] font-[900] text-[#3E3E3E] uppercase mb-2 font-Roboto">
             Artificial Intelligence
           </p>
-          <h1 className="text-3xl font-semibold text-[#3E3E3E] leading-snug mb-4">
+          <h1 className="text-[30px] md:text-[57px] font-[600] font-sans text-[#3E3E3E] leading-snug mb-4">
             Cross-sectional Collaboration: AI Partnerships driving Nigerias Digital Economy.
           </h1>
-          <p className="text-sm text-[#979595] mb-2">
+          <p className="text-[18px] md:text[20px] font-[400] font-Roboto text-[#979595] mb-2">
             By Suleman Olalomi, Danielle Udochi, Victoria Ubi
           </p>
-          <p className="text-sm text-[#979595] mb-6">5 min read.</p>
+          <p className="text-[18px] md:text[20px] font-[400] font-Roboto text-[#979595] mb-6">5 min read.</p>
 
           {/* Icons */}
           <div className="flex items-center gap-4 text-[#979595]">

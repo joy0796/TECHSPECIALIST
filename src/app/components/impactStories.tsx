@@ -46,30 +46,29 @@ export default function ImpactStories() {
         }, []);
 
   return (
-    <section className="bg-white text-black py-10 md:w-[95%] mx-auto " data-aos="zoom-in"
+    <section className="bg-white text-black py-10 md:w-[95%] mx-auto px-4 md:px-[10]" data-aos="zoom-in"
               data-aos-duration="1000">
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-center" >
-        <div className="w-full lg:w-[60%] h-auto " >
+      <div className="flex flex-col md:flex-row gap-6 md:gap-4 items-start" >
+        <div className="w-full lg:w-[60%] h-[400px] md:h-[553px] relative" >
           <Image
             src="/imactimg1.png" 
             alt="Speaker"
-            width={400}
-            height={1000}
-            className="rounded-md w-full object-cover"
+            fill
+            className=" w-full object-cover"
           />
         </div>
         <div className="px-2 w-full space-y-2" >
-          <h2 className="text-2xl md:text-[40px] font-[600] text-black font-custom pb-4" >
+          <h2 className="text-2xl md:text-[40px] font-[600] text-[#3E3E3E] font-custom pb-4" >
             Our Impact stories
           </h2>
-          <p className="text-[#666666] text-[19px] font-poppins pb-4">
+          <p className="text-[#666666] text-[19px] font-poppins pb-4 font-[400]">
             Over a wide range of sectors, here is how we have been able to make an impact.
           </p>
           <div className="space-y-6 flex flex-col">
             {stories.map((story) => (
               <Link key={story.id} href={story.link}>
-              <div key={story.id} className="flex gap-8 items-center">
-                <div className="min-w-[100px] h-[100px] relative">
+              <div key={story.id} className="flex gap-4 md:gap-8 items-center">
+                <div className="min-w-[100px] h-[100px] md:min-w-[135px] md:h-[132px] relative">
                   <Image
                     src={story.image}
                     alt={story.title}
@@ -78,8 +77,8 @@ export default function ImpactStories() {
                   />
                 </div>
                 <div>
-                  <p className="text-[16px] text-[#979595]  mt-2 mb-2 font-[sans]">{story.sector}</p>
-                  <p className="text-[23px] font-custom text-[#3E3E3E] font-[600]">{story.title}</p>
+                  <p className="text-[16px] text-[#979595]  mt-2 mb-2 font-sans font-[500]">{story.sector}</p>
+                  <p className="text-[18px] md:text-[23px] font-custom text-[#3E3E3E] font-[600] leading-[130%]">{story.title}</p>
                 </div>
               </div>
               </Link>

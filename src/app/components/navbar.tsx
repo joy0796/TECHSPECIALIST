@@ -12,9 +12,16 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
-  const isHomeStyle = ["/", "/contact", "/subscribe"].includes(pathname);
-  const isScrolledPast = isScrolled;
-  // const isNonHomeStyle = !isHomeStyle;
+  const isHomeStyle = [
+    "/",
+    "/contact",
+    "/subscribe",
+    
+  ].includes(pathname);
+
+  const isCaseStudyPage = ["/casestudy1", "/casestudy2", "/casestudy3"].includes(
+    pathname
+  );
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +31,8 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const isScrolledPast = isScrolled;
 
   const textColor = isHomeStyle
     ? "text-black"
@@ -38,7 +47,6 @@ const Navbar = () => {
 
   const iconColor = textColor;
 
-  // Function to check if a link is active
   const isActive = (href: string) => {
     return pathname === href ? "text-[#ED5D25]" : "";
   };
@@ -46,7 +54,11 @@ const Navbar = () => {
   return (
     <nav
       className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 border-b ${borderColor} ${
-        isScrolledPast ? "bg-white shadow-md" : "bg-transparent"
+        isCaseStudyPage
+          ? "bg-blue-500"
+          : isScrolledPast
+          ? "bg-white shadow-md"
+          : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -54,7 +66,6 @@ const Navbar = () => {
           className={`flex justify-between items-center h-16 transition-colors duration-300 ${textColor}`}
         >
           <Link href="/" className="flex items-center space-x-2">
-            {/* {isNonHomeStyle && <MenuIcon className={iconColor} />} */}
             <Image
               src={logoSrc}
               alt="TCL Logo"
@@ -64,20 +75,20 @@ const Navbar = () => {
             />
           </Link>
 
-          <div className="hidden md:flex space-x-10 text-[19px] font-sans font-[600]">
-            <Link href="/services" className={`${isActive("/services")}`}>
+          <div className="hidden md:flex space-x-10 text-[19px]  font-[600]">
+            <Link href="/services" className={`${isActive("/services")} font-custom`}>
               Services
             </Link>
-            <Link href="/about" className={`${isActive("/about")}`}>
+            <Link href="/about" className={`${isActive("/about")} font-custom`}>
               About
             </Link>
-            <Link href="/trends" className={`${isActive("/trends")}`}>
+            <Link href="/trends" className={`${isActive("/trends")} font-custom`}>
               Trends & Insights
             </Link>
-            <Link href="/subscribe" className={`${isActive("/subscribe")}`}>
+            <Link href="/subscribe" className={`${isActive("/subscribe")} font-custom`}>
               Subscribe
             </Link>
-            <Link href="/contact" className={`${isActive("/contact")}`}>
+            <Link href="/contact" className={`${isActive("/contact")} font-custom`}>
               Contact
             </Link>
           </div>
@@ -99,7 +110,9 @@ const Navbar = () => {
         className={`md:hidden absolute w-full top-16 left-0 z-40 transition-all duration-500 ${
           mobileOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         } overflow-hidden ${
-          isScrolledPast || isHomeStyle
+          isCaseStudyPage
+            ? "bg-blue-500 text-white"
+            : isScrolledPast || isHomeStyle
             ? "bg-white text-black"
             : "bg-black text-white"
         }`}
