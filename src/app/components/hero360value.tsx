@@ -10,7 +10,7 @@ export default function Hero360Value() {
         </p>
 
         <Link href="/about">
-        <button className="border border-white px-8 py-4 text-white text-[19px] font-medium hover:bg-white hover:text-blue-600 transition-all duration-300">
+        <button className="border border-white px-8 py-4 text-white text-[19px] font-[500] hover:bg-white hover:text-blue-600 transition-all duration-300 font-sans">
           Read More
         </button>
         </Link>

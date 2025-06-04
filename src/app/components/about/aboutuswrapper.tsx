@@ -5,7 +5,7 @@ import Image from "next/image";
 const AboutusWrapper = () => {
   return (
     <>
-    <div className="relative w-full h-[100vh] overflow-hidden">
+    <div className="relative w-full h-[100vh] overflow-hidden pt-16">
     <div
       className="absolute inset-0 bg-cover bg-no-repeat"
       style={{ backgroundImage: "url('/aboutimg.png')",

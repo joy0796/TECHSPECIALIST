@@ -12,7 +12,7 @@ const tabs = [
     label: "Artificial Intelligence",
     image: "/guy.jpeg",
     heading:
-      "Cross-Sectoral Collaboration:\nAI Partnerships Driving Nigerias\nDigital Economy",
+      "Cross-Sectoral Collaboration: AI Partnerships Driving Nigerias Digital Economy",
   },
   {
     label: "Digital Transformation",
@@ -24,13 +24,13 @@ const tabs = [
     label: "Information Security",
     image: "/female.png",
     heading:
-      " When Hackers come for \nGovernment: A review of\n cyberattacks on Nigerian\n public institutions.",
+      " When Hackers come for Government: A review of cyberattacks on Nigerian public institutions.",
   },
   {
     label: "Digital Infrastructure",
     image: "/goodnotes.png",
     heading:
-      "Bridging Budget and innovation:\n Sustainable IT management for Nigeria’s\n Digital future.",
+      "Bridging Budget and innovation: Sustainable IT management for Nigeria’s Digital future.",
   },
 ];
 
@@ -60,7 +60,7 @@ const HeroWrapper = () => {
   const activeTab = tabs[activeIndex];
 
   return (
-    <div className="relative w-full h-auto">
+    <div className="relative w-full h-fit">
       {/* Background Image */}
       <div
         className={`absolute   inset-0 bg-cover bg-no-repeat transition-all duration-700 ${

@@ -41,7 +41,7 @@ const findings: Finding[] = [
     title: "Cross-Sectoral Collaboration: AI Partnerships Driving Nigeria's Digital Economy",
     category: 'Artificial Intelligence',
     type: 'Case Study',
-    image: '/heroimage.jpg',
+    image: '/blackguy.png',
     link: '/casestudy2',
   },
 ];
@@ -75,9 +75,9 @@ export default function RecentFindings({ heading = 'Our most recent findings', b
      
             >
               <img src={item.image} alt={item.title} className="w-full h-56 object-cover" />
-              <div className="p-2  flex-1 flex flex-col justify-between">
+              <div className="p-2  flex-1 flex flex-col justify-between mt-1">
                 <div>
-                  <h3 className="font-[600] font-custom text-[19px] mb-2 text-[#3E3E3E] ">{item.title}</h3>
+                  <h3 className="font-[600] font-custom text-[19px] mb-2 text-[#3E3E3E] leading-[100%]">{item.title}</h3>
                   {/* <p className="text-[16px] text-gray-600 mb-1">{item.category}</p> */}
                 </div>
                 <p className="text-[16px] font-poppins font-[400] text-[#3E3E3E] mb-2">{item.category}</p> 
@@ -91,7 +91,7 @@ export default function RecentFindings({ heading = 'Our most recent findings', b
 
         {showButton && (
         <div className="text-center mt-10">
-          <button className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-6 py-4 transition-colors">
+          <button className="border border-[#ED5D25] text-[#ED5D25] hover:bg-[#ED5D25] hover:text-white px-6 py-4 transition-colors text-[19px] font-[500] font-sans">
             See all findings
           </button>
         </div>

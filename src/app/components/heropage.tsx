@@ -59,7 +59,7 @@ const HeroSection = ({
       <Box className="flex flex-col-reverse lg:flex-row">
         <Box className="w-full md:ml-10  lg:mt-8 space-y-4 text-center md:text-left">
           <div
-            className="font-black text:[16px] md:text-[23px] font-Roboto uppercase"
+            className="font-black text:[16px] md:text-[23px] font-sans uppercase"
             style={{ color: headingColor }}
           >
             {activeTab.label}
@@ -73,10 +73,13 @@ const HeroSection = ({
       sm: '40px',
       md: '63px', 
     },
+        fontFamily: 'WF Visual Sans, sans-serif',
               color: backgroundTextColor,
-              whiteSpace: 'pre-line' 
+              whiteSpace: 'pre-line',
+              lineHeight: '100%',
+              maxWidth: '950px',
             }}
-            className="font-sans "
+        
        
           >
             {activeTab.heading}
@@ -100,10 +103,13 @@ const HeroSection = ({
                   color: isWhiteText ? "#fff" : "#000",
                   padding: "1.5rem 2rem",
                   fontSize: "16px",
+                  fontFamily: 'Inter, sans-serif',
                   "&:hover": {
                     backgroundColor: isWhiteText ? "#fff" : "#000",
                     color: isWhiteText ? "#000" : "#fff",
                   },
+
+                  
                 }}
               >
                 Get a Free IT Audit
@@ -119,6 +125,7 @@ const HeroSection = ({
                   color: isWhiteText ? "#000" : "#fff",
                   padding: "1.5rem 4.5rem",
                   fontSize: "16px",
+                  fontFamily: 'Inter, sans-serif',
 
                   "&:hover": {
                     backgroundColor: isWhiteText ? "#f3f3f3" : "#2f2f2f",
@@ -173,7 +180,7 @@ const HeroSection = ({
                       color: isActive ? "#3E3E3E" : "#979595",
                       textTransform: "none",
                       fontSize: "27px",
-                      fontFamily: "font-sans",
+                      fontFamily: "'Roboto', 'sans-serif'",
                     }}
                   >
                     {tab.label}

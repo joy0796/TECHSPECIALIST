@@ -11,7 +11,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative w-full h-[90vh] min-h-[600px] flex items-center justify-start overflow-hidden">
+    <section className="relative w-full h-[90vh] min-h-[600px] flex items-center justify-start overflow-hidden md:pt-28">
       {/* Background Image */}
       <Image
         src="/image 4.png"
@@ -31,13 +31,13 @@ export default function HeroSection() {
         data-aos-duration="1000"
       >
         <div className="text-white md:pr-[40rem]">
-          <h1 className="text-[45px] md:text-[57px] font-custom  font-[500] leading-tight mb-6">
+          <h1 className="text-[45px] md:text-[57px] font-custom  font-[500] mb-8 leading-[100%]">
             Empowering businesses with digital solutions, one <br />{" "}
             process at a time
           </h1>
 
           <Link href="/contact">
-            <button className="border border-white px-10 py-6 text-white text-lg hover:bg-white hover:text-black transition">
+            <button className="border border-white px-8 py-6 text-white text-lg hover:bg-white hover:text-black transition text-[25px] md:text-[30px] font-500 font-sans">
               Contact Us
             </button>
           </Link>
@@ -45,10 +45,10 @@ export default function HeroSection() {
       </div>
 
       {/* Center Play Button */}
-      <div className="absolute inset-0 flex justify-center items-center md:left-[13%] md:-top-20">
-        <button className="bg-white rounded-full w-16 h-16 md:w-28 md:h-28 flex items-center justify-center shadow-xl group hover:scale-105 transition">
+      <div className="absolute inset-0 flex justify-center items-center md:left-[10%] md:-top-20">
+        <button className="bg-white rounded-full w-16 h-16 md:w-[90px] md:h-[90px] flex items-center justify-center shadow-xl group hover:scale-105 transition">
           <svg
-            className="w-28 h-28 text-red-600 group-hover:scale-110 transition"
+            className="w-[70px] h-[70px] text-red-600 group-hover:scale-110 transition"
             fill="currentColor"
             viewBox="0 0 20 20"
           >

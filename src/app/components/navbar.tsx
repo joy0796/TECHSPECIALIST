@@ -75,20 +75,20 @@ const Navbar = () => {
             />
           </Link>
 
-          <div className="hidden md:flex space-x-10 text-[19px] font-sans font-[600]">
-            <Link href="/services" className={`${isActive("/services")}`}>
+          <div className="hidden md:flex space-x-10 text-[19px]  font-[600]">
+            <Link href="/services" className={`${isActive("/services")} font-custom`}>
               Services
             </Link>
-            <Link href="/about" className={`${isActive("/about")}`}>
+            <Link href="/about" className={`${isActive("/about")} font-custom`}>
               About
             </Link>
-            <Link href="/trends" className={`${isActive("/trends")}`}>
+            <Link href="/trends" className={`${isActive("/trends")} font-custom`}>
               Trends & Insights
             </Link>
-            <Link href="/subscribe" className={`${isActive("/subscribe")}`}>
+            <Link href="/subscribe" className={`${isActive("/subscribe")} font-custom`}>
               Subscribe
             </Link>
-            <Link href="/contact" className={`${isActive("/contact")}`}>
+            <Link href="/contact" className={`${isActive("/contact")} font-custom`}>
               Contact
             </Link>
           </div>
