@@ -1,4 +1,3 @@
-// components/HeroSection.tsx
 "use client";
 
 import { useEffect } from "react";
@@ -54,7 +53,7 @@ const HeroSection = ({
   return (
     <Box
       component="section"
-      className="w-full pt-28 md:pt-[16rem] pb-12 relative z-10 md:pl-4 px-2"
+      className="w-full pt-28 md:pt-[10rem] pb-12 relative z-10 md:pl-4 px-2"
     >
       <Box className="flex flex-col-reverse lg:flex-row">
         <Box className="w-full md:ml-10  lg:mt-8 space-y-4 text-center md:text-left">
@@ -73,13 +72,13 @@ const HeroSection = ({
       sm: '40px',
       md: '63px', 
     },
-        fontFamily: 'WF Visual Sans, sans-serif',
               color: backgroundTextColor,
-              whiteSpace: 'pre-line',
-              lineHeight: '100%',
-              maxWidth: '950px',
+              lineHeight: "100%",
+              fontFamily: 'WF Visual Sans, sans-serif',
+              maxWidth: '800px',
+              whiteSpace: 'pre-line' 
             }}
-        
+            className=""
        
           >
             {activeTab.heading}
@@ -104,12 +103,11 @@ const HeroSection = ({
                   padding: "1.5rem 2rem",
                   fontSize: "16px",
                   fontFamily: 'Inter, sans-serif',
+                  fontWeight: "500",
                   "&:hover": {
                     backgroundColor: isWhiteText ? "#fff" : "#000",
                     color: isWhiteText ? "#000" : "#fff",
                   },
-
-                  
                 }}
               >
                 Get a Free IT Audit
@@ -126,6 +124,7 @@ const HeroSection = ({
                   padding: "1.5rem 4.5rem",
                   fontSize: "16px",
                   fontFamily: 'Inter, sans-serif',
+                  fontWeight: "500",
 
                   "&:hover": {
                     backgroundColor: isWhiteText ? "#f3f3f3" : "#2f2f2f",
@@ -166,7 +165,7 @@ const HeroSection = ({
                   {isActive && (
                     <Box
                       sx={{
-                        height: "4px",
+                        height: "6px",
                         backgroundColor: "#F97316",
                         borderRadius: "2px 2px 0 0",
                         width: "100%",
@@ -180,7 +179,7 @@ const HeroSection = ({
                       color: isActive ? "#3E3E3E" : "#979595",
                       textTransform: "none",
                       fontSize: "27px",
-                      fontFamily: "'Roboto', 'sans-serif'",
+                      fontFamily: 'Roboto, sans-serif',
                     }}
                   >
                     {tab.label}

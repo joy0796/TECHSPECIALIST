@@ -10,7 +10,7 @@ import Link from "next/link";
 const tabs = [
   {
     label: "Artificial Intelligence",
-    image: "/guy.jpeg",
+    image: "/blackman.png",
     heading:
       "Cross-Sectoral Collaboration: AI Partnerships Driving Nigerias Digital Economy",
   },
@@ -24,7 +24,7 @@ const tabs = [
     label: "Information Security",
     image: "/female.png",
     heading:
-      " When Hackers come for Government: A review of cyberattacks on Nigerian public institutions.",
+      " When Hackers come for \nGovernment: A review of\n cyberattacks on Nigerian\n public institutions.",
   },
   {
     label: "Digital Infrastructure",
@@ -60,7 +60,7 @@ const HeroWrapper = () => {
   const activeTab = tabs[activeIndex];
 
   return (
-    <div className="relative w-full h-fit">
+    <div className="relative w-full h-auto">
       {/* Background Image */}
       <div
         className={`absolute   inset-0 bg-cover bg-no-repeat transition-all duration-700 ${
@@ -68,8 +68,12 @@ const HeroWrapper = () => {
         }`}
         style={{
           backgroundImage: `url('${activeTab.image}')`,
-          backgroundPosition: "center top 0px",
+          backgroundPosition: "center top 2px",
           backgroundSize: "cover",
+  // backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+          // backgroundSize: "cover",
+          height:"auto"
         }}
       />
 
