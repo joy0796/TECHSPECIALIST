@@ -39,7 +39,7 @@ export default function DigitalTransformationSection() {
   return (
     <section className="flex  w-[95%] flex-col items-center justify-between  pt-12 pb-24 gap-10 mx-auto px-4 md:px-10">
       {step === 1 && (
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full gap-6 md:gap-[4.5rem]">
           <div
             className=" w-full text-center lg:text-left"
             data-aos="fade-up"
@@ -63,7 +63,7 @@ export default function DigitalTransformationSection() {
                 <button
                   key={sector}
                   onClick={() => sector === "Public Sector" && setStep(2)}
-                  className="px-12 py-4 border-2 border-gray-300 rounded-xl text-gray-800 font-[500] hover:bg-[#ED5D25] hover:text-white transition whitespace-nowrap text-[18px] md:text-[20px] font-inter"
+                  className="px-10 py-4 border-2 border-gray-300 rounded-2xl text-gray-800 font-[500] hover:bg-[#ED5D25] hover:text-white transition whitespace-nowrap text-[18px] md:text-[20px] font-inter"
                 >
                   {sector}
                 </button>
@@ -80,9 +80,9 @@ export default function DigitalTransformationSection() {
             <Image
               src="/digitalimg.png"
               alt="Digital transformation illustration"
-              width={400}
+              width={600}
               height={600}
-              className="w-full h-auto"
+              className="w-full h-[520px] md:w-[536px]"
             />
           </div>
         </div>
