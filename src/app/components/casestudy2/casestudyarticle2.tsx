@@ -53,114 +53,114 @@ const CaseArticleSection2 = () => {
      data-aos-duration="3000">
       {/* LEFT SIDEBAR */}
       
-      <aside className="lg:w-1/4 w-full space-y-8" >
-                                {/* Audio */}
-                                <div className="">
-                                  <p className="text-xs text-[#3E3E3E] font-md">Listen to this article</p>
-                                  <div className="bg-gray-200 h-8 rounded-md flex items-center justify-center text-sm text-gray-400">
-                                    [Audio Player]
-                                  </div>
-                                </div>
-                        
-                                {/* Authors */}
+        <aside className="lg:w-1/4 w-full space-y-8" >
+                        {/* Audio */}
+                        <div className="">
+                          <p className="text-xs text-[#3E3E3E] font-md">Listen to this article</p>
+                          <div className="bg-gray-200 h-8 rounded-md flex items-center justify-center text-sm text-gray-400">
+                            [Audio Player]
+                          </div>
+                        </div>
+                
+                        {/* Authors */}
+                        <div>
+                          <p className='text-xs text-[#3E3E3E] font-semibold uppercase mb-2'>Authors</p>
+                          <div className="space-y-4 border-b boder-black">
+                            {authors.map((author, index) => (
+                              <div key={index} className="flex items-center space-x-2">
+                                <Image
+                                  src={author.image}
+                                  alt={author.name}
+                                  width={40}
+                                  height={40}
+                                  className=""
+                                />
                                 <div>
-                                  <p className='text-xs text-[#3E3E3E] font-semibold uppercase mb-2'>Authors</p>
-                                  <div className="space-y-4 border-b boder-black">
-                                    {authors.map((author, index) => (
-                                      <div key={index} className="flex items-center space-x-2">
-                                        <Image
-                                          src={author.image}
-                                          alt={author.name}
-                                          width={40}
-                                          height={40}
-                                          className=""
-                                        />
-                                        <div>
-                                          <p className="font-medium text-xs">{author.name}</p>
-                                          <p className="text-xs text-[#8F8F8F]">{author.title}</p>
-                                        </div>
-                                      </div>
-                                    ))}
-                                  </div>
+                                  <p className="font-medium text-xs">{author.name}</p>
+                                  <p className="text-xs text-[#8F8F8F]">{author.title}</p>
                                 </div>
-                        
-                                {/* Tags */}
-                                <div className='border-b border-black pb-6'>
-                                  <p className="text-xs text-[#3E3E3E] font-semibold uppercase mb-4">Tags</p>
-                                  <ul className="text-[14px] md:text-[16px] text-[#8F8F8F] list-disc list-inside space-y-1 font-[500] font-sans">
-                                    {tags.map((tag, idx) => (
-                                      <li key={idx}>{tag}</li>
-                                    ))}
-                                  </ul>
-                                </div>
-                        
-                                {/* Form */}
-                                <div className="bg-white text-black pt-8  w-full md:w-[230px]">
-                                <div className='bg-gray-100 mb-1 py-2 px-6'>
-                                  <p className="text-[19px] md:text-[22px] font-[600] text-[#3E3E3E] font-sans">Ready to talk?</p>
-                                  <p className="text-[16px] font-[400] font-sans text-[#707070]">
-                                    I want to talk to your specialist in the field of
-                                    <span className="text-[#707070] underline">Digital Transformation</span>.
-                                  </p>
-                                  </div>
-                                  <form className="space-y-1">
-                                    <div className='bg-[#F0F0F0] mb-1 py-2 px-6'>
-                                      <label className='text-[8px] md:text-[10px] font-[600] font-sans text-[#3E3E3E]'>FULL NAME</label>
-                                        <input
-                                      type="text"
-                                      placeholder="Enter your name"
-                                      className="w-full border border-gray-300 p-2 rounded bg-[#F0F0F0] text-xs"
-                                    />
-                                    </div>
-                                    
-                                    <div className='bg-gray-100 mb-1 p-2 px-6'>
-                                      <label className='text-[8px] md:text-[10px] font-[600] font-sans text-[#3E3E3E]'>COMPANY/BUSINESS NAME</label>
-                                    <input
-                                      type="text"
-                                      placeholder="Enter your name here"
-                                      className="w-full border border-gray-300 p-2 rounded bg-[#F0F0F0] text-xs"
-                                    />
-                                    </div>
-                        
-                                    <div className='bg-gray-100 mb-1 p-2 px-6'>
-                                      <label className='text-[8px] md:text-[10px] font-[600] font-sans text-[#3E3E3E]'>BUSINESS EMAIL</label>
-                                                    <input
-                                      type="email"
-                                      placeholder="Enter your email here"
-                                      className="w-full border border-gray-300 p-2 rounded bg-[#F0F0F0] text-xs"
-                                    />
-                                    </div>
-                        
-                                    <div className='bg-gray-100 mb-1 py-2 px-6'>
-                                      <label className='text-[8px] md:text-[10px] font-[600] font-sans text-[#3E3E3E]'>PHONE NUMBER</label>
-                                    <input
-                                      type="tel"
-                                      placeholder="Enter your phone number"
-                                      className="w-full border border-gray-300 p-2 rounded bg-[#F0F0F0] text-xs"
-                                    />
-                                    </div>
-                                    
-                                    <div className='bg-gray-100 mb-1 py-2 px-4'>
-                                        <label className="flex items-start gap-2 text-xs">
-                                      <input type="checkbox" className="mt-1 text-[#707070] text-[8px] md:text-[10px] font-[400] font-sans" />
-                                      I would like to receive exciting communication regarding Techspecialist services.
-                                    </label>
-                                    </div>
-                                    
-                        
-                                    <div className=''>
-                                                    <button
-                                      type="submit"
-                                      className="w-full bg-orange-600 text-white py-2 rounded font-[600] font-sans text-[10px] md:text-[11px]"
-                                    >
-                                      Contact Me
-                                    </button>
-                                    </div>
-                        
-                                  </form>
-                                </div>
-                              </aside>
-
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                
+                        {/* Tags */}
+                        <div className='border-b border-black pb-6'>
+                          <p className="text-[19px] text-[#3E3E3E] font-[600] font-custom uppercase mb-4">Tags</p>
+                          <ul className="text-[14px] md:text-[16px] text-[#8F8F8F] list-disc list-inside space-y-1 font-[500] font-custom leading-[177%]">
+                            {tags.map((tag, idx) => (
+                              <li key={idx}>{tag}</li>
+                            ))}
+                          </ul>
+                        </div>
+                
+                        {/* Form */}
+                        <div className="bg-white text-black pt-8  w-full md:w-[230px]">
+                        <div className='bg-gray-100 mb-1 py-2 px-6'>
+                          <p className="text-[19px] md:text-[22px] font-[600] text-[#3E3E3E] font-custom">Ready to talk?</p>
+                          <p className="text-[16px] font-[400] font-custom text-[#707070]">
+                            I want to talk to your specialist in the field of
+                            <span className="text-[#707070] underline"> Digital Transformation</span>.
+                          </p>
+                          </div>
+                          <form className="space-y-1">
+                            <div className='bg-[#F0F0F0] mb-1 py-2 px-6'>
+                              <label className='text-[8px] md:text-[10px] font-[600] font-custom text-[#3E3E3E]'>FULL NAME</label>
+                                <input
+                              type="text"
+                              placeholder="Enter your name"
+                              className="w-full border border-gray-300 p-2 rounded bg-[#F0F0F0] text-xs"
+                            />
+                            </div>
+                            
+                            <div className='bg-gray-100 mb-1 p-2 px-6'>
+                              <label className='text-[8px] md:text-[10px] font-[600] font-custom text-[#3E3E3E]'>COMPANY/BUSINESS NAME</label>
+                            <input
+                              type="text"
+                              placeholder="Enter your name here"
+                              className="w-full border border-gray-300 p-2 rounded bg-[#F0F0F0] text-xs"
+                            />
+                            </div>
+                
+                            <div className='bg-gray-100 mb-1 p-2 px-6'>
+                              <label className='text-[8px] md:text-[10px] font-[600] font-custom text-[#3E3E3E]'>BUSINESS EMAIL</label>
+                                            <input
+                              type="email"
+                              placeholder="Enter your email here"
+                              className="w-full border border-gray-300 p-2 rounded bg-[#F0F0F0] text-xs"
+                            />
+                            </div>
+                
+                            <div className='bg-gray-100 mb-1 py-2 px-6'>
+                              <label className='text-[8px] md:text-[10px] font-[600] font-custom text-[#3E3E3E]'>PHONE NUMBER</label>
+                            <input
+                              type="tel"
+                              placeholder="Enter your phone number"
+                              className="w-full border border-gray-300 p-2 rounded bg-[#F0F0F0] text-xs"
+                            />
+                            </div>
+                            
+                            <div className='bg-gray-100 mb-1 py-2 px-4'>
+                                <label className="flex items-start gap-2 text-xs">
+                              <input type="checkbox" className="mt-1 text-[#707070] text-[8px] md:text-[10px] font-[400] font-custom" />
+                              I would like to receive exciting communication regarding Techspecialist services.
+                            </label>
+                            </div>
+                            
+                
+                            <div className=''>
+                                            <button
+                              type="submit"
+                              className="w-full bg-orange-600 text-white py-2 rounded font-[600] font-sans text-[10px] md:text-[11px]"
+                            >
+                              Contact Me
+                            </button>
+                            </div>
+                
+                          </form>
+                        </div>
+                      </aside>
+                
       {/* RIGHT MAIN ARTICLE */}
       <article className="lg:w-3/4 w-full text-[19px] font-[400] font-Poppins space-y-4" >
         <p className="leading-relaxed mb-4 text-justify text-md text-[#3E3E3E]">
@@ -183,7 +183,7 @@ A 2023 report by PwC Nigeria estimated that AI could contribute up to $15.7 tril
 
         
         
-        <div className="w-full h-64 md:w-1/2 md:mx-auto relative rounded-lg overflow-hidden shadow-md py-6">
+        <div className="w-full h-64 md:w-1/2 md:mx-auto relative overflow-hidden py-6">
                   <Image
                     src="/image 20.png"
                     alt="Digital Transformation"
@@ -218,7 +218,7 @@ Here is how we are helping power AI collaboration:</p>
 <p className="text-md font-bold mb-1 text-[#3E3E3E]">•	Infrastructure Support: <span className='font-normal'>Offering cloud, data, and cybersecurity platforms that power reliable and secure AI solutions.</span></p>
 <p className="leading-relaxed mb-2 text-justify text-md text-[#3E3E3E]">By enabling cross-sectoral synergy, Techspecialist does not just deploy tech we create transformative partnerships that move the needle for Nigerias digital economy.</p>
 
-        <div className="w-full h-64 md:w-1/2 md:mx-auto relative rounded-lg overflow-hidden shadow-md my-6">
+        <div className="w-full h-64 md:w-1/2 md:mx-auto relative overflow-hidden py-10">
                   <Image
                     src="/image 21.png"
                     alt="Digital Transformation"

@@ -29,8 +29,8 @@ useEffect(() => {
       {/* Content Box */}
       <div className="absolute top-16 left-5 sm:left-10 bg-gradient-to-r from-black/80 via-black/90 to-transparent text-white max-w-4xl px-6 py-16 md:mt-14 rounded-md shadow-lg border-l-4 border-[#F06322]" data-aos="fade-up"
      data-aos-duration="1000">
-        <p className="text-[40px] md:text-[57px] font-[600]  font-sans text-gray-300 mb-2 mt-10">Trends $ Insights</p>
-        <h2 className="text-[23px] font-[900] font-Roboto leading-snug mb-4">
+        <p className="text-[40px] md:text-[57px] font-[600]  font-custom text-gray-300 mb-2 mt-10">Trends $ Insights</p>
+        <h2 className="text-[23px] font-[900] font-sans leading-snug mb-4">
           Unique insights, expert-driven intelligence and visibility thinking for leaders aiming to accomplish the remarkable.
         </h2>
 

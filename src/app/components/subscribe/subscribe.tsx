@@ -25,9 +25,9 @@ useEffect(() => {
         {/* Left: Text + Form */}
         <div data-aos="zoom-in"
               data-aos-duration="1000">
-          <p className="text-[40px] md:text-[75px] font-[600] font-sans mb-6 text-[#3B73E3] mt-10">Subscribe <span className="text-gray-900"> to our Insights</span>
+          <p className="text-[40px] md:text-[75px] font-[600] font-custom mb-6 text-[#3B73E3] mt-10 leading-[100%]">Subscribe <span className="text-[#3E3E3E]"> to our Insights</span>
           </p>
-          <p className="text-[#3E3E3E] font-[900] mb-8 text-[23px] font-Roboto md:text-justify">
+          <p className="text-[#3E3E3E] font-[900] mb-4 text-[23px] font-sans md:text-justify">
             Stay ahead with the latest thinking in AI, cybersecurity, and digital transformation. Simply sign up with your email address and confirm your subscription via the email we will send you. You will start receiving curated insights and updates directly from the experts at Techspecialist Consulting Limited.
           </p>
 
@@ -49,14 +49,14 @@ useEffect(() => {
                 onChange={(e) => setIsChecked(e.target.checked)}
                 className="mt-1"
               />
-              <label htmlFor="consent" className="text-[16px] text-gray-700 text-justify font-[400] font-sans">
+              <label htmlFor="consent" className="text-[16px] text-gray-700 text-justify font-[400] font-custom leading-[100%]">
                 I would like to receive marketing communications regarding Techspecialist Consulting Limited service offerings. I understand that I can unsubscribe at any time.
               </label>
             </div>
 
             <button
               type="submit"
-              className="bg-[#3B73E3] text-white text-[23px] text-sm px-12 py-4 rounded-md transition duration-300 font-[500] font-sans"
+              className="bg-[#3B73E3] text-white text-[23px] text-sm px-12 py-4 rounded-md transition duration-300 font-[500] font-custom"
             >
               SUBSCRIBE
             </button>

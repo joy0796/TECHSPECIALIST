@@ -12,7 +12,7 @@ export default function ExperienceImpact() {
       <div className="max-w-6xl mx-auto text-center" data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
-        <h2 className="text-[40px] text-[#3E3E3E] font-[600] mb-8 font-sans">
+        <h2 className="text-[40px] text-[#3E3E3E] font-[600] mb-8 font-custom">
           Our Experience & Impact
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center" >

@@ -28,7 +28,7 @@ const ClientSuccessStories = () => {
   return (
     <section className="bg-white px-4 lg:px-24 py-10 md:py-16">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-[30px] md:text-[40px] font-[600] font-sans text-[#3E3E3E] mb-2">
+        <h2 className="text-[30px] md:text-[40px] font-[600] font-custom text-[#3E3E3E] mb-2">
           How we have helped clients
         </h2>
 
@@ -41,7 +41,7 @@ const ClientSuccessStories = () => {
               className="relative flex flex-col justify-between px-6 py-6 md:px-8 md:py-8"
             >
 
-              <h3 className="text-[30px] md:text-[40px] font-[600] font-sans">{study.title}</h3>
+              <h3 className="text-[30px] md:text-[40px] font-[600] font-custom leading-[100%]">{study.title}</h3>
 
               
               {idx < caseStudies.length - 1 && (
@@ -49,7 +49,7 @@ const ClientSuccessStories = () => {
               )}
 
               
-              <p className="text-[14px] md:text-[16px] font-[600] font-Roboto mt-4">{study.tag}</p>
+              <p className="text-[14px] md:text-[16px] font-[600] font-sans mt-4 mb-8">{study.tag}</p>
             </div>
           ))}
         </div>

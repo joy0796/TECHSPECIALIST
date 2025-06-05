@@ -82,7 +82,7 @@ export default function DigitalTransformationSection() {
               alt="Digital transformation illustration"
               width={600}
               height={600}
-              className="w-full h-[520px] md:w-[536px]"
+              className="w-full h-[480px] md:w-[536px]"
             />
           </div>
         </div>

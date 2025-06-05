@@ -40,10 +40,10 @@ useEffect(() => {
   return (
     <section className="bg-white text-black py-8 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-[35px] md:text-[40px] font-[600] text-center mb-4 text-[#3E3E3E] font-sans" data-aos="fade-right"
+        <h2 className="text-[35px] md:text-[40px] font-[600] text-center mb-4 text-[#3E3E3E] font-custom" data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine">Our Focus Sectors</h2>
-        <p className="font-sans text-[#979595] text-center max-w-5xl mx-auto mb-8 md:mb-10 text-[19px] font-[400]">
+        <p className="font-custom text-[#979595] text-center max-w-5xl mx-auto mb-8 md:mb-10 text-[19px] font-[400]">
           At Techspecialist Consulting Limited, we have developed specialized expertise across three vital sectors of the Nigerian economy. Our tailored approaches address the unique digital transformation challenges and opportunities in each sector, delivering measurable impact and sustainable digital evolution.
         </p>
 
@@ -67,10 +67,10 @@ useEffect(() => {
               <div className="md:w-2/3 w-full" data-aos="fade-down"
      data-aos-easing="linear"
      data-aos-duration="1000">
-                <h3 className="text-[35px] font-[600] text-[#3E3E3E] mb-2">
+                <h3 className="text-[35px] font-[600] text-[#3E3E3E] mb-2 font-custom leading-[100%] mb-6">
                   {sector.title}
                 </h3>
-                <p className="text-[#666666] text-[19px] font-[400] md:text-md leading-relaxed text-justify ">{sector.description}</p>
+                <p className="text-[#666666] text-[19px] font-[400] md:text-md leading-relaxed text-justify font-Poppins leading-[177%]">{sector.description}</p>
               </div>
             </div>
           ))}

@@ -11,21 +11,21 @@ export default function ContactWithCompanyInfo() {
       }, []);
 
   return (
-    <section className="bg-white text-black px-4 py-8 border-b border-gray-400">
+    <section className="bg-white text-black px-4 py-12 border-b border-gray-400">
       <div className="  flex flex-col md:flex-row justify-between gap-8 px-2 md:px-8" data-aos="fade-up"
      data-aos-duration="1000">
         {/* Left - Contact Form */}
         <div className="bg-white text-black p-4  space-y-1 pt-14 border-t border-gray-300 w-full md:w-[1000px]">
-        <div className='bg-[#F0F0F0] py-2 px-6'>
-          <p className="text-[22px] font-[600] text-[#3E3E3E] font-sans">Ready to talk?</p>
-          <p className="text-[18px] text-[#707070] font-[400] font-sans">
+        <div className='bg-[#F0F0F0] py-4 px-6'>
+          <p className="text-[22px] font-[600] text-[#3E3E3E] font-custom mb-1">Ready to talk?</p>
+          <p className="text-[18px] text-[#707070] font-[400] font-custom leading-[100%]">
             I want to talk to your specialist in the field of
-            <span className="text-[#707070] underline">Digital Transformation</span>.
+            <span className="text-[#707070] underline"> Digital Transformation</span>.
           </p>
           </div>
           <form className=" text-sm border-b border-gray-100">
             <div className='bg-[#F0F0F0] py-2 px-6 mb-1'>
-              <label className='text-[10px] text-[#3E3E3E] font-600 font-sans'>FULL NAME</label>
+              <label className='text-[10px] text-[#3E3E3E] font-600 font-custom'>FULL NAME</label>
                 <input
               type="text"
               placeholder="Enter your name"
@@ -34,7 +34,7 @@ export default function ContactWithCompanyInfo() {
             </div>
             
             <div className='bg-[#F0F0F0] px-6 mb-1 py-2'>
-              <label className='text-[10px] text-[#3E3E3E] font-600 font-sans'>COMPANY/BUSINESS NAME</label>
+              <label className='text-[10px] text-[#3E3E3E] font-600 font-custom'>COMPANY/BUSINESS NAME</label>
             <input
               type="text"
               placeholder="Enter your name here"
@@ -43,7 +43,7 @@ export default function ContactWithCompanyInfo() {
             </div>
 
             <div className='bg-[#F0F0F0] px-6 mb-1 py-2'>
-              <label className='text-[10px] text-[#3E3E3E] font-600 font-sans'>BUSINESS EMAIL</label>
+              <label className='text-[10px] text-[#3E3E3E] font-600 font-custom'>BUSINESS EMAIL</label>
                             <input
               type="email"
               placeholder="Enter your email here"
@@ -52,7 +52,7 @@ export default function ContactWithCompanyInfo() {
             </div>
 
             <div className='bg-[#F0F0F0] px-6 mb-1 py-2'>
-              <label className='text-[10px] text-[#3E3E3E] font-600 font-sans'>PHONE NUMBER</label>
+              <label className='text-[10px] text-[#3E3E3E] font-600 font-custom'>PHONE NUMBER</label>
             <input
               type="tel"
               placeholder="Enter your phone number"
@@ -60,16 +60,16 @@ export default function ContactWithCompanyInfo() {
             />
             </div>
             
-            <div className='bg-[#F0F0F0] py-4 px-6'>
+            <div className='bg-[#F0F0F0] py-4 px-6 text-[#3E3E3E]'>
                 <label className="flex items-center gap-2 text-xs mb-4">
-              <input type="checkbox" className="mt-1 text-[#707070]" />
+              <input type="checkbox" className="mt-1 text-[#707070] font-custom" />
               Id like to receive exciting communication regarding Techspecialist services.
             </label>
 
             <div className=''>
                             <button
               type="submit"
-              className="w-full bg-orange-600 text-white py-2 rounded font-semibold"
+              className="w-full bg-[#ED5D25] text-white py-2 rounded font-[600] font-custom text-[8px] md:text-[11px]"
             >
               Contact Me
             </button>

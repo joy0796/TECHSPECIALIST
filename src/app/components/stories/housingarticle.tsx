@@ -87,8 +87,8 @@ const HousingArticleSection = () => {
 
         {/* Tags */}
         <div className='border-b border-black pb-6'>
-          <p className="text-xs text-[#3E3E3E] font-semibold uppercase mb-4">Tags</p>
-          <ul className="text-[14px] md:text-[16px] text-[#8F8F8F] list-disc list-inside space-y-1 font-[500] font-sans">
+          <p className="text-[19px] text-[#3E3E3E] font-[600] font-custom uppercase mb-4">Tags</p>
+          <ul className="text-[14px] md:text-[16px] text-[#8F8F8F] list-disc list-inside space-y-1 font-[500] font-custom leading-[177%]">
             {tags.map((tag, idx) => (
               <li key={idx}>{tag}</li>
             ))}
@@ -98,15 +98,15 @@ const HousingArticleSection = () => {
         {/* Form */}
         <div className="bg-white text-black pt-8  w-full md:w-[230px]">
         <div className='bg-gray-100 mb-1 py-2 px-6'>
-          <p className="text-[19px] md:text-[22px] font-[600] text-[#3E3E3E] font-sans">Ready to talk?</p>
-          <p className="text-[16px] font-[400] font-sans text-[#707070]">
+          <p className="text-[19px] md:text-[22px] font-[600] text-[#3E3E3E] font-custom">Ready to talk?</p>
+          <p className="text-[16px] font-[400] font-custom text-[#707070]">
             I want to talk to your specialist in the field of
-            <span className="text-[#707070] underline">Digital Transformation</span>.
+            <span className="text-[#707070] underline"> Digital Transformation</span>.
           </p>
           </div>
           <form className="space-y-1">
             <div className='bg-[#F0F0F0] mb-1 py-2 px-6'>
-              <label className='text-[8px] md:text-[10px] font-[600] font-sans text-[#3E3E3E]'>FULL NAME</label>
+              <label className='text-[8px] md:text-[10px] font-[600] font-custom text-[#3E3E3E]'>FULL NAME</label>
                 <input
               type="text"
               placeholder="Enter your name"
@@ -115,7 +115,7 @@ const HousingArticleSection = () => {
             </div>
             
             <div className='bg-gray-100 mb-1 p-2 px-6'>
-              <label className='text-[8px] md:text-[10px] font-[600] font-sans text-[#3E3E3E]'>COMPANY/BUSINESS NAME</label>
+              <label className='text-[8px] md:text-[10px] font-[600] font-custom text-[#3E3E3E]'>COMPANY/BUSINESS NAME</label>
             <input
               type="text"
               placeholder="Enter your name here"
@@ -124,7 +124,7 @@ const HousingArticleSection = () => {
             </div>
 
             <div className='bg-gray-100 mb-1 p-2 px-6'>
-              <label className='text-[8px] md:text-[10px] font-[600] font-sans text-[#3E3E3E]'>BUSINESS EMAIL</label>
+              <label className='text-[8px] md:text-[10px] font-[600] font-custom text-[#3E3E3E]'>BUSINESS EMAIL</label>
                             <input
               type="email"
               placeholder="Enter your email here"
@@ -133,7 +133,7 @@ const HousingArticleSection = () => {
             </div>
 
             <div className='bg-gray-100 mb-1 py-2 px-6'>
-              <label className='text-[8px] md:text-[10px] font-[600] font-sans text-[#3E3E3E]'>PHONE NUMBER</label>
+              <label className='text-[8px] md:text-[10px] font-[600] font-custom text-[#3E3E3E]'>PHONE NUMBER</label>
             <input
               type="tel"
               placeholder="Enter your phone number"
@@ -143,7 +143,7 @@ const HousingArticleSection = () => {
             
             <div className='bg-gray-100 mb-1 py-2 px-4'>
                 <label className="flex items-start gap-2 text-xs">
-              <input type="checkbox" className="mt-1 text-[#707070] text-[8px] md:text-[10px] font-[400] font-sans" />
+              <input type="checkbox" className="mt-1 text-[#707070] text-[8px] md:text-[10px] font-[400] font-custom" />
               I would like to receive exciting communication regarding Techspecialist services.
             </label>
             </div>

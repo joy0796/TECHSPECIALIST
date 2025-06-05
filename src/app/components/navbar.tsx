@@ -14,12 +14,12 @@ const Navbar = () => {
 
   const isHomeStyle = [
     "/",
-    "/contact",
-    "/subscribe",
+    // "/contact",
+    // "/subscribe",
     
   ].includes(pathname);
 
-  const isCaseStudyPage = ["/casestudy1", "/casestudy2", "/casestudy3"].includes(
+  const isCaseStudyPage = ["/casestudy1", "/casestudy2", "/casestudy3", "/subscribe", "/contact"].includes(
     pathname
   );
 

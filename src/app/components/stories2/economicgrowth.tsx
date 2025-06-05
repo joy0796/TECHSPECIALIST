@@ -27,16 +27,16 @@ export default function EconomicGrowth() {
       {/* Content Box */}
       <div className="absolute top-14 left-5 sm:left-10 bg-gradient-to-r from-black/80 via-black/60 to-transparent text-white max-w-xl p-4 md:mt-14 rounded-md shadow-lg border-l-4 border-[#F06322]" data-aos="fade-up"
      data-aos-duration="1000">
-        <p className="text-xs font-lg uppercase text-gray-300 mb-2 pt-2">Public Sector</p>
-        <h2 className="text-[45px] font-[600] font-sans leading-snug mb-4">
+        <p className="text-[16px] font-[900] uppercase text-gray-300 mb-2 font-sans mt-4">Public Sector</p>
+        <h2 className="text-[45px] font-[600] font-custom leading-[100%] mb-4">
           Young Nigerians will drive Ai for economic growth
         </h2>
 
         
-        <div className="flex gap-4 mt-4 text-white/80">
-          <InsertLink className="cursor-pointer hover:text-white transition" />
-          <Share className="cursor-pointer hover:text-white transition" />
-          <Bookmark className="cursor-pointer hover:text-white transition" />
+        <div className="flex gap-4 mt-4 text-white/80 mb-4">
+          <InsertLink className="cursor-pointer hover:text-white transition border rounded-full" />
+          <Share className="cursor-pointer hover:text-white transition border rounded-full" />
+          <Bookmark className="cursor-pointer hover:text-white transition border rounded-full" />
         </div>
       </div>
       

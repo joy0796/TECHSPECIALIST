@@ -18,22 +18,22 @@ export default function DigitalFindingSection() {
         <div data-aos="flip-right"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
-          <p className="text-[14px] md:text-[16px] font-[900] font-Roboto text-[#3E3E3E] uppercase mb-2">
+          <p className="text-[14px] md:text-[16px] font-[900] font-sans text-[#3E3E3E] uppercase mb-4">
             Digital Transformation
           </p>
-          <h1 className="text-[30px] md:text-[57px] font-[600] font-sans text-[#3E3E3E] leading-snug mb-4">
+          <h1 className="text-[30px] md:text-[57px] font-[600] font-custom text-[#3E3E3E] leading-[100%] mb-4">
             Digital Transformation in Nigerian SMEs: Barriers, Breakthroughs, and Blueprints.
           </h1>
-          <p className="text-[18px] md:text-[20px] font-[400] font-Roboto text-[#979595] mb-2">
+          <p className="text-[18px] md:text-[20px] font-[400] font-sans text-[#979595] mb-2">
             By Suleman Olalomi, Danielle Udochi, Victoria Ubi
           </p>
-          <p className="text-[18px] md:text-[20px] font-[400] font-Roboto text-[#979595] mb-6">5 min read.</p>
+          <p className="text-[18px] md:text-[20px] font-[400] font-sans text-[#979595] mb-6">5 min read.</p>
 
           {/* Icons */}
           <div className="flex items-center gap-4 text-[#979595]">
-            <PrintIcon className="cursor-pointer hover:text-black" />
-            <ShareIcon className="cursor-pointer hover:text-black" />
-            <BookmarkBorderIcon className="cursor-pointer hover:text-black" />
+            <PrintIcon className="cursor-pointer hover:text-black border rounded-full border-black/70" />
+            <ShareIcon className="cursor-pointer hover:text-black border rounded-full" />
+            <BookmarkBorderIcon className="cursor-pointer hover:text-black border rounded-full" />
           </div>
         </div>
 

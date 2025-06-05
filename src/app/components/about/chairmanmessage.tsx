@@ -39,8 +39,8 @@ export default function ChairmanMessage() {
 
           <div className="mt-4 flex justify-between">
             <p>
-              <strong className="text-[#3E3E3E] text-[23px] font-[600] font-sans">Kadir Salami</strong>{' '}
-              <span className="text-gray-800 text-[19px] font-[400] font-sans">Chairman</span>
+              <strong className="text-[#3E3E3E] text-[23px] font-[600] font-custom">Kadir Salami</strong>{' '}
+              <span className="text-gray-800 text-[19px] font-[400] font-custom">Chairman</span>
             </p>
 
             
@@ -50,7 +50,7 @@ export default function ChairmanMessage() {
 
         <div className='mt-auto whitespace-nowrap'>
             <Link href="/team">
-            <button className="bg-[#F05A28] text-white font-[500] px-6 py-4 hover:bg-orange-600 transition text-[19px] font-Roboto">
+            <button className="bg-[#F05A28] text-white font-[500] px-6 py-4 hover:bg-orange-600 transition text-[19px] font-sans">
               Meet the team
             </button>
             </Link>

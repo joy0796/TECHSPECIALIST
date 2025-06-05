@@ -35,10 +35,10 @@ export default function ValueMethodologySection() {
   return (
     <section className="bg-white py-20 px-6 lg:px-24">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-[35px] md:text-[40px] sm:text-3xl font-[600] text-[#3E3E3E] font-sans">
+        <h2 className="text-[35px] md:text-[40px] sm:text-3xl font-[600] text-[#3E3E3E] font-custom">
           The Techspecialist Value Methodology
         </h2>
-        <p className="text-[#3E3E3E] mt-6 text-[19px] max-w-6xl mx-auto font-[400] font-sans">
+        <p className="text-[#3E3E3E] mt-6 text-[19px] max-w-6xl mx-auto font-[400] font-custom">
           TCLs proprietary engagement methodology has been refined through over a decade of successful digital transformation implementations. This structured yet flexible approach ensures maximum value creation, seamless implementation, and sustainable long-term outcomes.
         </p>
       </div>
@@ -48,12 +48,12 @@ export default function ValueMethodologySection() {
         {pillars.map((pillar, idx) => (
           <div
             key={idx}
-            className="bg-white text-gray-800 rounded-xl shadow-xl p-6 text-left"
+            className="bg-white text-gray-800 rounded-xl shadow-xl py-12 px-10 text-left border border-[#3E3E3E]"
             data-aos="fade-right"
      data-aos-offset="200"
      
           >
-            <h3 className="text-[30px] md:text-[40px] text-[#3E3E3E] font-[600] mb-3 font-sans">{pillar.title}</h3>
+            <h3 className="text-[30px] md:text-[40px] text-[#3E3E3E] font-[600] mb-4 font-custom leading-[100%]">{pillar.title}</h3>
             <p className="text-[19px] text-[#979595] leading-normal text-justify font-[500] Poppins">{pillar.description}</p>
           </div>
         ))}

@@ -1,6 +1,7 @@
 import Navbar from "../navbar";
 import ServicesSection from "./aboutservice";
 import Image from "next/image";
+import Link from "next/link";
 const AboutserviceWrapper = () => {
   return (
     <>
@@ -23,15 +24,17 @@ const AboutserviceWrapper = () => {
 
       <ServicesSection/>
       </div>
-        <div className="fixed bottom-4 right-4 sm:bottom-36 sm:right-24 w-8 h-8 bg-orange-600 rounded-full flex justify-center items-center z-50">
-  <Image
-    src="/Vector.png"
-    alt="Orange Icon"
-    width={16}
-    height={16}
-    className="object-contain"
-  />
-</div>
+        <Link href="/contact">
+        <div className="fixed bottom-4 right-4 sm:bottom-36 sm:right-24 w-12 h-12 bg-orange-600 rounded-full flex justify-center items-center z-50">
+          <Image
+            src="/Vector.png"
+            alt="Orange Icon"
+            width={30}
+            height={30}
+            className="object-contain"
+          />
+        </div>
+      </Link>
     </div>
     </>
   );
