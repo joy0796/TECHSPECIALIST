@@ -350,7 +350,7 @@ const HeroSection = ({
         >
           {tabs.map((tab, index) => {
             const isActive = activeIndex === index;
-            const isCurrentTabWhiteText = activeTab.textColor === "white";
+            // const isCurrentTabWhiteText = activeTab.textColor === "white";
 
             return (
               <Tab

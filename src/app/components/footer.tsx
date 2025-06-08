@@ -2,13 +2,7 @@
 import Link from 'next/link';
 
 import Image from 'next/image';
-import {
-  MailOutline,
-  Phone,
-  Twitter,
-  Instagram,
-  LocationOn,
-} from '@mui/icons-material';
+
 
 
 
