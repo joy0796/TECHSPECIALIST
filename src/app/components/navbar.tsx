@@ -7,21 +7,24 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { usePathname } from "next/navigation";
 
-const Navbar = () => {
+type NavbarProps = {
+  textColor?: "white" | "black";
+};
+
+const Navbar = ({ textColor: heroTextColor }: NavbarProps) => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
-  const isHomeStyle = [
-    "/",
-    // "/contact",
-    // "/subscribe",
-    
-  ].includes(pathname);
+  const isHomeStyle = ["/"].includes(pathname);
 
-  const isCaseStudyPage = ["/casestudy1", "/casestudy2", "/casestudy3", "/subscribe", "/contact"].includes(
-    pathname
-  );
+  const isCaseStudyPage = [
+    "/casestudy1",
+    "/casestudy2",
+    "/casestudy3",
+    "/subscribe",
+    "/contact",
+  ].includes(pathname);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,22 +37,42 @@ const Navbar = () => {
 
   const isScrolledPast = isScrolled;
 
-  const textColor = isHomeStyle
-    ? "text-black"
-    : isScrolledPast
-    ? "text-black"
-    : "text-white";
+  
 
-  const borderColor =
-    isScrolledPast || isHomeStyle ? "border-[#3E3E3E]" : "border-white";
+  // Text color: Use heroTextColor on home page when not scrolled, else black
+  // New: always use heroTextColor if passed, else default to black
+  const effectiveTextColor =
+  heroTextColor === "white" && !isScrolledPast ? "white" : "black";
 
-  const logoSrc = isScrolledPast || isHomeStyle ? "/logo.png" : "/logo2.png";
+const borderColor =
+  heroTextColor === "white" && !isScrolledPast ? "border-white" : "border-black";
 
-  const iconColor = textColor;
+// const logoSrc =
+//   heroTextColor === "white" && !isScrolledPast ? "/logo2.png" : "/logo.png";
 
-  const isActive = (href: string) => {
-    return pathname === href ? "text-[#ED5D25]" : "";
-  };
+// const logoSrc = !isScrolledPast ? "/logo2.png" : "/logo.png";
+const logoSrc = (() => {
+  if (!isScrolledPast) {
+    if (isHomeStyle) {
+      // On home page and not scrolled, logo depends on text color
+      return heroTextColor === "white" ? "/logo2.png" : "/logo.png";
+    } else {
+      // On other pages and not scrolled, always logo2.png (white logo)
+      return "/logo2.png";
+    }
+  }
+  // On any page and scrolled, use black logo
+  return "/logo.png";
+})();
+
+
+
+const iconColorClass =
+  effectiveTextColor === "white" ? "text-white" : "text-black";
+
+
+  const isActive = (href: string) =>
+    pathname === href ? "text-[#ED5D25]" : "";
 
   return (
     <nav
@@ -63,7 +86,9 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
-          className={`flex justify-between items-center h-16 transition-colors duration-300 ${textColor}`}
+          className={`flex justify-between items-center h-16 transition-colors duration-300 ${
+            effectiveTextColor === "white" ? "text-white" : "text-black"
+          }`}
         >
           <Link href="/" className="flex items-center space-x-2">
             <Image
@@ -75,8 +100,11 @@ const Navbar = () => {
             />
           </Link>
 
-          <div className="hidden md:flex space-x-10 text-[19px]  font-[600]">
-            <Link href="/services" className={`${isActive("/services")} font-custom`}>
+          <div className="hidden md:flex space-x-10 text-[19px] font-[600]">
+            <Link
+              href="/services"
+              className={`${isActive("/services")} font-custom`}
+            >
               Services
             </Link>
             <Link href="/about" className={`${isActive("/about")} font-custom`}>
@@ -85,10 +113,16 @@ const Navbar = () => {
             <Link href="/trends" className={`${isActive("/trends")} font-custom`}>
               Trends & Insights
             </Link>
-            <Link href="/subscribe" className={`${isActive("/subscribe")} font-custom`}>
+            <Link
+              href="/subscribe"
+              className={`${isActive("/subscribe")} font-custom`}
+            >
               Subscribe
             </Link>
-            <Link href="/contact" className={`${isActive("/contact")} font-custom`}>
+            <Link
+              href="/contact"
+              className={`${isActive("/contact")} font-custom`}
+            >
               Contact
             </Link>
           </div>
@@ -96,9 +130,9 @@ const Navbar = () => {
           <div className="md:hidden flex items-center rounded-lg overflow-hidden transition-all duration-300 ease-in-out">
             <button onClick={() => setMobileOpen(!mobileOpen)}>
               {mobileOpen ? (
-                <CloseIcon className={iconColor} />
+                <CloseIcon className={iconColorClass} />
               ) : (
-                <MenuIcon className={iconColor} />
+                <MenuIcon className={iconColorClass} />
               )}
             </button>
           </div>
@@ -112,9 +146,11 @@ const Navbar = () => {
         } overflow-hidden ${
           isCaseStudyPage
             ? "bg-blue-500 text-white"
-            : isScrolledPast || isHomeStyle
+            : isScrolledPast || !isHomeStyle
             ? "bg-white text-black"
-            : "bg-black text-white"
+            : effectiveTextColor === "white"
+            ? "bg-black text-white"
+            : "bg-white text-black"
         }`}
       >
         <div className="px-4 py-3 space-y-2 text-sm font-bold">

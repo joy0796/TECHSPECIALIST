@@ -5,22 +5,20 @@ import Link from "next/link";
 const AboutserviceWrapper = () => {
   return (
     <>
-    <div className="relative w-full h-[100vh] ">
+    <div className="relative w-full h-[95vh] ">
     <div
       className="absolute inset-0 bg-cover bg-no-repeat"
       style={{ backgroundImage: "url('/servicesimg.png')",
         
-    //   backgroundSize: 'cover',
-        // zIndex: 0
+    
 
        }}
     ></div>
 
         
     <div className="relative z-10 text-white">
-       <Navbar 
-    
-/>
+       <Navbar textColor="white" />
+
 
       <ServicesSection/>
       </div>

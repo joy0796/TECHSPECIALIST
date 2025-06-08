@@ -19,7 +19,7 @@ export default function ChairmanMessage() {
         </div>
 
         {/* Text Content */}
-        <div className="w-full md:w-2/3 flex flex-col justify-between mt-[28px]">
+        <div className="w-full md:w-2/3 flex flex-col justify-between mt-[10px]">
           <div className="text-gray-800 space-y-6 leading-relaxed text-justify">
             <p className='text-[19px] font-[400] font-Poppins'>
               At Techspecialist Consulting Limited (TCL), we recognize that Artificial Intelligence,

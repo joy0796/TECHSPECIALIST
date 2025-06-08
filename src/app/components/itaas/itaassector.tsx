@@ -33,7 +33,7 @@ const ItaasSection = () => {
   return (
     <section className="bg-white text-black py-4 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl font-bold text-center mb-4 text-[#3E3E3E]">What we offer</h2>
+        <h2 className="text-[30px] md:text-[40px] font-[600] font-custom text-center mb-4 text-[#3E3E3E]">What we offer</h2>
         
 
         <div className="space-y-6">
@@ -44,18 +44,18 @@ const ItaasSection = () => {
                 sector.imageLeft ? "md:flex-row-reverse" : ""
               } gap-8 items-center`}
             >
-              <div className="md:w-[450px] w-full">
+              <div className=" w-full md:w-1/2" >
                 <img
                   src={sector.image}
                   alt={sector.title}
-                  className="w-full h-auto  object-cover shadow-md"
+                  className="w-full h-[400px] object-cover shadow-md"
                 />
               </div>
               <div className="md:w-3/2 w-full">
-                <h3 className="text-2xl font-semibold text-[#3E3E3E] mb-4">
+                <h3 className="text-[30px] md:text-[35px] font-[600] text-[#3E3E3E] mb-4 font-custom">
                   {sector.title}
                 </h3>
-                <p className="text-[#666666] text-md text-justify">{sector.description}</p>
+                <p className="text-[#666666] text-[18px] md:text-[19px] font-[400] font-Poppins text-justify leading-[177%]">{sector.description}</p>
               </div>
             </div>
           ))}

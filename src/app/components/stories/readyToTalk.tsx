@@ -6,7 +6,7 @@ export default function ReadyToTalk() {
   return (
     <section className="bg-white py-16 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-[50px] md:text-[83px] font-[600] text-[#3E3E3E] mb-6 font-custom leading-[100%]">
+        <h2 className="text-[50px] md:text-[75px] font-[600] text-[#3E3E3E] mb-6 font-custom leading-[100%]">
           Ready to talk?
         </h2>
         <p className="text-[30px] md:text-[40px] text-[#3E3E3E] font-[500] font-custom leading-[100%]">

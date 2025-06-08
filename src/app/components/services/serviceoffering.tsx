@@ -46,12 +46,12 @@ const ServiceOfferingsSection = () => {
   {services.map((service, index) => (
     <Link key={index} href={service.link!}>
       <div
-        className="flex flex-col h-full bg-gray-50 px-6 py-6 rounded-lg border border-blue-500 shadow-lg hover:shadow-xl transition-shadow duration-300"
+        className="flex flex-col h-full bg-gray-50 px-4 py-4 rounded-lg border border-blue-500 shadow-lg hover:shadow-xl transition-shadow duration-300"
         data-aos="fade-up"
      data-aos-duration="1000"
       >
         <div className="w-14 h-14 bg-blue-500 rounded-md mb-12 mt-6" />
-        <h3 className="text-[40px] font-[600] text-[#3E3E3E] mb-4 font-custom leading-[100%] mt-4">
+        <h3 className="text-[35px] font-[600] text-[#3E3E3E] mb-4 font-custom leading-[100%] mt-4">
           {service.title}
         </h3>
         <p className="text-[#979595] text-[19px] font-[500] font-custom mb-4">

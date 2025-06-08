@@ -72,7 +72,12 @@ const footerLinks = [
         <div>
           <h3 className="text-[17px] md:text-[24.53px] font-[600] mb-2 font-custom">Location</h3>
           <p className="flex items-center gap-4">
-            <LocationOn fontSize="medium" className="mt-0.5 w-[21.77px] h-[25.14px]" />
+            <Image
+            src="/vector2.png"
+            alt="Techspecialist Logo"
+            width={15}
+            height={15}
+          />
             <span className='text-[14px] md:text-[18.59px] font-[500] font-inter'>No. 2 Harare street, Wuse<br/> Zone 6, Abuja, F.C.T.</span>
           </p>
         </div>
@@ -82,16 +87,40 @@ const footerLinks = [
           <h3 className="text-[17px] md:text-[24.53px] font-[600] font-custom mb-2">Contact us</h3>
           <ul className="text-[18.59px] space-y-2">
             <li className="flex items-center gap-2">
-              <MailOutline fontSize="small" /> <span className='font-inter font-[500] text-[16px] md:text-[18.59px]'>info@techspecialistlimited.com</span>
+              <Image
+            src="/messages-1.png"
+            alt="Techspecialist Logo"
+            width={20}
+            height={20}
+          />
+               <span className='font-inter font-[500] text-[16px] md:text-[18.59px]'>info@techspecialistlimited.com</span>
             </li>
             <li className="flex items-center gap-2">
-              <Phone fontSize="small" /> <span className='font-inter font-[500] text-[16px] md:text-[18.59px]'>+234 0929 11443</span>
+              <Image
+            src="/call1.png"
+            alt="Techspecialist Logo"
+            width={20}
+            height={20}
+          />
+               <span className='font-inter font-[500] text-[16px] md:text-[18.59px]'>+234 0929 11443</span>
             </li>
             <li className="flex items-center gap-2">
-              <Twitter fontSize="small" /> <span className='font-inter font-[500] text-[16px] md:text-[18.59px]'>@tclafrica</span>
+              <Image
+            src="/twitter.png"
+            alt="Techspecialist Logo"
+            width={20}
+            height={20}
+          />
+              <span className='font-inter font-[500] text-[16px] md:text-[18.59px]'>@tclafrica</span>
             </li>
             <li className="flex items-center gap-2">
-              <Instagram fontSize="small" /> <span className='font-inter font-[500] text-[16px] md:text-[18.59px]'>@tclafrica</span>
+              <Image
+            src="/instagram.png"
+            alt="Techspecialist Logo"
+            width={20}
+            height={20}
+          />
+             <span className='font-inter font-[500] text-[16px] md:text-[18.59px]'>@tclafrica</span>
             </li>
           </ul>
         </div>

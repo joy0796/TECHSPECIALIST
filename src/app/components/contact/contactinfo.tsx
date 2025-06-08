@@ -25,18 +25,28 @@ export default function ContactSection() {
           </p>
 
           <div className="space-y-2 flex items-center gap-4">
-            <div className="flex items-center gap-2">
-              <span className='text-black'>📧</span>
+            <div className="flex items-center gap-4">
+              <Image
+                          src="/messages-3.jpg"
+                          alt="Techspecialist Logo"
+                          width={20}
+                          height={20}
+                        />
               <span className='font-Poppins text-[18.59px] font-[500]'>info@techspecialistlimited.com</span>
             </div>
-            <div className="flex items-center gap-2">
-              <span className='text-black'>📞</span>
+            <div className="flex items-center gap-4">
+              <Image
+                          src="/call.jpg"
+                          alt="Techspecialist Logo"
+                          width={20}
+                          height={20}
+                        />
               <span className='font-Poppins text-[18.59px] font-[500]'>+234 0929 11443</span>
             </div>
           </div>
 
           
-          <div className="flex justify-center md:justify-start mt-6">
+          <div className="flex justify-center md:justify-start ">
             
               <Image
   src="/groupcontactimg.png"
@@ -53,7 +63,7 @@ export default function ContactSection() {
         <div className="bg-[#ED5D25] shadow-lg pt-8 px-6 space-y-4 text-white h-fit rounded-md" data-aos="zoom-in"
               data-aos-duration="1000">
           <div>
-            <label className="block text-[22px] font-[600] mb-1 font-custom">FULL NAME</label>
+            <label className="block text-[19px] font-[600] mb-1 font-custom">FULL NAME</label>
             <input
               type="text"
               placeholder="Enter your name here"
@@ -62,7 +72,7 @@ export default function ContactSection() {
           </div>
 
           <div>
-            <label className="block text-[22px] font-[600] mb-1 font-custom">COMPANY/BUSINESS NAME</label>
+            <label className="block text-[19px] font-[600] mb-1 font-custom">COMPANY/BUSINESS NAME</label>
             <input
               type="text"
               placeholder="Enter your company name here"
@@ -71,7 +81,7 @@ export default function ContactSection() {
           </div>
 
           <div>
-            <label className="block text-[22px] font-[600] mb-1 font-custom">COMPANY/BUSINESS EMAIL ADDRESS</label>
+            <label className="block text-[19px] font-[600] mb-1 font-custom">COMPANY/BUSINESS EMAIL ADDRESS</label>
             <input
               type="email"
               placeholder="Enter your email address here"
@@ -80,7 +90,7 @@ export default function ContactSection() {
           </div>
 
           <div>
-            <label className="block text-[22px] font-[600] mb-1 font-custom">PHONE NUMBER</label>
+            <label className="block text-[19px] font-[600] mb-1 font-custom">PHONE NUMBER</label>
             <input
               type="tel"
               placeholder="Enter your phone number here"
@@ -89,7 +99,7 @@ export default function ContactSection() {
           </div>
 
           <div>
-            <label className="block text-[22px] font-[600] mb-1 font-custom">FIELD OF INTEREST</label>
+            <label className="block text-[19px] font-[600] mb-1 font-custom">FIELD OF INTEREST</label>
             <select className="w-full p-4 rounded text-black">
               <option>Digital Transformation</option>
               <option>AI Solutions</option>

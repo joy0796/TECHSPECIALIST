@@ -54,7 +54,7 @@ export default function ValueMethodologySection() {
      
           >
             <h3 className="text-[30px] md:text-[40px] text-[#3E3E3E] font-[600] mb-4 font-custom leading-[100%]">{pillar.title}</h3>
-            <p className="text-[19px] text-[#979595] leading-normal text-justify font-[500] Poppins">{pillar.description}</p>
+            <p className="text-[19px] text-[#979595] leading-normal font-[500] font-Poppins">{pillar.description}</p>
           </div>
         ))}
       </div>

@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from 'next/link';
 
 const SubscribeSection = () => {
 useEffect(() => {
@@ -25,7 +26,7 @@ useEffect(() => {
         {/* Left: Text + Form */}
         <div data-aos="zoom-in"
               data-aos-duration="1000">
-          <p className="text-[40px] md:text-[75px] font-[600] font-custom mb-6 text-[#3B73E3] mt-10 leading-[100%]">Subscribe <span className="text-[#3E3E3E]"> to our Insights</span>
+          <p className="text-[40px] md:text-[75px] font-[600] font-custom mb-6 text-[#3B73E3] mt-12 leading-[100%]">Subscribe <span className="text-[#3E3E3E]"> to our Insights</span>
           </p>
           <p className="text-[#3E3E3E] font-[900] mb-4 text-[23px] font-sans md:text-justify">
             Stay ahead with the latest thinking in AI, cybersecurity, and digital transformation. Simply sign up with your email address and confirm your subscription via the email we will send you. You will start receiving curated insights and updates directly from the experts at Techspecialist Consulting Limited.
@@ -76,15 +77,17 @@ useEffect(() => {
         </div>
       </div>
 
-        <div className="fixed bottom-4 right-4 sm:bottom-36 sm:right-24 w-8 h-8 bg-orange-600 rounded-full flex justify-center items-center z-50">
-  <Image
-    src="/Vector.png"
-    alt="Orange Icon"
-    width={16}
-    height={16}
-    className="object-contain"
-  />
-</div>
+        <Link href="/contact">
+        <div className="fixed bottom-4 right-4 sm:bottom-36 sm:right-20 w-10 h-10 bg-orange-600 rounded-full flex justify-center items-center z-50">
+          <Image
+            src="/Vector.png"
+            alt="Orange Icon"
+            width={20}
+            height={20}
+            className="object-contain"
+          />
+        </div>
+      </Link>
     </section>
   );
 };

@@ -7,7 +7,7 @@ import Footer from "../components/footer";
 export default function Services() {
   return (
     <>
-        <Navbar />
+        <Navbar textColor="white" />
         <ContactSection/>
         <JoinUsSection/>
         <Footer/>

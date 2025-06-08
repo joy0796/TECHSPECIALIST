@@ -13,9 +13,9 @@ import Footer from "../components/footer";
 
 
 const breadcrumbItems = [
-  { label: "Home", href: "/" },
-  { label: "Impact Stories", href: "/stories" },
-  { label: "Public Sector", href: "/stories/public-sector" },
+  { label: "HOME", href: "/" },
+  { label: "ABOUT US", href: "/stories" },
+  
 ];
 
 export default function About() {

@@ -7,20 +7,22 @@ const ContactSection = () => {
   // const [topic, setTopic] = useState("Digital Transformation");
 
   return (
-    <section className="w-full px-4 py-12 bg-white md:flex md:gap-10 md:justify-between md:items-center gap-12 mx-auto">
-      {/* Left: Form */}
-      <div className="bg-white text-black  w-full md:w-[230px]">
-    
-        <div className='bg-gray-100 p-2'>
-          <p className="text-sm font-semibold text-[#3E3E3E]">Ready to talk?</p>
-          <p className="text-xs text-[#707070]">
+
+      <section className="bg-white text-black px-4 py-12 ">
+      <div className="  flex flex-col md:flex-row justify-between gap-8 px-2 md:px-8" data-aos="fade-up"
+     data-aos-duration="1000">
+        {/* Left - Contact Form */}
+        <div className="bg-white text-black p-4  space-y-1 pt-14 border-t border-gray-300 w-full md:w-[1000px]">
+        <div className='bg-[#F0F0F0] py-4 px-6'>
+          <p className="text-[22px] font-[600] text-[#3E3E3E] font-custom mb-1">Ready to talk?</p>
+          <p className="text-[18px] text-[#707070] font-[400] font-custom leading-[100%]">
             I want to talk to your specialist in the field of
-            <span className="text-[#707070] underline">Digital Transformation</span>.
+            <span className="text-[#707070] underline"> Digital Transformation</span>.
           </p>
           </div>
-          <form className="text-xs">
-            <div className='bg-[#F0F0F0] p-2'>
-              <label className='text-xs text-[#3E3E3E]'>FULL NAME</label>
+          <form className=" text-sm border-b border-gray-100">
+            <div className='bg-[#F0F0F0] py-2 px-6 mb-1'>
+              <label className='text-[10px] text-[#3E3E3E] font-600 font-custom'>FULL NAME</label>
                 <input
               type="text"
               placeholder="Enter your name"
@@ -28,8 +30,8 @@ const ContactSection = () => {
             />
             </div>
             
-            <div className='bg-gray-100 p-2'>
-              <label className='text-xs text-[#3E3E3E]'>COMPANY/BUSINESS NAME</label>
+            <div className='bg-[#F0F0F0] px-6 mb-1 py-2'>
+              <label className='text-[10px] text-[#3E3E3E] font-600 font-custom'>COMPANY/BUSINESS NAME</label>
             <input
               type="text"
               placeholder="Enter your name here"
@@ -37,8 +39,8 @@ const ContactSection = () => {
             />
             </div>
 
-            <div className='bg-gray-100 p-2'>
-              <label className='text-xs text-[#3E3E3E]'>BUSINESS EMAIL</label>
+            <div className='bg-[#F0F0F0] px-6 mb-1 py-2'>
+              <label className='text-[10px] text-[#3E3E3E] font-600 font-custom'>BUSINESS EMAIL</label>
                             <input
               type="email"
               placeholder="Enter your email here"
@@ -46,8 +48,8 @@ const ContactSection = () => {
             />
             </div>
 
-            <div className='bg-gray-100 p-2'>
-              <label className='text-xs text-[#3E3E3E]'>PHONE NUMBER</label>
+            <div className='bg-[#F0F0F0] px-6 mb-1 py-2'>
+              <label className='text-[10px] text-[#3E3E3E] font-600 font-custom'>PHONE NUMBER</label>
             <input
               type="tel"
               placeholder="Enter your phone number"
@@ -55,30 +57,30 @@ const ContactSection = () => {
             />
             </div>
             
-            <div className='bg-gray-100 p-2'>
-                <label className="flex items-start gap-2 text-xs">
-              <input type="checkbox" className="mt-1 text-[#707070]" />
-              I would like to receive exciting communication regarding Techspecialist services.
+            <div className='bg-[#F0F0F0] py-4 px-6 text-[#3E3E3E]'>
+                <label className="flex items-center gap-2 text-xs mb-4">
+              <input type="checkbox" className="mt-1 text-[#707070] font-custom" />
+              Id like to receive exciting communication regarding Techspecialist services.
             </label>
-            </div>
-            
 
-            <div>
+            <div className=''>
                             <button
               type="submit"
-              className="w-full bg-orange-600 text-white py-2 rounded font-normal"
+              className="w-full bg-[#ED5D25] text-white py-2 rounded font-[600] font-custom text-[8px] md:text-[11px]"
             >
               Contact Me
             </button>
             </div>
+            </div>
+            
+
+            
 
           </form>
         </div>
-
-
-      {/* Right: Text + Stats */}
-      <div className="mt-10 md:mt-0 md:w-[600px] text-gray-800">
-        <p className="text-md mb-4 text-justify">
+        {/* Right - Company Info */}
+        <div className="text-[#3E3E3E] space-y-6 text-[19px] font-[400] leading-[177%] text-justify font-Poppins">
+          <p className="text-md mb-4 text-justify">
           Modern businesses require more than just functional IT systems—they need resilient, responsive, and future-ready technology environments that keep operations running smoothly.  At Techspecialist Consulting Limited (TCL), we deliver dependable IT Support as a Service (ITaaS) that ensures your infrastructure performs at its best—every hour, every day. </p>
 
         <p className="text-md mb-6 text-justify">
@@ -116,8 +118,38 @@ const ContactSection = () => {
         <p className="text-md">
           <span className="font-semibold">One Partner, Total Support:</span> We act as an extension of your team, offering end-to-end IT support that covers infrastructure, user support, security, and strategic advisory—all under one roof.
         </p>
+        </div>
       </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   );
 };
 

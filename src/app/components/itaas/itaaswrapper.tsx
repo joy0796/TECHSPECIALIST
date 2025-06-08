@@ -18,9 +18,7 @@ const ItaasWrapper = () => {
 
         
     <div className="relative z-10">
-      <Navbar 
-      
-      />
+      <Navbar textColor="white" />
       <Itaas/>
       </div>
 

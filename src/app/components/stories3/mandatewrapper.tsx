@@ -18,9 +18,7 @@ const MandateWrapper = () => {
 
         
     <div className="relative z-10 text-white">
-      <Navbar 
-      
-      />
+      <Navbar textColor="white" />
       <Mandate/>
       </div>
       <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 w-8 h-8 bg-orange-600 rounded-full flex justify-center ">

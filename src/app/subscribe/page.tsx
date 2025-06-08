@@ -7,7 +7,7 @@ import Footer from "../components/footer";
 export default function Stories3() {
   return (
     <>
-    <Navbar  />
+    <Navbar textColor="white" />
     <SubscribeSection/>
     <Footer/>
     </>

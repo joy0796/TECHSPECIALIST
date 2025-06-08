@@ -57,7 +57,7 @@ const TeamSection = () => {
       <div className="max-w-7xl mx-auto space-y-20">
         {teamData.map((group, idx) => (
           <div key={idx}>
-            <h2 className="text-center text-[30px] md:text-[40px] font-[600] font-sans text-gray-800 mb-10 text-[#3E3E3E]">
+            <h2 className="text-center text-[30px] md:text-[40px] font-[600] font-custom text-gray-800 mb-10 text-[#3E3E3E]">
               {group.title}
             </h2>
 
@@ -72,7 +72,7 @@ const TeamSection = () => {
                       className="object-cover rounded"
                     />
                   </div>
-                  <p className="font-[600] font-sans text-[20px] md:text-[23px] text-gray-900 mb-8">{member.name}</p>
+                  <p className="font-[600] font-custom text-[20px] md:text-[23px] text-gray-900 mb-8">{member.name}</p>
                   {/* <p className="text-[17px] font-[400] font-sans text-[#3E3E3E] mt-1">{member.role}</p> */}
                 </div>
               ))}

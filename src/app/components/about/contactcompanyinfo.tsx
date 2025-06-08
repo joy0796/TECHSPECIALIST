@@ -15,7 +15,7 @@ export default function ContactWithCompanyInfo() {
       <div className="  flex flex-col md:flex-row justify-between gap-8 px-2 md:px-8" data-aos="fade-up"
      data-aos-duration="1000">
         {/* Left - Contact Form */}
-        <div className="bg-white text-black p-4  space-y-1 pt-14 border-t border-gray-300 w-full md:w-[1000px]">
+        <div className="bg-white text-black p-4  space-y-1 pt-14 border-t border-b border-gray-300 w-full md:w-[1000px] ">
         <div className='bg-[#F0F0F0] py-4 px-6'>
           <p className="text-[22px] font-[600] text-[#3E3E3E] font-custom mb-1">Ready to talk?</p>
           <p className="text-[18px] text-[#707070] font-[400] font-custom leading-[100%]">
@@ -82,7 +82,7 @@ export default function ContactWithCompanyInfo() {
           </form>
         </div>
         {/* Right - Company Info */}
-        <div className="text-[#3E3E3E] space-y-6 text-[19px] font-[400] leading-relaxed text-justify font-Poppins">
+        <div className="text-[#3E3E3E] space-y-6 text-[18px] font-[400] leading-relaxed text-justify font-Poppins">
           <p>
             Techspecialist Consulting Limited (TCL) stands as Nigerias premier digital transformation enabler,
             delivering innovative technology solutions that drive measurable business value.
