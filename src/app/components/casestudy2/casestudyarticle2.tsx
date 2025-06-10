@@ -183,7 +183,7 @@ A 2023 report by PwC Nigeria estimated that AI could contribute up to $15.7 tril
 
         
         
-        <div className="w-full h-64 md:w-1/2 md:mx-auto relative overflow-hidden py-6">
+        <div className="w-full h-[600px] md:mx-auto relative overflow-hidden py-6">
                   <Image
                     src="/image 20.png"
                     alt="Digital Transformation"
@@ -218,7 +218,7 @@ Here is how we are helping power AI collaboration:</p>
 <p className="text-md font-bold mb-1 text-[#3E3E3E]">•	Infrastructure Support: <span className='font-normal'>Offering cloud, data, and cybersecurity platforms that power reliable and secure AI solutions.</span></p>
 <p className="leading-relaxed mb-2 text-justify text-md text-[#3E3E3E]">By enabling cross-sectoral synergy, Techspecialist does not just deploy tech we create transformative partnerships that move the needle for Nigerias digital economy.</p>
 
-        <div className="w-full h-64 md:w-1/2 md:mx-auto relative overflow-hidden py-10">
+        <div className="w-full h-[600px] md:mx-auto relative overflow-hidden py-10">
                   <Image
                     src="/image 21.png"
                     alt="Digital Transformation"

@@ -39,8 +39,7 @@ const Navbar = ({ textColor: heroTextColor }: NavbarProps) => {
 
   
 
-  // Text color: Use heroTextColor on home page when not scrolled, else black
-  // New: always use heroTextColor if passed, else default to black
+  
   const effectiveTextColor =
   heroTextColor === "white" && !isScrolledPast ? "white" : "black";
 
@@ -54,14 +53,14 @@ const borderColor =
 const logoSrc = (() => {
   if (!isScrolledPast) {
     if (isHomeStyle) {
-      // On home page and not scrolled, logo depends on text color
+      
       return heroTextColor === "white" ? "/logo2.png" : "/logo.png";
     } else {
-      // On other pages and not scrolled, always logo2.png (white logo)
+      
       return "/logo2.png";
     }
   }
-  // On any page and scrolled, use black logo
+
   return "/logo.png";
 })();
 

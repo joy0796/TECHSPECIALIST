@@ -6,7 +6,7 @@ import Link from "next/link";
 const TrendsWrapper = () => {
   return (
     <>
-    <div className="relative w-full h-[95vh] overflow-hidden">
+    <div className="relative w-full h-[92vh] overflow-hidden">
     <div
       className="absolute inset-0 bg-cover bg-no-repeat"
       style={{ backgroundImage: "url('/trendsimg.png')",

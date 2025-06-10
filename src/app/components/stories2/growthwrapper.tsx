@@ -1,11 +1,12 @@
 import Navbar from "../navbar";
 import EconomicGrowth from "./economicgrowth";
 import Image from "next/image";
+import Link from "next/link";
 
 const GrowthWrapper = () => {
   return (
     <>
-    <div className="relative w-full h-[98vh] overflow-hidden pt-16">
+    <div className="relative w-full h-[95vh] overflow-hidden pt-16">
     <div
       className="absolute inset-0 bg-cover bg-no-repeat"
       style={{ backgroundImage: "url('/aiimg.png')",
@@ -21,15 +22,17 @@ const GrowthWrapper = () => {
       <Navbar textColor="white" />
       <EconomicGrowth/>
       </div>
-      <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 w-8 h-8 bg-orange-600 rounded-full flex justify-center ">
-              <Image
-                src="/Vector.png"
-                alt="Orange Icon"
-                width={16}
-                height={16}
-                className="object-contain"
-              />
-            </div>
+        <Link href="/contact">
+        <div className="fixed bottom-4 right-4 sm:bottom-36 sm:right-20 w-10 h-10 bg-orange-600 rounded-full flex justify-center items-center z-50">
+          <Image
+            src="/Vector.png"
+            alt="Orange Icon"
+            width={20}
+            height={20}
+            className="object-contain"
+          />
+        </div>
+      </Link>
     </div>
     </>
   );

@@ -261,7 +261,7 @@ const HeroSection = ({
   return (
     <Box
       component="section"
-      className="w-full h-screen pt-28 md:pt-[6rem] pb-4 relative z-10 md:pl-4 px-2 flex flex-col justify-between"
+      className="w-full h-screen pt-16 md:pt-[6rem] pb-4 relative z-10 md:pl-4 px-2 flex flex-col justify-between"
     >
       {/* Top Content */}
       <Box className="flex flex-col-reverse lg:flex-row h-full items-center">

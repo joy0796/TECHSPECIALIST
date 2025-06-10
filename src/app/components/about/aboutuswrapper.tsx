@@ -6,7 +6,7 @@ import Link from "next/link";
 const AboutusWrapper = () => {
   return (
     <>
-    <div className="relative w-full h-[95vh] overflow-hidden pt-16">
+    <div className="relative w-full h-[92vh] overflow-hidden pt-16">
     <div
       className="absolute inset-0 bg-cover bg-no-repeat"
       style={{ backgroundImage: "url('/aboutimg.png')",

@@ -5,7 +5,7 @@ import Link from "next/link";
 const AboutserviceWrapper = () => {
   return (
     <>
-    <div className="relative w-full h-[95vh] ">
+    <div className="relative w-full h-[92vh] ">
     <div
       className="absolute inset-0 bg-cover bg-no-repeat"
       style={{ backgroundImage: "url('/servicesimg.png')",

@@ -19,7 +19,7 @@ type Props = {
   showButton?: boolean;
   headingColor?: string;
   padding?: string; 
-  // default to true
+  
 };
 
 const findings: Finding[] = [

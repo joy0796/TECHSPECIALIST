@@ -176,7 +176,7 @@ const CaseArticleSection1 = () => {
 
         
         <h1 className=" font-bold  text-[#3E3E3E]">Top Barriers to SME Digital Transformation in Nigeria</h1>
-        <div className="w-full md:w-1/2 h-64 md:mx-auto relative rounded-lg overflow-hidden shadow-md py-8">
+        <div className="w-full h-[600px] md:mx-auto relative  overflow-hidden  py-8">
                   <Image
                     src="/image18.png"
                     alt="Digital Transformation"
@@ -225,7 +225,7 @@ const CaseArticleSection1 = () => {
                 <h1 className=" font-bold mb-1 text-[#3E3E3E]">Blueprints: How to Digitally Transform Nigerian SMEs</h1>
 
 
-                <div className="w-full md:w-1/2 h-64 md:mx-auto relative rounded-lg overflow-hidden shadow-md py-8">
+                <div className="w-full h-[600px] md:mx-auto relative  overflow-hidden  py-10">
                   <Image
                     src="/image18.png"
                     alt="Digital Transformation"

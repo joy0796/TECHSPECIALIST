@@ -177,7 +177,7 @@ const CaseArticleSection3 = () => {
 
 
         
-        <div className="w-full h-64 md:w-1/2 mx-auto my-6 relative  overflow-hidden">
+        <div className="w-full h-[600px] mx-auto my-6 relative  overflow-hidden">
                   <Image
                     src="/image 22.png"
                     alt="Digital Transformation"
@@ -197,7 +197,7 @@ Despite the clear need, public sector IT projects in Nigeria face chronic constr
               Principles of Sustainable IT Management
             </p>
 
-        <div className="w-full h-64 md:w-1/2 mx-auto my-6 relative overflow-hidden">
+        <div className="w-full h-[600px] mx-auto my-6 relative overflow-hidden">
                   <Image
                     src="/image 23.png"
                     alt="Digital Transformation"

@@ -54,7 +54,7 @@ export default function ServicesSection() {
   }, [])
 
   return (
-    <section className="relative w-full text-white overflow-hidden h-[95vh] flex flex-col justify-between pb-0">
+    <section className="relative w-full text-white overflow-hidden h-[92vh] flex flex-col justify-between pb-0">
       {/* Top Content */}
 
       {/* <div className="absolute inset-0 bg-black/50 backdrop-blur-lg"></div> */}

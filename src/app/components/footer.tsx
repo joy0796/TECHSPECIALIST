@@ -67,7 +67,7 @@ const footerLinks = [
           <h3 className="text-[17px] md:text-[24.53px] font-[600] mb-2 font-custom">Location</h3>
           <p className="flex items-center gap-4">
             <Image
-            src="/vector2.png"
+            src="/Vector2.png"
             alt="Techspecialist Logo"
             width={15}
             height={15}

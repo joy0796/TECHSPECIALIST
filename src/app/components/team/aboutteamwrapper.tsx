@@ -6,7 +6,7 @@ import Link from "next/link";
 const TeamWrapper = () => {
   return (
     <>
-    <div className="relative w-full h-[100vh] overflow-hidden pt-16">
+    <div className="relative w-full h-[92vh] overflow-hidden pt-16">
     <div
       className="absolute inset-0  bg-cover bg-no-repeat"
       style={{ backgroundImage: "url('/teamimg.png')",
@@ -19,20 +19,18 @@ const TeamWrapper = () => {
 
         
     <div className="relative z-10">
-       <Navbar 
-      
-      />
+       <Navbar textColor="white" />
       <Team/>
       </div>
        
 
        <Link href="/contact">
-        <div className="fixed bottom-4 right-4 sm:bottom-36 sm:right-24 w-8 h-8 bg-orange-600 rounded-full flex justify-center items-center z-50">
+        <div className="fixed bottom-4 right-4 sm:bottom-36 sm:right-20 w-10 h-10 bg-orange-600 rounded-full flex justify-center items-center z-50">
           <Image
             src="/Vector.png"
             alt="Orange Icon"
-            width={16}
-            height={16}
+            width={20}
+            height={20}
             className="object-contain"
           />
         </div>
